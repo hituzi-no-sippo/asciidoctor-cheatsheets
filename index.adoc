@@ -1,9 +1,10 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-05-24T07:20:38+09:00
-:revremark: display document type
+:revnumber: v0.5.0
+:revdate: 2023-06-15T01:49:08+09:00
+:revremark: dispaly document attributes
+:toc: right
 :copyright: Copyright (C) 2023 {author}
 
 // Custom Attributes
@@ -12,6 +13,10 @@
 [horizontal]
 AsciiDoctor Version:: {asciidoctor-version}
 Document Type:: {asciidoc_docs_url}/document/doctype/[{doctype}^]
+
+== Display Document Attributes
+
+include::./display_document_attributes/index.adoc[tag=main, leveloffset=+1]
 
 '''
 

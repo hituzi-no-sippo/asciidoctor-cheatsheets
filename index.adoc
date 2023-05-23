@@ -1,9 +1,13 @@
+= AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-08T15:40:49+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-05-24T06:50:43+09:00
+:revremark: display AsciiDoctor version
 :copyright: Copyright (C) 2023 {author}
+
+[horizontal]
+AsciiDoctor Version:: {asciidoctor-version}
 
 '''
 

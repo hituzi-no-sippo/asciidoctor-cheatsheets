@@ -1,9 +1,33 @@
+= Section Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-08T16:07:02+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-08T16:11:11+09:00
+:revremark: add section style introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:sections_docs_url: {asciidoc_docs_url}/sections
+
+// tag::main[]
+
+.References
+{sections_docs_url}/styles/[
+Section Styles for Articles and Books^]
+
+.Article section styles
+* abstract
+* appendix
+* glossary
+* bibliography
+
+// end::main[]
+
+// end::body[]
 
 '''
 

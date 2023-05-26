@@ -1,9 +1,9 @@
 = Section Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-08T16:11:11+09:00
-:revremark: add section style introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-08T16:13:37+09:00
+:revremark: add abstract
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -24,6 +24,30 @@ Section Styles for Articles and Books^]
 * appendix
 * glossary
 * bibliography
+
+== Abstract
+
+:abstract_docs_url: {sections_docs_url}/abstract
+.References
+* {abstract_docs_url}[
+  Abstract(Section)^]
+* {abstract_docs_url}-block[
+  Abstract(block)^]
+
+// tag::abstract_block[]
+
+[abstract]
+.Abstract Block
+--
+Block Style
+--
+
+// end::abstract_block[]
+
+:display_code_tag_name: abstract_block
+
+:asciidoc_code_file_path: ./sections/styles.adoc
+include::../display_asciidoc_code.adoc[]
 
 // end::main[]
 

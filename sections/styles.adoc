@@ -1,9 +1,9 @@
 = Section Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-06-08T16:26:57+09:00
-:revremark: add glossary
+:revnumber: v0.7.0
+:revdate: 2023-06-08T16:31:01+09:00
+:revremark: add bibliography section
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -105,6 +105,83 @@ Word:: Description
 // end::glossary_block[]
 
 :display_code_tag_name: glossary_block
+include::./styles.adoc[tag=display_asciidoc_code]
+
+== Bibliography
+
+.References
+{sections_docs_url}/bibliography/[
+Bibliography^]
+
+// tag::bibliography_target[]
+
+:double_angled_brackets: <<double_angled_brackets>>
+- Double angled brackets xref
+  {double_angled_brackets} +
+  (`pass:a[{double_angled_brackets}]`)
+
+:inter_document_xref: xref:{docname}{docfilesuffix}#inter_document_xref[]
+- inter-document xref
+  {inter_document_xref} +
+  (`pass:a[{inter_document_xref}]`)
+
+:double_angled_brackets_xreftext: <<double_angled_brackets, bibliography entries>>
+- xreftext on double angled brackets xref
+  {double_angled_brackets_xreftext} +
+  (`pass:a[{double_angled_brackets_xreftext}]`)
+
+:inter_document_xref_xreftext: xref:{docname}{docfilesuffix}#inter_document_xref[bibliography entries]
+- xreftext on inter-document xref
+  {inter_document_xref_xreftext} +
+  (`pass:a[{inter_document_xref_xreftext}]`)
+
+- xreftext on the bibliography anchor
+  <<label_xreftext>>
+- Number on the bibliography anchor
+  <<label_number>>
+
+// end::bibliography_target[]
+
+:display_code_tag_name: bibliography_target
+
+include::./styles.adoc[tag=display_asciidoc_code]
+
+// tag::bibliography_enable[]
+
+[bibliography]
+=== Bibliography Enable
+
+// tag::bibliography_entriess[]
+
+:double_angled_brackets_entry: [[[double_angled_brackets]]]
+:inter_document_xref_entry: [[[inter_document_xref]]]
+:xreftext_entry: [[[label_xreftext, xreftext]]]
+:number_entry: [[[label_number, 1]]]
+* {double_angled_brackets_entry} `pass:a[{double_angled_brackets}]`
+* {inter_document_xref_entry} `pass:a[{inter_document_xref_entry}]`
+* {xreftext_entry} `pass:a[{xreftext_entry}]`
+* {number_entry} `pass:a[{number_entry}]`
+
+// end::bibliography_entriess[]
+
+// end::bibliography_enable[]
+
+:display_code_tag_name: bibliography_enable
+
+include::./styles.adoc[tag=display_asciidoc_code]
+
+// tag::bibliography_disable[]
+
+=== Bibliography Disable
+
+include::./styles.adoc[tag=bibliography_entriess]
+
+// end::bibliography_section[]
+
+// end::bibliography_disable[]
+
+:display_code_tag_name: bibliography_disable
+
 include::./styles.adoc[tag=display_asciidoc_code]
 
 // end::main[]

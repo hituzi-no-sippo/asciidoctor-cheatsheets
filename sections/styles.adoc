@@ -1,9 +1,9 @@
 = Section Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-08T16:25:49+09:00
-:revremark: add appendix section
+:revnumber: v0.6.0
+:revdate: 2023-06-08T16:26:57+09:00
+:revremark: add glossary
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -89,6 +89,22 @@ Appendix^]
 :sectnumlevels:
 
 :display_code_tag_name: appendix_sections
+include::./styles.adoc[tag=display_asciidoc_code]
+
+== Glossary
+
+.References
+{sections_docs_url}/glossary/[
+Glossary^]
+
+// tag::glossary_block[]
+
+[glossary]
+Word:: Description
+
+// end::glossary_block[]
+
+:display_code_tag_name: glossary_block
 include::./styles.adoc[tag=display_asciidoc_code]
 
 // end::main[]

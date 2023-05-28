@@ -1,9 +1,9 @@
 = Paragraphs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-08T18:57:56+09:00
-:revremark: add lead style
+:revnumber: v0.6.0
+:revdate: 2023-06-08T19:01:49+09:00
+:revremark: add paragraph alignment
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -108,6 +108,40 @@ Lead style with `role` attribute.
 
 :display_code_tag_name: lead_style
 include::./paragraphs.adoc[tag=display_asciidoc_code]
+
+== Alignment
+
+.References
+{blocks_docs_url}/paragraph-alignment[
+Paragraph Alignment^]
+
+// tag::alignment[]
+
+:alignment: left
+
+// tag::alignment_text[]
+
+.text-{alignment}
+[.text-{alignment}]
+text-{alignment}
+
+// end::alignment_text[]
+
+:alignment: center
+include::./paragraphs.adoc[tag=alignment_text]
+
+:alignment: right
+include::./paragraphs.adoc[tag=alignment_text]
+
+:alignment: justify
+include::./paragraphs.adoc[tag=alignment_text]
+
+// end::alignment[]
+
+:display_code_tag_name: alignment
+include::./paragraphs.adoc[tag=display_asciidoc_code]
+
+`[.text-<ALIGNMENT>]` is same as `[role="text-<ALIGNMENT>"]`
 
 // end::main[]
 

@@ -1,9 +1,40 @@
+= Paragraphs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-08T18:42:37+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-08T18:44:44+09:00
+:revremark: add normal paragraph
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:blocks_docs_url: {asciidoc_docs_url}/blocks
+
+.References
+{blocks_docs_url}/paragraphs/[
+Paragraphs^]
+
+// tag::introduction[]
+
+Simply type and it will be generated as a paragraph.
+No special markup or attributes need to be used.
+
+// end::introduction[]
+
+:display_code_tag_name: introduction
+
+:asciidoc_code_file_path: ./paragraphs.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

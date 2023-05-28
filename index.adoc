@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.7.0
-:revdate: 2023-05-23T04:15:23+09:00
-:revremark: add section link attributes
+:revnumber: v0.8.0
+:revdate: 2023-05-28T09:49:10+09:00
+:revremark: add paragraph
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -29,6 +29,10 @@ This is due to the `leveloffset` of the `include` macro.
 == Sections
 
 include::./sections/index.adoc[tag=main, leveloffset=+1]
+
+== Paragraphs
+
+include::./paragraphs.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

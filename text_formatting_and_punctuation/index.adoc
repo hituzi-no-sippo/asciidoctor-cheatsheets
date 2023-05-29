@@ -1,9 +1,78 @@
+= Text Formatting and Punctuation
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-08T20:16:16+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-08T20:18:56+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:text_docs_url: {asciidoc_docs_url}/text
+
+.References
+{text_docs_url}/[
+Text Formatting and Punctuation^]
+
+// tag::text_formatting[]
+
+* *Bold* (type: strong) (`*`)
+* _Italic_ (type: emphasis) (`_`)
+* `Monospace` (type: monospaced) (```)
+* #Highlight# (type: mark) (`#`)
+* [.line-through]#Styled phrase# (type: unquoted) (`[.<ROLE>]#`)
+* ^Subscript^ (type: subscript) (`^`)
+* ~Superscript~ (type: superscript) (`~`)
+* Curved quotation marks
+** '`Single`' (type: single) (`'``<WORD>``'`)
+** "`Double`" (type: double) (`"`<WORD>`"`)
+* Apostrophes sing's (type: single) (`'`)
+
+// end::text_formatting[]
+
+:display_code_tag_name: text_formatting
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./text_formatting_and_punctuation/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::unconstrained[]
+
+.Unconstrained formatting pair
+If the text does not begin or end with a space character,
+use an unconstrained text pair consisting of
+a double start mark and a double end mark around the text to be styled. +
+##J##apan__ese__(**日本**``語``)
+
+// end::unconstrained[]
+
+:display_code_tag_name: unconstrained
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::mixed[]
+
+.Mixed Formatting
+* *bold _italic_ `mono` #Highlight# [.red]#Red# H~2~o 2^10^ '`Single`' "`Double`"*
+* **bold _italic ``mono #Highlight [.red]##Red '`Single`' "`Double`"###``_**
+* `**bold _italic mono #Highlight [.red]##Red '`Single`' "`Double`"###**_`
+
+// end::mixed[]
+
+:display_code_tag_name: mixed
+include::./index.adoc[tag=display_asciidoc_code]
+
+// end::body[]
+
+// end::main[]
 
 '''
 

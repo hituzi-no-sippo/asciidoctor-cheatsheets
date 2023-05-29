@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.10.0
-:revdate: 2023-05-28T09:49:10+09:00
-:revremark: add break
+:revnumber: v0.11.0
+:revdate: 2023-05-29T07:57:53+09:00
+:revremark: add text formatting and punctuation introduction
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -41,6 +41,10 @@ include::./document_attributes.adoc[tag=main, leveloffset=+1]
 == Breaks
 
 include::./breaks.adoc[tag=main, leveloffset=+1]
+
+== Text Formatting and Punctuation
+
+include::./text_formatting_and_punctuation/index.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

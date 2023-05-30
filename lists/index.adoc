@@ -1,9 +1,123 @@
+= Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-08T20:33:21+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-08T20:35:49+09:00
+:revremark: add list introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:list_url: {asciidoc_docs_url}/lists
+
+.References
+* {list_url}/unordered[
+  Unordered Lists^]
+* {list_url}/ordered[
+  Ordered Lists^]
+
+// tag::unordered[]
+
+.Unordered
+* Level 1
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+****** Level 6
+******* Level 7
+******** Level 8
+********* Level 9
+********** Level 10
+* Level 1
+
+// end::unordered[]
+
+:display_code_tag_name: unordered
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+
+// tag::ordered[]
+
+.Ordered
+. Level 1
+.. Level 2
+... Level 3
+.... Level 4
+..... Level 5
+...... Level 6
+....... Level 7
+........ Level 8
+......... Level 9
+.......... Level 10
+. Level 1
+.. Level 2
+... Level 3
+... Level 3
+.. Level 2
+... Level 3
+
+// end::ordered[]
+
+:display_code_tag_name: ordered
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::mixed[]
+
+.Mixed List
+* Unordered Level 1
+** Unordered Level 2
+. Ordered Level 3
+.. Ordered Level 4
+*** Unordered Level 5
+... Ordered Level 6
+.... Ordered Level 7
+..... Ordered Level 8
+**** Unordered Level 9
+...... Ordered Level 10
+...... Ordered Level 10
+...... Ordered Level 10
+..... Ordered Level 8
+..... Ordered Level 8
+..... Ordered Level 8
+.... Ordered Level 7
+.... Ordered Level 7
+.... Ordered Level 7
+... Ordered Level 6
+... Ordered Level 6
+.. Ordered Level 4
+.. Ordered Level 4
+. Ordered Level 3
+.. Ordered Level 4
+.. Ordered Level 4
+. Ordered Level 3
+.. Ordered Level 4
+** Unordered Level 2
+. Ordered Level 3
+. Ordered Level 3
+* Unordered Level 1
+. Ordered Level 2
+
+// end::mixed[]
+
+:display_code_tag_name: mixed
+include::./index.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

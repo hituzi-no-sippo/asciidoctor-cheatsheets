@@ -1,9 +1,73 @@
+= Unordered Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-09T04:33:59+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-09T04:39:59+09:00
+:revremark: add unordered list marks
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:list_url: {asciidoc_docs_url}/lists
+
+// tag::main[]
+
+== Marks
+
+.References
+{list_url}/unordered/#markers[
+Marks^]
+
+// tag::unordered_marks[]
+
+.Default
+* Level 1
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+
+:mark_style: square
+
+// tag::examples[]
+
+.{mark_style}
+[{mark_style}]
+* Level 1
+** Level 2
+*** Level 3
+**** Level 4
+***** Level 5
+
+// end::examples[]
+
+:mark_style: circle
+include::./unordered.adoc[tag=examples]
+
+:mark_style: disc
+include::./unordered.adoc[tag=examples]
+
+:mark_style: no-bullet
+include::./unordered.adoc[tag=examples]
+
+:mark_style: none
+include::./unordered.adoc[tag=examples]
+
+:mark_style: unstyled
+include::./unordered.adoc[tag=examples]
+
+// end::unordered_marks[]
+
+:asciidoc_code_file_path: ./lists/unordered.adoc
+:display_code_tag_name: unordered_marks
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

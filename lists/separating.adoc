@@ -1,9 +1,80 @@
+= Separating Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-09T07:17:58+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-09T07:20:03+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:list_url: {asciidoc_docs_url}/lists
+
+// tag::main[]
+
+.References
+{list_url}/separating/[
+Separating Lists^]
+
+// tag::not_separate[]
+
+.Not separate
+[%reversed]
+. List 1
+. List 1
+
+. List 1
+. List 1
+
+// end::not_separate[]
+
+:display_code_tag_name: not_separate
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/separating.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::separate_with_comment[]
+
+.Separate with `//-`
+[%reversed]
+. List 1
+. List 1
+
+//-
+. List 2
+. List 2
+
+// end::separate_with_comment[]
+
+:display_code_tag_name: separate_with_comment
+include::./separating.adoc[tag=display_asciidoc_code]
+
+// tag::separate_with_sb[]
+
+.Separate with `[]`
+[%reversed]
+. List 1
+. List 1
+
+[]
+. List 2
+. List 2
+
+// end::separate_with_sb[]
+
+:display_code_tag_name: separate_with_sb
+include::./separating.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

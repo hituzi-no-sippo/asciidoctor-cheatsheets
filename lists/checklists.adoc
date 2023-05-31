@@ -1,9 +1,54 @@
+= Checklists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-09T07:10:50+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-09T07:12:50+09:00
+:revremark: add checklists
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:list_url: {asciidoc_docs_url}/lists
+
+// tag::main[]
+
+.References
+{list_url}/checklist/[
+Checklists^]
+
+// tag::default[]
+* [*] Check with `*`
+* [x] Check with `x`
+* [ ] Not checked
+* Not a checklist
+// end::default[]
+
+:display_code_tag_name: default
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/checklists.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::interactive[]
+
+.interactive(`[%interactive]` or `[options=interactive]`)
+[%interactive]
+include::./checklists.adoc[tag=default]
+
+// end::interactive[]
+
+:display_code_tag_name: interactive
+include::./checklists.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

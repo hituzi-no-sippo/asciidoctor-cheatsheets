@@ -1,9 +1,9 @@
 = Description Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-13T07:08:50+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-13T07:10:10+09:00
+:revremark: add horizontal description list
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -92,6 +92,71 @@ include::./description_lists.adoc[tag=display_asciidoc_code]
 HTML converter isn't support {list_url}/description-with-marker/[
 Description Lists With Marker^].
 ====
+
+== Horizontal
+
+.References
+{list_url}/horizontal/[
+Horizontal Description List^]
+
+// tag::horizontal[]
+
+[horizontal]
+Level 1:: description 1
+Level 1:: description 2
+Level 1:: description 3
+Level 2::: description 1
++
+[horizontal]
+Level 3:::: description 1
+Level 3:::: description 2
+Level 3:::: description 3
+
+// end::horizontal[]
+
+:display_code_tag_name: horizontal
+include::./description_lists.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_width[]
+
+.Horizontal Width(Number is unitless percentage `%`)
+[horizontal, labelwidth=65, itemwidth=35]
+label:: item
+label:: item
+label:: item
+Level 2::: item
++
+[horizontal, labelwidth=10]
+Level 3:::: item 1
+Level 3:::: item 2
+Level 3:::: item 3
+
+// end::horizontal_width[]
+
+:display_code_tag_name: horizontal_width
+include::./description_lists.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_nest[]
+
+.Nest
+[horizontal]
+Level 1:: Item
+Level 2::: Item
+Level 2::: Item
++
+--
+[horizontal, labelwidth=55]
+Level 3:::: Item
+Level 3:::: Item
+Level 4::::: Item
+Level 4::::: Item
+--
+Level 1:: Item
+
+// end::horizontal_nest[]
+
+:display_code_tag_name: horizontal_nest
+include::./description_lists.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.14.0
-:revdate: 2023-06-13T06:34:37+09:00
-:revremark: set images directory
+:revnumber: v0.15.0
+:revdate: 2023-06-13T07:07:16+09:00
+:revremark: add description list
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -54,6 +54,10 @@ include::./emoji.adoc[tag=main, leveloffset=+1]
 == Lists
 
 include::./lists/index.adoc[tag=main, leveloffset=+1]
+
+== Description Lists
+
+include::./description_lists.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

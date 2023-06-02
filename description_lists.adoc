@@ -1,9 +1,101 @@
+= Description Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T07:01:52+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T07:08:50+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:list_url: {asciidoc_docs_url}/lists
+
+.References
+{list_url}/description/[
+Description Lists^]
+
+// tag::simple[]
+
+Word 1:: Description 1
+Word 2:: Description 2
+Word 3:: Description 3
+
+// end::simple[]
+
+:display_code_tag_name: simple
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./description_lists.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::nest[]
+
+.Nest
+Level 1:: Level 1 Description
+Level 2::: Level 2 Description
+Level 3:::: Level 3 Description
+Level 4;; Level 4 Description
+Level 5::::: Level 5 Description
+Level 6:::::: Level 6 Description
+
+// end::nest[]
+
+:display_code_tag_name: nest
+include::./description_lists.adoc[tag=display_asciidoc_code]
+
+// tag::mixed[]
+
+.Mixed
+Level 1:: Level 1 Description 1
+* Level 2 Unordered List Item 1
+. Level 3 ordered List Item 1
+. Level 3 ordered List Item 2
+Level 4::: Level 4 Description 1
+Level 4::: Level 4 Description 2
+* Level 2 Unordered List Item 2
+Level 3::: Level 3 Description 1
+Level 1:: Level 1 Description 2
+* Level 2 Unordered List Item 1
+** Level 3 Unordered List Item 1
+*** Level 4 Unordered List Item 1
+*** Level 4 Unordered List Item 2
+. Level 5 ordered List Item 1
+. Level 5 ordered List Item 2
+.. Level 6 ordered List Item 1
+.. Level 6 ordered List Item 2
+** Level 3 Unordered List Item 2
+. Level 4 ordered List Item 1
+. Level 4 ordered List Item 2
+Level 5::: Level 5 Description 1
+.. Level 6 ordered List Item 1
+.. Level 6 ordered List Item 2
+* Level 2 Unordered List Item 2
+. Level 3 ordered List Item 1
+
+// end::mixed[]
+
+:display_code_tag_name: mixed
+include::./description_lists.adoc[tag=display_asciidoc_code]
+
+[CAUTION]
+====
+HTML converter isn't support {list_url}/description-with-marker/[
+Description Lists With Marker^].
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

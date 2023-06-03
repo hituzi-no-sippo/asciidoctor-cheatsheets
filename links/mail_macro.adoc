@@ -1,9 +1,51 @@
+= E-mail Macro
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T19:38:51+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T19:42:01+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/mailto-macro/[
+Mailto Macro^]
+
+// tag::mailto_macro[]
+
+:example_mail_address: test@example.com
+
+* mailto:{example_mail_address}[]
+* mailto:{example_mail_address}[
+  Custom Link Text]
+* mailto:{example_mail_address}[
+  Set Subject,
+  Subject]
+* mailto:{example_mail_address}[
+  Set Subject and Body,
+  Subject,
+  Body]
+* mailto:{example_mail_address}[
+  Set Body Only,
+  '',
+  Body]
+
+// end::mailto_macro[]
+
+:asciidoc_code_file_path: ./links/mail_macro.adoc
+:display_code_tag_name: mailto_macro
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

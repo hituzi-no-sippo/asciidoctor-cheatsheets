@@ -1,9 +1,9 @@
 = Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.7.0
-:revdate: 2023-06-13T19:35:14+09:00
-:revremark: add enable link macro
+:revnumber: v0.8.0
+:revdate: 2023-06-13T19:39:31+09:00
+:revremark: add E-mail macro
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -100,6 +100,10 @@ include::./escape_autolink.adoc[tag=main, leveloffset=+1]
 == Enable Link Macro
 
 include::./enable_link_macro.adoc[tag=main, leveloffset=+1]
+
+== E-mail Macro
+
+include::./mail_macro.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

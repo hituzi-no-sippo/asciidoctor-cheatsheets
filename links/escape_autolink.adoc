@@ -1,9 +1,73 @@
+= Escape Autolink
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T19:16:37+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T19:21:02+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/autolinks/#escaping-urls-and-email-addresses[
+Escaping URLs and email addresses^]
+
+// tag::backslash[]
+
+.Add a backslash(`/`) to beginning
+[horizontal]
+https:: \https://asciidoctor.org
+mali:: \test@example.com
+ftp:: \ftp://localhost/index.html
+irc:: \irc://localhost
+file:: \file://index.html
+
+// end::backslash[]
+
+:display_code_tag_name: backslash
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./links/escape_autolink.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::document_attribute[]
+
+:url_attribute: https://asciidoctor.org
+.Document Attribute
+[horizontal]
+Autolink:: {url_attribute}
+Escape (Use `\pass:a[<ATTRIBUTE>]`):: pass:a[{url_attribute}]
+
+// end::document_attribute[]
+
+:display_code_tag_name: document_attribute
+include::./escape_autolink.adoc[tag=display_asciidoc_code]
+
+// tag::paragraphs[]
+
+.Paragraphs
+[subs=-macros]
+Use `subs=-macro` for escaping. +
+Literal is https://asciidoctor.org +
+Attribute is {url_attribute}
+
+// end::paragraphs[]
+
+:display_code_tag_name: paragraphs
+include::./escape_autolink.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

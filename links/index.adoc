@@ -1,9 +1,9 @@
 = Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-13T19:13:40+09:00
-:revremark: add link and URL macro attributes
+:revnumber: v0.6.0
+:revdate: 2023-06-13T19:20:36+09:00
+:revremark: add escape autolink
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -92,6 +92,10 @@ include::./custom_link_text.adoc[tag=main, leveloffset=+1]
 == Link & URL Macro Attribute Parsing
 
 include::./macro_attribute.adoc[tag=main, leveloffset=+1]
+
+== Escape Autolink
+
+include::./escape_autolink.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

@@ -1,9 +1,9 @@
 = Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-06-13T19:20:36+09:00
-:revremark: add escape autolink
+:revnumber: v0.7.0
+:revdate: 2023-06-13T19:35:14+09:00
+:revremark: add enable link macro
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -96,6 +96,10 @@ include::./macro_attribute.adoc[tag=main, leveloffset=+1]
 == Escape Autolink
 
 include::./escape_autolink.adoc[tag=main, leveloffset=+1]
+
+== Enable Link Macro
+
+include::./enable_link_macro.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

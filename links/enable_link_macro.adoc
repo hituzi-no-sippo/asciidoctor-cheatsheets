@@ -1,9 +1,61 @@
+= Enable Link Macro
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T19:27:02+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T19:34:43+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:subs_attribute_url: {asciidoc_docs_url}/subs/apply-subs-to-blocks/#set-the-subs-attribute-on-a-block
+
+.References
+{subs_attribute_url}[
+Set the subs attribute on a block - Customize the Substitutions Applied to Blocks^]
+
+.Default Autolink
+* Enable
+** Admonitions
+*** `[NOTE]`
+*** `[TIP]`
+*** `[WARNING]`
+** Side bar (`\****`)
+** Quote (`\____`)
+** Verses (`\____`)
+* Disable
+** Source Code (`----`)
+** Listing (`----`)
+** Literal (`\....`)
+** Passthrough (`\\++++`)
+
+Use {subs_attribute_url}[
+`subs="+macros"` block attributes^] to enable autolink.
+
+// tag::subs_block_attribute[]
+
+.Source Code
+[source, AsciiDoc, subs="+macros"]
+----
+https://asciidoctor.org
+https://asciidoctor.org[AsciiDoctor^]
+----
+
+// end::subs_block_attribute[]
+
+:asciidoc_code_file_path: ./links/enable_link_macro.adoc
+:display_code_tag_name: subs_block_attribute
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

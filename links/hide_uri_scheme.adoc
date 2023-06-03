@@ -1,9 +1,67 @@
+= Hide URI Scheme
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T01:24:33+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T01:30:24+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/#hide-uri-scheme[
+Hide the URL scheme^]
+
+// tag::display_uri_scheme[]
+
+:!hide-uri-scheme:
+
+.`:!hide-uri-scheme:`
+[horizontal]
+https:: https://asciidoctor.org
+mali:: test@example.com
+ftp:: ftp://localhost/index.html
+irc:: irc://localhost
+file:: file://index.html
+
+// end::display_uri_scheme[]
+
+:display_code_tag_name: display_uri_scheme
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./links/hide_uri_scheme.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::hide_uri_scheme[]
+
+:hide-uri-scheme:
+
+.`:hide-uri-scheme:`
+[horizontal]
+https:: https://asciidoctor.org
+mali:: test@example.com
+ftp:: ftp://localhost/index.html
+irc:: irc://localhost
+file:: file://index.html
+
+// end::hide_uri_scheme[]
+
+:!hide-uri-scheme:
+
+:display_code_tag_name: hide_uri_scheme
+include::./hide_uri_scheme.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

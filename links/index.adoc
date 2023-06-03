@@ -1,9 +1,9 @@
 = Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-13T07:33:20+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-13T08:02:05+09:00
+:revremark: add custom link text
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -84,6 +84,10 @@ include::./index.adoc[tag=display_asciidoc_code]
 Use the cross references(`\<<anchor>>` or `xref:<anchor>[]`)
 instead of the link macro for relative links to AsciiDoc files.
 ====
+
+== Custom Link Text
+
+include::./custom_link_text.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

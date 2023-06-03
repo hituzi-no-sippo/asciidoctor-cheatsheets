@@ -1,9 +1,97 @@
+= Custom Link Text
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T07:54:03+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T08:01:34+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:macro_url: https://docs.asciidoctor.org/asciidoc/latest/macros
+
+// tag::main[]
+
+.References
+{macro_url}/url-macro/#link-text[
+Custom link text^]
+
+// tag::custom_link_text[]
+
+:example_url: https://asciidoctor.org
+
+* {example_url}[
+  Custom Link Text]
+* {example_url}[
+  "Quote quotes when using ="]
+* {example_url}[
+  "Quote quotes when using , and attributes", id=example]
+
+// end::custom_link_text[]
+
+:display_code_tag_name: custom_link_text
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./links/custom_link_text.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::text_formatting_style[]
+
+.Text Formatting Style
+* {example_url}[
+  *Bold*]
+* {example_url}[
+  _italic_]
+* {example_url}[
+  [.big]#Big#]
+* {example_url}[
+  `Monospace`]
+* {example_url}[
+  "`Curved quotation marks`"]
+
+// end::text_formatting_style[]
+
+:display_code_tag_name: text_formatting_style
+include::./custom_link_text.adoc[tag=display_asciidoc_code]
+
+// tag::color[]
+
+.Color
+* {example_url}[
+  #Highlight#]
+* {example_url}[
+  [.black]#Black#]
+* {example_url}[
+  [.black-background]#Black Background#]
+
+// end::color[]
+
+:display_code_tag_name: color
+include::./custom_link_text.adoc[tag=display_asciidoc_code]
+
+// tag::line[]
+
+.Line
+* {example_url}[
+  [.underline]#underline#]
+* {example_url}[
+  [.overline]#overline#]
+* {example_url}[
+  [.line-through]#line-through#]
+
+// end::line[]
+
+:display_code_tag_name: line
+include::./custom_link_text.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

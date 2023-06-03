@@ -1,9 +1,118 @@
+= Link & URL Macro Attribute Parsing
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T19:08:03+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T19:11:19+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:macro_url: {asciidoc_docs_url}/macros
+
+.References
+* {macro_url}/link-macro-attribute-parsing/[
+  Link & URL Macro Attribute Parsing^]
+* {macro_url}/link-macro-ref/[
+  Link, URL, and Mailto Macro Attributes Reference^]
+
+// tag::id[]
+
+:example_url: https://asciidoctor.org
+
+.ID
+* {example_url}[
+  'id=<ID> = <a ... id="<ID>" ... </a>', id=id_example]
+
+// end::id[]
+
+:display_code_tag_name: id
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./links/macro_attribute.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::role[]
+
+:text_color_role: role=red
+:background_color_role: role=red-background
+:line_role: role=line-through
+:size_role: role=big
+:float_role: role=right
+.Role
+* {example_url}[
+  "{text_color_role}", {text_color_role}]
+* {example_url}[
+  "{background_color_role}", {background_color_role}]
+* {example_url}[
+  "{line_role}", {line_role}]
+* {example_url}[
+  "{size_role}", {size_role}]
+* {example_url}[
+  "{float_role}", {float_role}]
+
+// end::role[]
+
+:display_code_tag_name: role
+include::./macro_attribute.adoc[tag=display_asciidoc_code]
+
+// tag::title[]
+
+.Title
+* {example_url}[
+  'title=<title> = <a ... title="<title>" ... </a>, Show it with tooltip',
+  title=title example]
+
+// end::title[]
+
+:display_code_tag_name: title
+include::./macro_attribute.adoc[tag=display_asciidoc_code]
+
+// tag::window[]
+
+.Where to display the linked URL(`window`)
+* {example_url}[
+  New tab (`window=_blank`), window=_blank]
+* {example_url}[
+  New tab alias (Use `\^`)^]
+* {example_url}[
+  Read Later (`window=read-later`), window=read-later]
+
+// end::window[]
+
+:display_code_tag_name: window
+include::./macro_attribute.adoc[tag=display_asciidoc_code]
+
+// tag::rel[]
+
+:no_follow_rel: options=nofollow
+:no_opener_rel: options=noopener
+.`rel` attribute(`options`)
+* {example_url}[
+  '{no_follow_rel} = <a ... rel="nofollow" ... </a>',
+  {no_follow_rel}]
+* {example_url}[
+  '{no_opener_rel} = <a ... rel="noopener" ... </a>',
+  {no_opener_rel},
+  window=read-later]
+
+// end::rel[]
+
+:display_code_tag_name: rel
+include::./macro_attribute.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

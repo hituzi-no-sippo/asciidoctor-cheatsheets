@@ -1,10 +1,93 @@
 = Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-13T07:26:55+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-13T07:33:20+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:macro_url: {asciidoc_docs_url}/macros
+
+.References
+* {macro_url}/links[
+  Links^]
+* {macro_url}/url-macro[
+  URL Macro^]
+* {macro_url}/link-macro[
+  Link Macro^]
+
+// tag::auto_link[]
+
+.Autolink
+[horizontal]
+https:: {empty}
+* https://asciidoctor.org
+* https://asciidoctor.org/#sponsors
+mali:: test@example.com
+ftp:: ftp://localhost/index.html
+irc:: irc://localhost
+file:: file://index.html
+
+// end::auto_link[]
+
+:display_code_tag_name: auto_link
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./links/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::url_macro[]
+
+.URL Macro
+* In "https://asciidoctor.org[]" with URL macro (`<URL>[]`), autolink is enabled +
+  In "https://asciidoctor.org", autolink is disabled
+* https://asciidoctor.org[Custom link text]
+* https://asciidoctor.org[
+  "window=_blank (shorthand `<URL>[^\]`)",
+  window=_blank]
+
+// end::url_macro[]
+
+:display_code_tag_name: url_macro
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::link_macro[]
+
+.Link Macro
+* link:https://asciidoctor.org[]
+* link:./index.html[]
+* link:./index.html#sections[]
+* link:file:./index.html[]
+* link:./index.html[Custom link text] +
+  Macro attributes such as `window=_blank` are the same as URL macro.
+
+// end::link_macro[]
+
+:display_code_tag_name: link_macro
+include::./index.adoc[tag=display_asciidoc_code]
+
+.For relative links to AsciiDoc files
+[IMPORTANT]
+====
+Use the cross references(`\<<anchor>>` or `xref:<anchor>[]`)
+instead of the link macro for relative links to AsciiDoc files.
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

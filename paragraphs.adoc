@@ -1,9 +1,10 @@
 = Paragraphs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-08T18:44:44+09:00
-:revremark: add normal paragraph
+:revnumber: v0.4.0
+:revdate: 2023-06-08T18:53:10+09:00
+:revremark: add hard line breaks
+:icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -29,8 +30,62 @@ No special markup or attributes need to be used.
 
 :display_code_tag_name: introduction
 
+// tag::display_asciidoc_code[]
+
 :asciidoc_code_file_path: ./paragraphs.adoc
 include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Hard Line Breaks
+
+.References
+{blocks_docs_url}/hard-line-breaks/[
+Hard Line Breaks^]
+
+// tag::inline[]
+
+.Inline
+inline line break is +
+used `+`.
+
+// end::inline[]
+
+:display_code_tag_name: inline
+include::./paragraphs.adoc[tag=display_asciidoc_code]
+
+// tag::hardbreaks_option[]
+
+.hardbreaks block option
+[%hardbreaks]
+hardbreaks option is
+used `[%hardbreaks]`.
+
+// end::hardbreaks_option[]
+
+:display_code_tag_name: hardbreaks_option
+include::./paragraphs.adoc[tag=display_asciidoc_code]
+
+// tag::hardbreaks_document_attribute[]
+
+:hardbreaks-option:
+
+.hardbreaks-option attribute
+hardbreaks option attribute is
+enabled with `:hardbreaks-option:`.
+disabled with `:!hardbreaks-option:`.
+
+:!hardbreaks-option:
+
+// end::hardbreaks_document_attribute[]
+
+:display_code_tag_name: hardbreaks_document_attribute
+include::./paragraphs.adoc[tag=display_asciidoc_code]
+
+[TIP]
+====
+Hard line breaks can be used in lists and tables.
+====
 
 // end::main[]
 

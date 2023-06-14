@@ -1,9 +1,9 @@
 = Source Highlighting and Formatting
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-15T01:01:28+09:00
-:revremark: add attributes for source highlighting
+:revnumber: v0.4.0
+:revdate: 2023-06-15T01:02:17+09:00
+:revremark: add attributes for source formatting
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -55,6 +55,20 @@ prettify-theme:: {highlightjs-theme}
 .Language
 [horizontal]
 source-language:: {source-language}
+
+== Formatting
+
+.Indent
+[horizontal]
+source-indent:: {source-indent}
+
+.Wrap
+[horizontal]
+prewrap:: {prewrap}
+
+.Line Number
+[horizontal]
+source-linenums-option:: {source-linenums-option}
 
 // end::main[]
 

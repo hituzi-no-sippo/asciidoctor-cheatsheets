@@ -1,9 +1,67 @@
+= Document Metadata
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.2.0
-:revdate: 2023-06-14T15:50:07+0900
-:revremark: add copyright
+:revdate: 2023-06-14T15:51:22+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#document-metadata-attributes[
+Document metadata attributes - Document Attributes Reference^]
+
+.Revision
+[horizontal]
+revnumber:: {revnumber}
+revdate:: {revdate}
+revremark:: {revremark}
+
+.Author
+[horizontal]
+author:: {author}
+authors:: {authors}
+authorcount:: {authorcount}
+authorinitials:: {authorinitials}
+
+.Author Name
+[horizontal]
+firstname:: {firstname}
+lastname:: {lastname}
+middlename:: {middlename}
+
+.Author E-Mail
+[horizontal]
+email:: {email}
+
+.Title
+[horizontal]
+doctitle:: {doctitle}
+title:: {title}
+
+.HTML meta element
+[horizontal]
+copyright:: {copyright}
+description:: {description}
+keywords:: {keywords}
+app-name:: {app-name}
+
+.Front-matter
+[horizontal]
+front-matter:: {front-matter}
+
+.DocBook
+[horizontal]
+orgname:: {orgname}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

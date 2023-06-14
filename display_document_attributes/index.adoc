@@ -1,12 +1,14 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-14T15:54:02+09:00
-:revremark: add example of display attribute
+:revnumber: v0.4.0
+:revdate: 2023-06-14T15:56:07+09:00
+:revremark: add display of attributes for compliance
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
 
 // tag::main[]
 
@@ -15,6 +17,10 @@
 <ATTRIBUTE>::
   The attribute value. +
   Display <ATTRIBUTE> if unset attribute. (For Example `:!toc:`)
+
+== Compliance
+
+include::./compliance.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

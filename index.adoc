@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.17.0
-:revdate: 2023-06-15T02:22:10+09:00
-:revremark: add cross references
+:revnumber: v0.18.0
+:revdate: 2023-06-15T02:57:11+09:00
+:revremark: add footnotes
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -66,6 +66,10 @@ include::./links/index.adoc[tag=main, leveloffset=+1]
 == Cross References
 
 include::./cross_references/index.adoc[tag=main, leveloffset=+1]
+
+== Footnotes
+
+include::./footnotes.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

@@ -1,9 +1,98 @@
+= Footnotes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-15T02:56:39+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-15T03:02:24+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/footnote/[
+Footnotes^]
+
+// tag::syntax[]
+
+.Syntax
+Footnote syntax is `\footnote:[footnote text]`.footnote:[Footnote syntax test]
+
+// end::syntax[]
+
+:display_code_tag_name: syntax
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./footnotes.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::reuse[]
+
+.Reuse a footnote
+. Set a IDfootnote:reuse_footnote[Reuse footnote test]
+. How to reuse footnote is `footnote:<ID>[]`.footnote:reuse_footnote[]
+
+// end::reuse[]
+
+:display_code_tag_name: reuse
+include::./footnotes.adoc[tag=display_asciidoc_code]
+
+// tag::blank[]
+
+.Blank
+* Blank spaces are not deleted
+** There is not a space between footnote macrofootnote:blank_test[There is a space between footnote macro]
+** There is a space between footnote macro footnote:blank_test[]
+* `apple\{empty}footnote:[]` is same as `applefootnote:[]`{empty}footnote:[Use empty attribute]
+
+// end::blank[]
+
+:display_code_tag_name: blank
+include::./footnotes.adoc[tag=display_asciidoc_code]
+
+// tag::text_formatting[]
+
+.Text Formatting
+* Bold{empty}footnote:[*Bold*]
+* Italic{empty}footnote:[*Italic*]
+* Monospace{empty}footnote:[`Monospace`]
+* Highlight{empty}footnote:[#Highlight#]
+* Styled phrase{empty}footnote:[[.line-through]#Styled phrase#]
+* Subscript{empty}footnote:[^Subscript^]
+* Superscript{empty}footnote:[~Superscript~]
+* Curved quotation marks
+** Single{empty}footnote:['`Single`']
+** Double{empty}footnote:["`Double`"]
+
+// end::text_formatting[]
+
+:display_code_tag_name: text_formatting
+include::./footnotes.adoc[tag=display_asciidoc_code]
+
+// tag::esay_to_read[]
+
+.Make it easy to read
+:fn_attribute_test: footnote:[use attribute]
+:fn_attribute_test_for_text_formatting: pass:q[footnote:[*bold* _italic_ #highlight#]]
+* Use document attributes to make footnotes easier to read{fn_attribute_test}
+* If use text formatting to footnote text, use `pass` macro{fn_attribute_test_for_text_formatting}
+
+// end::esay_to_read[]
+
+:display_code_tag_name: esay_to_read
+include::./footnotes.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

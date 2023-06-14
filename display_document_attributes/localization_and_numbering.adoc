@@ -1,9 +1,101 @@
+= Localization and Numbering
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T15:47:23+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T15:49:53+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#builtin-attributes-i18n[
+Localization and numbering attributes - Document Attributes Reference^]
+
+.Admonitions
+[horizontal]
+note-caption:: {note-caption}
+tip-caption:: {tip-caption}
+important-caption:: {important-caption}
+warning-caption:: {warning-caption}
+caution-caption:: {caution-caption}
+
+.Table
+[horizontal]
+table-caption:: {table-caption}
+table-number:: {table-number}
+
+.Example
+[horizontal]
+example-caption:: {example-caption}
+example-number:: {example-number}
+
+.Figure
+[horizontal]
+figure-caption:: {figure-caption}
+figure-number:: {figure-number}
+
+.Listing
+[horizontal]
+listing-caption:: {listing-caption}
+listing-number:: {listing-number}
+
+.Cross-Reference
+[horizontal]
+section-refsig:: {section-refsig}
+
+.Footnote
+[horizontal]
+footnote-number:: {footnote-number}
+
+.Revision
+[horizontal]
+last-update-label:: {last-update-label}
+version-label:: {version-label}
+
+.Table of Contents
+[horizontal]
+toc-title:: {toc-title}
+
+.Appendix
+[horizontal]
+appendix-caption:: {appendix-caption}
+appendix-number:: {appendix-number}
+appendix-refsig:: {appendix-refsig}
+
+.Title
+[horizontal]
+untitled-label:: {untitled-label}
+
+.Lang
+[horizontal]
+lang:: {lang}
+nolang:: {nolang}
+
+== Book Doctype Only
+
+.Part
+[horizontal]
+part-refsig:: {part-refsig}
+part-signifier:: {part-signifier}
+
+.Chapter
+[horizontal]
+chapter-number:: {chapter-number}
+chapter-refsig:: {chapter-refsig}
+chapter-signifier:: {chapter-signifier}
+
+.Title
+[horizontal]
+preface-title:: {preface-title}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

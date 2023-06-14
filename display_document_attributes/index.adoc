@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-14T15:56:07+09:00
-:revremark: add display of attributes for compliance
+:revnumber: v0.5.0
+:revdate: 2023-06-14T15:57:52+09:00
+:revremark: add display of attributes for localization and numbering
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -21,6 +21,10 @@
 == Compliance
 
 include::./compliance.adoc[tag=main, leveloffset=+1]
+
+== Localization and Numbering
+
+include::./localization_and_numbering.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

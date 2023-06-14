@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.9.0
-:revdate: 2023-06-14T16:36:24+09:00
-:revremark: add display of attributes for table of contents
+:revnumber: v0.10.0
+:revdate: 2023-06-14T17:26:18+09:00
+:revremark: add display of attributes for table of general content and formatting
 :toc: right
 :copyright: Copyright (C) 2023 {author}
 
@@ -42,6 +42,10 @@ include::./document_title.adoc[tag=main, leveloffset=+1]
 == Table of Contents
 
 include::./table_of_contents.adoc[tag=main, leveloffset=+1]
+
+== General Content and Formatting
+
+include::./general_content_and_formatting.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

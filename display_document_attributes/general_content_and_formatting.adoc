@@ -1,9 +1,106 @@
+= General Content and Formatting
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T16:46:52+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T17:25:59+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#general-content-and-formatting-attributes[
+General content and formatting attributes - Document Attributes Reference^]
+
+.Cross-Reference
+[horizontal]
+xrefstyle:: {xrefstyle}
+relfileprefix:: {relfileprefix}
+relfilesuffix:: {relfilesuffix}
+
+.Hide
+[horizontal]
+noheader:: {noheader}
+nofooter:: {nofooter}
+nofootnotes:: {nofootnotes}
+
+.Line Break
+[horizontal]
+hardbreaks-option:: {hardbreaks-option}
+
+.docinfo
+[horizontal]
+docinfo:: {docinfo}
+docinfodir:: {docinfodir}
+docinfosubs:: {docinfosubs}
+
+.Document Type
+[horizontal]
+doctype:: {doctype}
+
+.Table
+[horizontal]
+table-frame:: {table-frame}
+table-grid:: {table-grid}
+table-stripes:: {table-stripes}
+
+.Convert Tabs to Spaces
+[horizontal]
+tabsize:: {tabsize}
+
+.Embedded Document Title
+[horizontal]
+showtitle:: {showtitle}
+notitle:: {notitle}
+
+.URI
+[horizontal]
+hide-uri-scheme:: {hide-uri-scheme}
+
+.CDN
+[horizontal]
+asset-uri-scheme:: {asset-uri-scheme}
+
+.Cache
+[horizontal]
+cache-uri:: {cache-uri}
+
+.Embed Graphics
+[horizontal]
+data-uri:: {data-uri}
+
+.LaTeX
+[horizontal]
+eqnums:: {eqnums}
+
+.Equations and Formulas (STEM)
+[horizontal]
+stem:: {stem}
+
+.Web fonts
+[horizontal]
+webfonts:: {webfonts}
+
+.Output File Extension
+[horizontal]
+outfilesuffix:: {outfilesuffix}
+
+.DocBook Only
+[horizontal]
+pagewidth:: {pagewidth}
+
+.PDF Only
+[horizontal]
+media:: {media}
+show-link-uri:: {show-link-uri}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

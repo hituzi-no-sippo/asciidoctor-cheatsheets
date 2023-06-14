@@ -1,9 +1,28 @@
+= Document Title
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T16:26:02+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T16:30:38+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#section-title-and-table-of-contents-attributes[
+Section title and table of contents attributes - Document Attributes Reference^]
+
+.Subtitle
+[horizontal]
+title-separator:: {title-separator}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

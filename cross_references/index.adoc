@@ -1,9 +1,90 @@
+= Cross References
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-15T02:18:21+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-15T02:21:53+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:macro_url: {asciidoc_docs_url}/macros
+
+.References
+{macro_url}/xref/[
+Cross References^]
+
+// tag::double_angled_brackets[]
+
+.Double Angled Brackets(`\<<ANCHOR>>`)
+[horizontal]
+Minimum:: <<_sections>>
+Custom Link Text:: <<_sections, Custom link text>>
+Natural Cross Reference:: <<Sections>>
+
+// end::double_angled_brackets[]
+
+:display_code_tag_name: double_angled_brackets
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./cross_references/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::xref_macro[]
+
+.xref macro(`xref:<ANCHOR>[]`)
+[horizontal]
+Minimum:: xref:_sections[]
+Custom Link Text:: xref:_sections[Custom link text]
+Natural Cross Reference:: xref:Sections[]
+Inter Document Cross References:: xref:link_to_file.adoc[]
+
+// end::xref_macro[]
+
+:display_code_tag_name: xref_macro
+include::./index.adoc[tag=display_asciidoc_code]
+
+.Validate Cross References
+[NOTE]
+====
+.References
+{macro_url}/xref-validate/[
+Validate Cross References^]
+
+.How to validate
+[horizontal]
+CLI:: `-v, --verbose`
+API:: `$VERBOSE` variable to `true`
+
+.Use CLI
+[source, console]
+----
+$ asciidoctor --verbose <PATH>
+asciidoctor: INFO: possible invalid reference: apple
+----
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+See xref:apple[].
+
+== Banana
+----
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

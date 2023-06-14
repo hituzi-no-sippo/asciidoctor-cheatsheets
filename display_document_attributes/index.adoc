@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.13.0
-:revdate: 2023-06-15T01:15:25+09:00
-:revremark:add display of attributes for HTML styling
+:revnumber: v0.14.0
+:revdate: 2023-06-15T01:21:05+09:00
+:revremark:add display of attributes for security
 :toc: right
 :copyright: Copyright (C) 2023 {author}
 
@@ -58,6 +58,10 @@ include::./source_highlighting_and_formatting.adoc[tag=main, leveloffset=+1]
 == HTML Styling
 
 include::./html_styling.adoc[tag=main, leveloffset=+1]
+
+== Security
+
+include::./security.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

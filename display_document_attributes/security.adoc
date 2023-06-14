@@ -1,9 +1,36 @@
+= Security
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.2.0
-:revdate: 2023-06-15T01:17:21+0900
-:revremark: add copyright
+:revdate: 2023-06-15T01:20:18+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#security-attributes[
+Security attributes - Document Attributes Reference^]
+
+.Read data from URI
+[horizontal]
+allow-uri-read:: {allow-uri-read}
+
+.AsciiDoc Attribute
+[horizontal]
+max-attribute-value-size:: {max-attribute-value-size}
+
+.AsciiDoc Include
+[horizontal]
+max-include-depth:: {max-include-depth}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

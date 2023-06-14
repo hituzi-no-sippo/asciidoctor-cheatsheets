@@ -1,9 +1,48 @@
+= HTML Styling
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-15T01:05:00+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-15T01:13:41+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#html-styling-attributes[
+HTML styling attributes - Document Attributes Reference^]
+
+.Directory
+[horizontal]
+stylesdir:: {stylesdir}
+
+.File Name
+[horizontal]
+stylesheet:: stylesheet
+
+.Table of Content
+[horizontal]
+toc-class:: {toc-class}
+
+.Embedded CSS
+[horizontal]
+linkcss:: {linkcss}
+
+.Output
+[horizontal]
+copycss:: {copycss}
+
+.HTML element
+[horizontal]
+css-signature:: {css-signature}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

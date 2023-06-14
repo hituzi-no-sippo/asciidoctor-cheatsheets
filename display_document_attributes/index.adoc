@@ -1,9 +1,24 @@
+= Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T15:51:48+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T15:54:02+09:00
+:revremark: add example of display attribute
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+// tag::main[]
+
+.Example
+[horizontal]
+<ATTRIBUTE>::
+  The attribute value. +
+  Display <ATTRIBUTE> if unset attribute. (For Example `:!toc:`)
+
+// end::main[]
+
+// end::body[]
 
 '''
 

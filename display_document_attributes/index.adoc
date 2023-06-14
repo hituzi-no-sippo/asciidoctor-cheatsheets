@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.11.0
-:revdate: 2023-06-14T17:55:13+09:00
-:revremark: add display of attributes for image and icons
+:revnumber: v0.12.0
+:revdate: 2023-06-15T01:00:25+09:00
+:revremark: add display of attributes for source highlighting and formatting
 :toc: right
 :copyright: Copyright (C) 2023 {author}
 
@@ -50,6 +50,10 @@ include::./general_content_and_formatting.adoc[tag=main, leveloffset=+1]
 == Image and Icon
 
 include::./image_and_icon.adoc[tag=main, leveloffset=+1]
+
+== Source Highlighting and Formatting
+
+include::./source_highlighting_and_formatting.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

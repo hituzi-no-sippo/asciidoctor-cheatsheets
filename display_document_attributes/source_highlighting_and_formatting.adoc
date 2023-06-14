@@ -1,9 +1,64 @@
+= Source Highlighting and Formatting
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-15T00:41:51+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-15T01:01:28+09:00
+:revremark: add attributes for source highlighting
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#source-highlighting-and-formatting-attributes[
+Source highlighting and formatting attributes - Document Attributes Reference^]
+
+== Highlighting
+
+.Tool
+[horizontal]
+source-highlighter:: {source-highlighter}
+
+.highlight.js
+[horizontal]
+highlightjsdir:: {highlightjsdir}
+highlightjs-theme:: {highlightjs-theme}
+
+.Coderay
+[horizontal]
+coderay-css:: {coderay-css}
+coderay-linenums-mode:: {coderay-linenums-mode}
+coderay-unavailable:: {coderay-unavailable}
+
+.Rouge
+[horizontal]
+rouge-css:: {rouge-css}
+rouge-linenums-mode:: {rouge-linenums-mode}
+rouge-unavailable:: {rouge-unavailable}
+rouge-style:: {rouge-style}
+
+.Pygments
+[horizontal]
+pygments-css:: {pygments-css}
+pygments-linenums-mode:: {pygments-linenums-mode}
+pygments-unavailable:: {pygments-unavailable}
+pygments-style:: {pygments-style}
+
+.Prettify
+[horizontal]
+prettifydir:: {highlightjsdir}
+prettify-theme:: {highlightjs-theme}
+
+.Language
+[horizontal]
+source-language:: {source-language}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

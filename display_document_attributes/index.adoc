@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.8.0
-:revdate: 2023-06-14T16:30:55+09:00
-:revremark: add display of attributes for document title
+:revnumber: v0.9.0
+:revdate: 2023-06-14T16:36:24+09:00
+:revremark: add display of attributes for table of contents
 :toc: right
 :copyright: Copyright (C) 2023 {author}
 
@@ -38,6 +38,10 @@ include::./section.adoc[tag=main, leveloffset=+1]
 == Document Title
 
 include::./document_title.adoc[tag=main, leveloffset=+1]
+
+== Table of Contents
+
+include::./table_of_contents.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

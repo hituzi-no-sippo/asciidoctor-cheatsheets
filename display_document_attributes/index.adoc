@@ -1,9 +1,9 @@
 = Display Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-06-14T15:59:52+09:00
-:revremark: add display of attributes for document metadata
+:revnumber: v0.7.0
+:revdate: 2023-06-14T16:24:41+09:00
+:revremark: add display of attributes for section
 :toc: right
 :copyright: Copyright (C) 2023 {author}
 
@@ -30,6 +30,10 @@ include::./localization_and_numbering.adoc[tag=main, leveloffset=+1]
 == Document metadata
 
 include::./document_metadata.adoc[tag=main, leveloffset=+1]
+
+== Section
+
+include::./section.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

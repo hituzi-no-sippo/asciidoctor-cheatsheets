@@ -1,9 +1,54 @@
+= Section
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T16:08:39+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T16:23:20+09:00
+:revremark: add attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#section-title-and-table-of-contents-attributes[
+Section title and table of contents attributes - Document Attributes Reference^]
+
+.ID
+[horizontal]
+sectids:: {sectids}
+idprefix:: {idprefix}
+idseparator:: {idseparator}
+
+.Anchor
+[horizontal]
+sectanchors:: {sectanchors}
+sectlinks:: {sectlinks}
+
+.Number
+[horizontal]
+sectnums:: {sectnums}
+sectnumlevels:: {sectnumlevels}
+
+.Level
+[horizontal]
+leveloffset:: {leveloffset}
+
+.Fragment
+[horizontal]
+fragment:: {fragment}
+
+== Book Doctype Only
+
+.Part
+[horizontal]
+partnums:: {partnums}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,30 @@
+= Image and Icon
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-14T17:51:20+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-14T17:54:46+09:00
+:revremark: add image attributes
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/attributes/document-attributes-ref/#image-and-icon-attributes[
+Image and icon attributes - Document Attributes Reference^]
+
+== Image
+
+.Directory
+[horizontal]
+imagesdir:: {imagesdir}
+
+// end::main[]
+
+// end::body[]
 
 '''
 

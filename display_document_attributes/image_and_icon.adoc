@@ -1,9 +1,9 @@
 = Image and Icon
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-14T17:54:46+09:00
-:revremark: add image attributes
+:revnumber: v0.4.0
+:revdate: 2023-06-14T18:03:25+09:00
+:revremark: add icon attributes
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -21,6 +21,29 @@ Image and icon attributes - Document Attributes Reference^]
 .Directory
 [horizontal]
 imagesdir:: {imagesdir}
+
+== Icon
+
+.Directory
+[horizontal]
+iconsdir:: {iconsdir}
+
+.File Extension
+[horizontal]
+icontype:: {icontype}
+
+.Admonitions
+[horizontal]
+icons:: {icons}
+
+.CSS
+[horizontal]
+iconfont-name:: {iconfont-name}
+
+.CDN
+[horizontal]
+iconfont-cdn:: {iconfont-cdn}
+iconfont-remote:: {iconfont-remote}
 
 // end::main[]
 

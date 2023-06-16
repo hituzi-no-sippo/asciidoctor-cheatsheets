@@ -1,9 +1,109 @@
+= Video
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-16T20:26:22+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-17T07:03:54+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ./videos
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:video_url: {asciidoc_docs_url}/macros/audio-and-video
+
+.Reference
+{video_url}/#video-macro-syntax[
+Video macro syntax - Audio and Video^]
+
+:pixabay_url: https://pixabay.com
+:pixabay_url_with_utm: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video
+
+// tag::local[]
+
+.Local
+video::example.mp4[]
+
+// end::local[]
+
+:example_content_id: 49970
+:example_video_credit_text: {pixabay_url}/videos/sheep-wool-grazing-grass-meadow-{example_content_id}/[ \
+Video^] by {pixabay_url}/users/matthias_groeneveld-4535957/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=video&amp;utm_content={example_content_id}[ \
+Matthias Groeneveld^] from {pixabay_url_with_utm}&amp;utm_content={example_content_id}[ \
+Pixabay^]
+
+{example_video_credit_text}
+
+:display_code_tag_name: local
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./video.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::url[]
+
+.URL
+video::https://storage.googleapis.com/things-roomsxyz-assets/home-page/rooms.webm[]
+
+// end::url[]
+
+https://rooms.xyz[Rooms.xyz^]
+
+:display_code_tag_name: url
+include::./video.adoc[tag=display_asciidoc_code]
+
+// tag::youtube[]
+
+.Youtube Embedded
+video::9NG7cFc-ddQ[youtube]
+
+// end::youtube[]
+
+:display_code_tag_name: youtube
+include::./video.adoc[tag=display_asciidoc_code]
+
+// tag::video_macro_attributes[]
+
+.Change Size
+video::example.mp4[800, 450]
+
+.Start Stop
+video::example.mp4[start=20, end=25]
+
+.Change Thumbnail
+video::example.mp4[thumbnail.webp]
+
+// end::video_macro_attributes[]
+
+{example_video_credit_text}
+
+:thumbnail_content_id: 4066997
+{pixabay_url}/photos/sheep-scotland-highlands-nature-{thumbnail_content_id}/[
+Image^] by {pixabay_url}/users/efraimstochter-12351/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content={thumbnail_content_id}[
+M V^] from {pixabay_url_with_utm}&amp;utm_content={thumbnail_content_id}[
+Pixabay^]
+
+:display_code_tag_name: video_macro_attributes
+include::./video.adoc[tag=display_asciidoc_code]
+
+.Use imagesdir attribute
+[CAUTION]
+====
+`video::<PATH>[]` is read video file on `\{imagesdir}/<PATH>`.
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

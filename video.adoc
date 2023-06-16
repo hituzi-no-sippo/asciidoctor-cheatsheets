@@ -1,9 +1,9 @@
 = Video
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-17T07:03:54+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-17T07:05:16+09:00
+:revremark: add youtube embedded
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -100,6 +100,38 @@ include::./video.adoc[tag=display_asciidoc_code]
 ====
 `video::<PATH>[]` is read video file on `\{imagesdir}/<PATH>`.
 ====
+
+== Youtube
+
+.References
+{video_url}/#vimeo-and-youtube-videos[
+Vimeo and YouTube videos - Audio and Video^]
+
+// tag::youtube_embedded[]
+
+.Change Size
+video::9NG7cFc-ddQ[youtube, 800, 450]
+
+.Hide Youtube Logo
+video::9NG7cFc-ddQ[youtube, options='modest']
+
+// end::youtube_embedded[]
+
+:display_code_tag_name: youtube_embedded
+include::./video.adoc[tag=display_asciidoc_code]
+
+// tag::youtube_playlist[]
+
+.Dynamic Playlist(Add playlist icon right top)
+video::,9NG7cFc-ddQ,mfKx4j-C6nI,WPPFnHQWwFk,oXbB0H5a_r4,8vSGjhTHZqA,ZeFuwlxnyFU[youtube]
+
+.Playlist(Add playlist icon right top)
+video::NnmRVY22Lq8[youtube, list=PLx2ksyallYzVI8CN1JMXhEf62j2AijeDa]
+
+// end::youtube_playlist[]
+
+:display_code_tag_name: youtube_playlist
+include::./video.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

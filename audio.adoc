@@ -1,9 +1,67 @@
+= Audio
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-16T17:30:28+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-16T19:05:58+09:00
+:revremark: add audio contents
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ./audios
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.Reference
+{asciidoc_docs_url}/macros/audio-and-video/#audio-macro-syntax[
+Audio macro syntax - Audio and Video^]
+
+:pixabay_url: https://pixabay.com
+:pixabay_url_with_utm: {pixabay_url}/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music
+
+// tag::audio[]
+
+.Default
+audio::sheep_bleating.mp3[]
+
+.Start Stop
+audio::sheep_bleating.mp3[start=10, end=15]
+
+.Loop
+audio::baby_lamb_calling_his_mother.mp3[options='loop']
+
+// end::audio[]
+
+:long_audio_content_id: 23761
+:long_audio_link: {pixabay_url}/sound-effects/sheep-{long_audio_content_id}/[long^]
+:short_audio_link: {pixabay_url}/sound-effects/baby-lamb-calling-his-mother-104063/[short^]
+Sound Effect ({long_audio_link}, {short_audio_link}) from {pixabay_url_with_utm}&amp;utm_content={long_audio_content_id}[
+Pixabay^]
+
+:asciidoc_code_file_path: ./audio.adoc
+:display_code_tag_name: audio
+include::./display_asciidoc_code.adoc[]
+
+.Read a audio from any URL
+[NOTE]
+====
+Can reference audio served from any URL.
+`audio::<URL>[]`
+====
+
+.Use imagesdir attribute
+[CAUTION]
+====
+`audio::<PATH>[]` is read audio file on `\{imagesdir}/<PATH>`.
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

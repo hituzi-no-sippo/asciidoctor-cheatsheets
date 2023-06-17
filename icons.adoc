@@ -1,9 +1,9 @@
 = Icons
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-17T15:33:20+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-17T15:34:40+09:00
+:revremark: add font mode only attributes
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -72,6 +72,56 @@ Background:: icon:bandcamp[role="aqua-background"]
 // end::color[]
 
 :display_code_tag_name: color
+include::./icons.adoc[tag=display_asciidoc_code]
+
+== Icon Macro Attributes
+
+=== Font Mode Only
+
+.References
+* {font_icon_mode_link}
+* {icon_macro_url}#icon-macro-attributes-font-mode-only[
+  Icon macro attributes (font mode only)^]
+
+On `:icons: font` only.
+
+// tag::size[]
+
+:icons: font
+
+.Size
+[horizontal]
+Default:: icon:github[]
+fw:: icon:github[fw]
+lg:: icon:github[lg]
+2x:: icon:github[2x]
+3x:: icon:github[3x]
+4x:: icon:github[4x]
+5x:: icon:github[5x]
+
+// end::size[]
+
+:display_code_tag_name: size
+include::./icons.adoc[tag=display_asciidoc_code]
+
+// tag::rotate[]
+
+.Rotate
+icon:linux[rotate=90]
+
+// end::rotate[]
+
+:display_code_tag_name: rotate
+include::./icons.adoc[tag=display_asciidoc_code]
+
+// tag::flip[]
+
+.Flip
+icon:steam[flip=vertical]
+
+// end::flip[]
+
+:display_code_tag_name: flip
 include::./icons.adoc[tag=display_asciidoc_code]
 
 // end::main[]

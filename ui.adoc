@@ -1,9 +1,67 @@
+= UI
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-18T07:58:21+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T08:41:20+09:00
+:revremark: add ui macro examples
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/ui-macros/[
+Button and Menu UI Macros^]
+
+[IMPORTANT]
+====
+To use UI macros, you need to set `experimental` document attribute.
+(i.e. `:experimental:`)
+====
+
+// tag::button[]
+
+:experimental:
+
+.Button
+* btn:[OK]
+* btn:[Cancel]
+* btn:[Open]
+
+// end::button[]
+
+:display_code_tag_name: button
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./ui.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::menu[]
+
+.Menu
+* menu:Home[]
+* menu:Home[Open File]
+* menu:Home[File > Save]
+* menu:Emoji[&#x1f411; > &#x1f40f;]
+* "Shorthand > &#x1f411; > &#x1f40f;"
+
+// end::menu[]
+
+:display_code_tag_name: menu
+include::./ui.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,82 @@
+= Icons
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-17T07:09:05+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-17T15:33:20+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:iconsdir: ./icons
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:macro_url: {asciidoc_docs_url}/macros
+:font_icon_mode_link: {macro_url}/icons-font/[Font Icons Mode^]
+:icon_macro_url: {macro_url}/icon-macro/
+
+.References
+* {macro_url}/icons/[
+  Icons^]
+* {font_icon_mode_link}
+* {icon_macro_url}[
+  Icon Macro^]
+
+:fontawesome_v4_url: https://fontawesome.com/v4/
+Icon use {fontawesome_v4_url}[Font Awesome^].
+Set `icons` document attribute to `font` (i.e. `:icons: font`).
+
+// tag::default[]
+
+:icons: font
+
+.Default
+icon:soundcloud[]
+
+// end::default[]
+
+:display_code_tag_name: default
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./icons.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::link[]
+
+:fontawesome_icon_url: {fontawesome_v4_url}/icon/font-awesome
+.Link (Let's Click on Icon)
+icon:font-awesome[
+link={fontawesome_icon_url},
+window=_blank]
+
+// end::link[]
+
+:display_code_tag_name: link
+include::./icons.adoc[tag=display_asciidoc_code]
+
+// tag::color[]
+
+.Color
+[horizontal]
+Icon:: icon:bandcamp[role="aqua"]
+Background:: icon:bandcamp[role="aqua-background"]
+
+// end::color[]
+
+:display_code_tag_name: color
+include::./icons.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

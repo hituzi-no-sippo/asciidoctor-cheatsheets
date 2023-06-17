@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.23.0
-:revdate: 2023-06-17T17:01:30+09:00
-:revremark: set iconsdir
+:revnumber: v0.24.0
+:revdate: 2023-06-17T17:10:05+09:00
+:revremark: add keyboard macro
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -92,6 +92,12 @@ include::./video.adoc[tag=main, leveloffset=+1]
 :iconsdir: ./icons
 
 include::./icons.adoc[tag=main, leveloffset=+1]
+
+:icons: font
+
+== Keyboard
+
+include::./keyboard.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

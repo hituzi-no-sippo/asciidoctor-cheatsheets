@@ -1,9 +1,140 @@
+= Keyboard
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-17T17:06:54+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T08:32:11+09:00
+:revremark: add Keyboard macro examples
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/macros/keyboard-macro/[
+Keyboard Macro^]
+
+[IMPORTANT]
+====
+To use keyboard macros, you need to set `experimental` document attribute.
+(i.e. `:experimental:`)
+====
+
+// tag::alphabet[]
+
+:experimental:
+
+.Alphabet
+* kbd:[a]
+* kbd:[h]
+* kbd:[H]
+
+// end::alphabet[]
+
+:display_code_tag_name: alphabet
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./keyboard.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::number[]
+
+.Number
+* kbd:[0]
+* kbd:[8]
+* kbd:[1]
+
+// end::number[]
+
+:display_code_tag_name: number
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// tag::sign[]
+
+.Sign
+* kbd:[_]
+* kbd:[+]
+* kbd:[[]
+* kbd:[\]]
+* kbd:[\ ]
+
+// end::sign[]
+
+:display_code_tag_name: sign
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// tag::modifier_key[]
+
+.Modifier Key
+[horizontal]
+SHIFT::
+  * kbd:[SHIFT+h]
+  * kbd:[SHIFT+H]
+CTRL:: kbd:[CTRL+h]
+ALT:: kbd:[ALT+h]
+Win:: kbd:[Win+h]
+Cmd:: kbd:[Cmd+h]
+Super:: kbd:[Super+h]
+Hyper:: kbd:[Hyper+h]
+Meta:: kbd:[Meta+h]
+Two Modifier::
+  * kbd:[CTRL+SHIFT+h]
+  * kbd:[CTRL+ALT+h]
+  * kbd:[CTRL+Win++]
+  * kbd:[CTRL,SHIFT,,]
+  * kbd:[CTRL,ALT,,]
+
+// end::modifier_key[]
+
+:display_code_tag_name: modifier_key
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// tag::function[]
+
+.Function
+* kbd:[F1]
+* kbd:[F10]
+* kbd:[F15]
+
+// end::function[]
+
+:display_code_tag_name: function
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// tag::arrow[]
+
+.Arrow
+[horizontal]
+kbd:[i] > kbd:[\->] > kbd:[ESC]:: kbd:[i > \-> > ESC]
+kbd:[i] -> kbd:[\->] -> kbd:[ESC]:: kbd:[i -> \-> -> ESC]
+kbd:[i] => kbd:[\=>] => kbd:[ESC]:: kbd:[i => \=> => ESC]
+
+// end::arrow[]
+
+:display_code_tag_name: arrow
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// tag::space[]
+
+.Space
+* kbd:[h j k l]
+
+// end::space[]
+
+:display_code_tag_name: space
+include::./keyboard.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

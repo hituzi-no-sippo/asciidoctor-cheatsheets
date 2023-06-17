@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.22.0
-:revdate: 2023-06-17T13:35:51+09:00
-:revremark: add icons
+:revnumber: v0.23.0
+:revdate: 2023-06-17T17:01:30+09:00
+:revremark: set iconsdir
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -88,6 +88,8 @@ include::./audio.adoc[tag=main, leveloffset=+1]
 include::./video.adoc[tag=main, leveloffset=+1]
 
 == Icons
+
+:iconsdir: ./icons
 
 include::./icons.adoc[tag=main, leveloffset=+1]
 

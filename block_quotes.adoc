@@ -1,9 +1,9 @@
 = Quote
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-19T07:30:30+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-19T07:32:54+09:00
+:revremark: add attribution and title link
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -79,6 +79,30 @@ ____
 // end::quote_block[]
 
 :display_code_tag_name: quote_block
+include::./block_quotes.adoc[tag=display_asciidoc_code]
+
+== Link
+
+.References
+{asciidoc_docs_url}/attributes/positional-and-named-attributes/#substitutions[
+Substitutions - Positional and Named Attributes^]
+
+// tag::attribution_link[]
+
+:attribution_link: {block_quotes_url}[attribution_link]
+:title_link: {block_quotes_url}[citation title and information]
+.quote attribute
+[quote, '{attribution_link}' , '{title_link}']
+Quote or excerpt text
+
+.Quoted Paragraph
+"Quote or
+excerpt text"
+-- {attribution_link}, {title_link}
+
+// end::attribution_link[]
+
+:display_code_tag_name: attribution_link
 include::./block_quotes.adoc[tag=display_asciidoc_code]
 
 // end::main[]

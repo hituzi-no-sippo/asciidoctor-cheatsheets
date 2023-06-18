@@ -1,9 +1,76 @@
-:author: hituzi no sippo
+= Verses
+sauthor: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-19T08:19:08+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-19T08:35:12+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:verbses_url: {asciidoc_docs_url}/blocks/verses
+
+.References
+{verbses_url}[
+Verses^]
+
+// tag::verse_block_attribute[]
+
+.verse attribute
+[verse,author,title]
+Paragraph
+
+// end::verse_block_attribute[]
+
+:display_code_tag_name: verse_block_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./verses.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::verse_block[]
+
+.Verse Block
+[verse,author,title]
+____
+First Block
+
+Second Block
+____
+
+// end::verse_block[]
+
+:display_code_tag_name: verse_block
+include::./verses.adoc[tag=display_asciidoc_code]
+
+// tag::link[]
+
+:attribute_substitutions_url: {asciidoc_docs_url}/attributes/positional-and-named-attributes/#substitutions
+:author_link: {attribute_substitutions_url}[author]
+:title_link: {attribute_substitutions_url}[title]
+.Link
+[verse,'{author_link}','{title_link}']
+____
+Quote single quotation mark (')
+____
+
+// end::link[]
+
+:display_code_tag_name: link
+include::./verses.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

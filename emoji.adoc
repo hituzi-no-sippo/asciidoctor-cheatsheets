@@ -1,9 +1,41 @@
+= Emoji
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-18T09:08:06+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T09:08:54+09:00
+:revremark: add how to use emoji
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/admonitions/#using-emoji-for-admonition-icons[
+Using emoji for admonition icons - Admonitions^]
+
+// tag::emoji[]
+
+[horizontal]
+Eve:: &#x1f411;
+Raw:: &#x1f40f;
+Japanese Castle:: &#x1f3ef;
+Mount Fuji:: &#x1f5fb;
+Shinto Shrine:: &#x26e9;
+
+// end::emoji[]
+
+:asciidoc_code_file_path: ./emoji.adoc
+:display_code_tag_name: emoji
+include::./display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

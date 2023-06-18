@@ -1,9 +1,9 @@
 = Admonitions
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-18T14:28:27+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-18T14:32:14+09:00
+:revremark: add admonition emoji
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -74,6 +74,37 @@ Example Block
 
 :display_code_tag_name: admonition_block
 include::./admonitions.adoc[tag=display_asciidoc_code]
+
+== Emoji
+
+.References
+{admonitions_url}/#using-emoji-for-admonition-icons[
+Using emoji for admonition icons - Admonitions^]
+
+Use `<LABEL>-caption` document attributes to change label displayed.
+(`:note-caption: Note`)
+
+// tag::admonition_emoji[]
+
+:!icons:
+
+:note-caption: pass:[&#x2139;]
+:tip-caption: pass:[&#x1f4a1;]
+:important-caption: pass:[&#x2757;]
+:caution-caption: pass:[&#x1f525;]
+:warning-caption: pass:[&#x26a0;]
+
+include::./admonitions.adoc[tag=admonition_examples]
+
+// end::admonition_emoji[]
+
+:display_code_tag_name: admonition_emoji
+include::./admonitions.adoc[tag=display_asciidoc_code]
+
+[TIP]
+====
+On GitHub, you can also write `:tip-caption: :bulb:`.
+====
 
 // end::main[]
 

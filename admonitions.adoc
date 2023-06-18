@@ -1,9 +1,9 @@
 = Admonitions
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-18T14:33:23+09:00
-:revremark: add admonition icon
+:revnumber: v0.6.0
+:revdate: 2023-06-18T14:33:53+09:00
+:revremark: add admonition image
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -124,6 +124,37 @@ include::./admonitions.adoc[tag=admonition_examples]
 // end::admonition_font[]
 
 :display_code_tag_name: admonition_font
+include::./admonitions.adoc[tag=display_asciidoc_code]
+
+== Images
+
+.References
+{asciidoc_docs_url}/macros/icons-image/#default-icons-directory-and-type[
+Default icons directory and type - Image Icons Mode^]
+
+Display a image when `icons` document attribute is `image`.
+(`:icons: image`)
+
+// tag::admonition_image[]
+
+:icons: image
+:icontype: svg
+
+TIP: Used `\{iconsdir}/tip.\{icontype}`
+
+// end::admonition_image[]
+
+:pixabay_url: https://pixabay.com
+:pixabay_url_with_utm: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image
+:light_content_id: 158273
+{pixabay_url}/vectors/sheep-animal-electric-light-switch-{light_content_id}/[
+Image^] by {pixabay_url}/users/openclipart-vectors-30363/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content={light_content_id}[
+OpenClipart-Vectors^] from {pixabay_url_with_utm}&utm_content={light_content_id}[
+Pixabay^]
+
+// end::admonitions[]
+
+:display_code_tag_name: admonition_image
 include::./admonitions.adoc[tag=display_asciidoc_code]
 
 // end::main[]

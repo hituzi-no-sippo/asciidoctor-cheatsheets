@@ -1,13 +1,13 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.27.0
-:revdate: 2023-06-18T15:25:23+09:00
-:revremark: add sidebars
+:revnumber: v0.28.0
+:revdate: 2023-06-18T19:35:54+09:00
+:revremark: add example blocks
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
-:highlightjs-languages: asciidoc
+:highlightjs-languages: asciidoc, julia
 :imagesdir: ./images
 :copyright: Copyright (C) 2023 {author}
 
@@ -112,6 +112,10 @@ include::./admonitions.adoc[tag=main, leveloffset=+1]
 == Sidebars
 
 include::./sidebars.adoc[tag=main, leveloffset=+1]
+
+== Example Blocks
+
+include::./example_blocks.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

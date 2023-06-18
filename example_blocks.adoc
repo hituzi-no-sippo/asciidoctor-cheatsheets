@@ -1,9 +1,64 @@
+= Example
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-18T15:48:06+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T19:34:46+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc, julia
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/example-blocks[
+Example Blocks^]
+
+// tag::example_block_attribute[]
+
+.example attribute
+[example]
+`[example]`
+
+// end::example_block_attribute[]
+
+:display_code_tag_name: example_block_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./example_blocks.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::example_block[]
+
+.Example Block
+====
+Delimit by four equal signs (`=`).
+
+.List
+* Item 1
+
+.Source Code
+[source, julia]
+----
+println("Hello World")
+----
+====
+
+// end::example_block[]
+
+:display_code_tag_name: example_block
+include::./example_blocks.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

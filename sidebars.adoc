@@ -1,9 +1,65 @@
+= Sidebars
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-18T15:24:01+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T15:42:40+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/sidebars[
+Sidebars^]
+
+// tag::sidebar_block_attribute[]
+
+.sidebar attribute
+[sidebar]
+`[sidebar]`
+
+// end::sidebar_block_attribute[]
+
+:display_code_tag_name: sidebar_block_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./sidebars.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::sidebar_block[]
+
+.Sidebar Block
+****
+Delimit by four asterisks (`*`).
+
+.List
+* Item 1
+
+.Source Code
+[source, TOML]
+----
+[supported]
+TOML = highlight
+----
+****
+
+// end::sidebar_block[]
+
+:display_code_tag_name: sidebar_block
+include::./sidebars.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

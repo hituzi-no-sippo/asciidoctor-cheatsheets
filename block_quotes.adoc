@@ -1,9 +1,89 @@
+= Quote
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-19T05:07:29+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-19T07:30:30+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:block_quotes_url: {asciidoc_docs_url}/blocks/blockquotes
+
+.References
+{block_quotes_url}[
+Blockquotes^]
+
+// tag::quote_block_attribute[]
+
+.quote attribute
+[quote,attribution,citation title and information]
+Quote or excerpt text
+
+// end::quote_block_attribute[]
+
+:display_code_tag_name: quote_block_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./block_quotes.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::quote_paragraph[]
+
+.Quoted Paragraph
+"Quote or
+excerpt text"
+-- attribution, citation title and information
+
+// end::quote_paragraph[]
+
+:display_code_tag_name: quote_paragraph
+include::./block_quotes.adoc[tag=display_asciidoc_code]
+
+// tag::quote_block[]
+
+.Quote Block
+[quote,attribution,citation title and information]
+____
+Delimit by four underscores (`_`).
+
+.List
+* Item 1
+
+.Source Code
+[source, Zig]
+----
+const std = @import("std");
+
+pub fn main() void {
+    std.debug.print("Hello, {s}!\n", .{"World"});
+}
+----
+
+.Nest
+[quote,attribution,citation title and information]
+______
+Nest
+______
+____
+
+// end::quote_block[]
+
+:display_code_tag_name: quote_block
+include::./block_quotes.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,9 @@
 = Quote
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-19T07:32:54+09:00
-:revremark: add attribution and title link
+:revnumber: v0.5.0
+:revdate: 2023-06-19T07:33:29+09:00
+:revremark: add Markdown style
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -103,6 +103,27 @@ excerpt text"
 // end::attribution_link[]
 
 :display_code_tag_name: attribution_link
+include::./block_quotes.adoc[tag=display_asciidoc_code]
+
+== Markdown Style
+
+.References
+{block_quotes_url}/#markdown-style-blockquotes[
+Markdown-style blockquotes - Blockquotes^]
+
+// tag::markdown_style[]
+
+.Markdown Style
+> Quote or
+> excerpt text
+>
+> > Nest
+>
+> -- attribution, citation title and information
+
+// end::markdown_style[]
+
+:display_code_tag_name: markdown_style
 include::./block_quotes.adoc[tag=display_asciidoc_code]
 
 // end::main[]

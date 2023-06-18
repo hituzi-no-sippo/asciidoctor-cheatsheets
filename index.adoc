@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.25.0
-:revdate: 2023-06-18T08:04:43+09:00
-:revremark: add UI macro
+:revnumber: v0.26.0
+:revdate: 2023-06-18T14:29:21+09:00
+:revremark: add admonitions
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -102,6 +102,10 @@ include::./keyboard.adoc[tag=main, leveloffset=+1]
 == UI
 
 include::./ui.adoc[tag=main, leveloffset=+1]
+
+== Admonitions
+
+include::./admonitions.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

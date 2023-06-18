@@ -1,9 +1,83 @@
+= Admonitions
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-18T09:54:04+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-18T14:28:27+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:iconsdir: ./icons
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:admonitions_url: {asciidoc_docs_url}/blocks/admonitions/
+
+.References
+{admonitions_url}[
+Admonitions^]
+
+Display a label when `icons` document attribute is not set.
+(`:!icons:`)
+
+// tag::admonition_text[]
+
+:!icons:
+
+// tag::admonition_examples[]
+
+NOTE: NOTE
+
+TIP: TIP
+
+IMPORTANT: IMPORTANT
+
+CAUTION: CAUTION
+
+WARNING: WARNING
+
+// end::admonition_examples[]
+
+// end::admonition_text[]
+
+:display_code_tag_name: admonition_text
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./admonitions.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::admonition_block[]
+
+.Admonition Block
+[NOTE]
+====
+Delimit by four equal signs (`=`).
+
+.List
+* Item 1
+
+.Example
+======
+Example Block
+======
+====
+
+// end::admonition_block[]
+
+:display_code_tag_name: admonition_block
+include::./admonitions.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

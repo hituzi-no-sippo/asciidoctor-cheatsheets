@@ -1,9 +1,89 @@
+= Source Code
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-20T07:49:25+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-22T06:22:27+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:verbatim_url: {asciidoc_docs_url}/verbatim
+
+.References
+* {verbatim_url}/source-blocks/[
+  Source Code Blocks^]
+* {asciidoc_docs_url}/subs/apply-subs-to-blocks/#set-the-subs-attribute-on-a-block[
+  Set the subs attribute on a block - Customize the Substitutions Applied to Blocks^]
+
+// tag::source_code[]
+
+.Source Code
+[source, bash]
+----
+#!/usr/bin/env bash
+
+set -o nounset
+
+function hello() {
+  printf "Hello World!!"
+}
+
+hello
+----
+
+// end::source_code[]
+
+:display_code_tag_name: source_code
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./source_code_blocks/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::shorthand[]
+
+.Shorthand
+[, console]
+----
+$ echo "Hello World"
+Hello World
+$ asciidoctor --version
+Asciidoctor 2.0.20 [https://asciidoctor.org]
+Runtime Environment (ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x86_64-linux]) (lc:UTF-8 fs:UTF-8 in:UTF-8 ex:UTF-8)
+----
+
+// end::shorthand[]
+
+:display_code_tag_name: shorthand
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::attribute[]
+
+:hello: Hello World
+.Use Attributes
+[source, AsciiDoc, subs="+attributes"]
+----
+\{hello} is {hello}
+Set the subs attribute on a block to attributes.
+----
+
+// end::attribute[]
+
+:display_code_tag_name: attribute
+include::./index.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

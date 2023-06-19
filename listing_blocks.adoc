@@ -1,9 +1,96 @@
+= Listing
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-19T08:46:37+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-20T06:24:19+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/verbatim/listing-blocks/[
+Listing Blocks^]
+
+// tag::listing_block_attribute[]
+
+.listing attribute
+[listing]
+`[listing]`
+
+// end::listing_block_attribute[]
+
+:display_code_tag_name: listing_block_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./listing_blocks.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::listing_block[]
+
+.Listing Block
+----
+Delimit by four hyphen signs (`-`).
+
+.List
+* Item 1
+
+.Source Code
+[source, jesth]
+------
+name = 'jesth'
+------
+----
+
+// end::listing_block[]
+
+:display_code_tag_name: listing_block
+include::./listing_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::document_attributes[]
+
+.Use document attributes
+[listing, subs=+attributes]
+$ asciidoctor {docname}{docfilesuffix}
+
+// end::document_attributes[]
+
+:display_code_tag_name: document_attributes
+include::./listing_blocks.adoc[tag=display_asciidoc_code]
+
+.listing
+[listing]
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+!@#$%^&*_+-=
+(){}[]|\:;"'<>,.?/
+*bold* _italic_
+{docname}{docfilesuffix}
+(C) -> <- => <=
+あいうえお アイウエオ
+かきくけこ カキクケコ
+がぎぐげご ガギゴゲゴ
+さしすせそ サシスセソ
+ざじずぜぞ ザジズゼゾ
+たちつてと タチツテト
+だぢづでど ダヂヅデド
+はひふへほ ハヒフヘホ
+ばびぶべぼ バビブベボ
+ぽぴぷぺぽ パピプペポ
+
+// end::main[]
+
+// end::body[]
 
 '''
 

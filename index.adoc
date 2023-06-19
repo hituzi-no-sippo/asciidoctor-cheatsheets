@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.31.0
-:revdate: 2023-06-22T06:23:05+09:00
-:revremark: add source code
+:revnumber: v0.32.0
+:revdate: 2023-06-22T06:38:34+09:00
+:revremark: add listing block
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -128,6 +128,10 @@ include::./verses.adoc[tag=main, leveloffset=+1]
 == Source Code Blocks
 
 include::./source_code_blocks/index.adoc[tag=main, leveloffset=+1]
+
+== Listing Blocks
+
+include::./listing_blocks.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

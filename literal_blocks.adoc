@@ -1,9 +1,108 @@
+= Literal
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-20T06:22:29+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-20T06:39:41+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/verbatim/literal-blocks/[
+Literal Blocks^]
+
+// tag::literal_indent[]
+
+.Indent (add a space)
+ ~/.config -> ~/dotfiles/config
+
+// end::literal_indent[]
+
+:display_code_tag_name: literal_indent
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./literal_blocks.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::literal_block_attribute[]
+
+.literal attribute
+[literal]
+`[literal]`
+
+// end::literal_block_attribute[]
+
+:display_code_tag_name: literal_block_attribute
+include::./literal_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::literal_block[]
+
+.Literal Block
+....
+Delimit by four periods (`.`).
+
+.List
+* Item 1
+
+.Source Code
+[source, cue]
+----
+typesAreValues: {
+  name: string
+}
+----
+....
+
+// end::literal_block[]
+
+:display_code_tag_name: literal_block
+include::./literal_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::document_attributes[]
+
+.Use document attributes
+[literal, subs=+attributes]
+$ asciidoctor {docname}{docfilesuffix}
+
+// end::document_attributes[]
+
+:display_code_tag_name: document_attributes
+include::./literal_blocks.adoc[tag=display_asciidoc_code]
+
+.Example
+[literal]
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789
+!@#$%^&*_+-=
+(){}[]|\:;"'<>,.?/
+*bold* _italic_
+{docname}{docfilesuffix}
+(C) -> <- => <=
+あいうえお アイウエオ
+かきくけこ カキクケコ
+がぎぐげご ガギゴゲゴ
+さしすせそ サシスセソ
+ざじずぜぞ ザジズゼゾ
+たちつてと タチツテト
+だぢづでど ダヂヅデド
+はひふへほ ハヒフヘホ
+ばびぶべぼ バビブベボ
+ぽぴぷぺぽ パピプペポ
+
+// end::main[]
+
+// end::body[]
 
 '''
 

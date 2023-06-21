@@ -1,9 +1,97 @@
+= Callouts
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-20T07:58:38+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-22T07:14:46+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:callouts_url: {asciidoc_docs_url}/verbatim/callouts
+
+.References
+{callouts_url}[
+Callouts^]
+
+.Supported Block
+* Source Code
+* Listing
+* Literal
+
+// tag::icons_attribute[]
+
+:!icons:
+
+.`:!icons:`
+ Callout numbers are text <1>
+
+<1> `<1>`
+
+:icons: font
+
+.`:icons: font`
+ Callout numbers are icon of Font-Awesome <1>
+
+<1> `<1>`
+
+// end::icons_attribute[]
+
+:display_code_tag_name: icons_attribute
+
+// tag::display_asciidoc_code[]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs=-callouts]
+------
+include::./index.adoc[tag={display_code_tag_name}]
+------
+====
+
+// end::display_asciidoc_code[]
+
+:!icons:
+
+// tag::block[]
+
+.Block
+----
+one two <1> <2>
+three <3>
+four five <4><5>
+----
+<1> `<1>`
+<2> `<2>`
+<3> `<3>`
+<4> `<4>`
+<5> `<5>`
+
+// end::block[]
+
+:display_code_tag_name: block
+include::./index.adoc[tag=display_asciidoc_code]
+
+:icons: font
+
+.Display callout number used local icon.
+[NOTE]
+====
+Use `\{iconsdir}/<NUMBER>{icontype}` (e.g. `{iconsdir}/1.svg`),
+when set `icons` document attribute to `image` (i.e. `:icons: image`)
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

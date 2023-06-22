@@ -1,9 +1,9 @@
 = Example
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-18T19:34:46+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-23T04:30:02+09:00
+:revremark: add caption change
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc, julia
 :copyright: Copyright (C) 2023 {author}
@@ -55,6 +55,53 @@ println("Hello World")
 
 :display_code_tag_name: example_block
 include::./example_blocks.adoc[tag=display_asciidoc_code]
+
+== Caption
+
+// tag::change_caption[]
+
+.Change caption
+[example, caption="Change example catpion"]
+Use `caption` option.
+
+// end::change_caption[]
+
+:display_code_tag_name: change_caption
+include::./example_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::disable_caption[]
+
+.Disable caption
+[caption=]
+====
+`[caption=]`
+====
+
+// end::disable_caption[]
+
+:display_code_tag_name: disable_caption
+include::./example_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::link_caption[]
+
+:attribute_substitutions_link: {asciidoc_docs_url}/attributes/positional-and-named-attributes/#substitutions[ \
+Substitutions - Positional and Named Attributes^]
+.Link Caption
+[caption='{attribute_substitutions_link}']
+====
+Quote single quotation mark (`'`)
+====
+
+// end::link_caption[]
+
+:display_code_tag_name: link_caption
+include::./example_blocks.adoc[tag=display_asciidoc_code]
+
+.How to disable caption for all the examples
+[NOTE]
+====
+Unset `example-caption` document attribute (i.e. `:!example-caption:`).
+====
 
 // end::main[]
 

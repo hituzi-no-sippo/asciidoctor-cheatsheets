@@ -1,9 +1,9 @@
 = Images
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-16T16:57:25+09:00
-:revremark: add image size
+:revnumber: v0.5.0
+:revdate: 2023-06-16T17:02:40+09:00
+:revremark: add image title
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -113,6 +113,10 @@ Can reference image served from any URL.
 == Size
 
 include::./size.adoc[tag=main, leveloffset=+1]
+
+== Title
+
+include::./title.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

@@ -1,9 +1,9 @@
 = Images
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.8.0
-:revdate: 2023-06-16T17:05:54+09:00
-:revremark: add block image only attributes
+:revnumber: v0.9.0
+:revdate: 2023-06-16T17:07:17+09:00
+:revremark: add SVG image
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -130,6 +130,10 @@ include::./frame.adoc[tag=main, leveloffset=+1]
 == Block Image Only Attributes
 
 include::./block_image_only_attributes.adoc[tag=main, leveloffset=+1]
+
+== SVG
+
+include::./svg.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

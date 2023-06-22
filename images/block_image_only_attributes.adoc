@@ -1,9 +1,59 @@
+= Block Image Only Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-23T05:55:34+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-23T06:00:12+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ./
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:macro_url: {asciidoc_docs_url}/macros
+
+// tag::main[]
+
+.References
+{macro_url}/image-ref[
+Images Reference^]
+
+// tag::block_image_only_attributes[]
+
+:width: 80
+:height: 45
+.ID(`id=<ID>`)
+image::example.webp[id=image_id_test, {width}, {height}]
+
+.Caption(`caption='change caption '`)
+image::example.webp[caption='change caption ', {width}, {height}]
+
+// end::block_image_only_attributes[]
+
+:pixabay_url: https://pixabay.com
+:pixabay_url_with_utm: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image
+:example_image_content_id: 197160
+:example_image_url: {pixabay_url}/photos/lawn-green-meadow-pasture-animal-{example_image_content_id}/
+:anna_link: {pixabay_url}/users/annaer-35513/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content={example_image_content_id}[Anna^]
+{example_image_url}[
+Image^] by {anna_link} from {pixabay_url_with_utm}&amp;utm_content={example_image_content_id}[
+pixabay^]
+
+:asciidoc_code_file_path: ./images/block_image_only_attributes.adoc
+:display_code_tag_name: block_image_only_attributes
+include::../display_asciidoc_code.adoc[]
+
+.How to disable caption for all the image blocks
+[NOTE]
+====
+Unset `figure-caption` document attribute. (i.e. `:!figure-caption:`)
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

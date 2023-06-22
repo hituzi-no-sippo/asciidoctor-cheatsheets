@@ -1,9 +1,9 @@
 = Images
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.7.0
-:revdate: 2023-06-16T17:04:25+09:00
-:revremark: add image frame
+:revnumber: v0.8.0
+:revdate: 2023-06-16T17:05:54+09:00
+:revremark: add block image only attributes
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -126,6 +126,10 @@ include::./position.adoc[tag=main, leveloffset=+1]
 == Frame
 
 include::./frame.adoc[tag=main, leveloffset=+1]
+
+== Block Image Only Attributes
+
+include::./block_image_only_attributes.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

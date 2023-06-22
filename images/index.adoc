@@ -1,9 +1,10 @@
 = Images
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-16T17:02:40+09:00
-:revremark: add image title
+:revnumber: v0.6.0
+:revdate: 2023-06-16T17:04:05+09:00
+:revremark: add image position
+:toc:
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -117,6 +118,10 @@ include::./size.adoc[tag=main, leveloffset=+1]
 == Title
 
 include::./title.adoc[tag=main, leveloffset=+1]
+
+== Position
+
+include::./position.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

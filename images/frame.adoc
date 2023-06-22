@@ -1,9 +1,53 @@
+= Frame
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-23T05:50:27+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-23T05:53:49+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ./
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:macro_url: {asciidoc_docs_url}/macros
+
+// tag::main[]
+
+.References
+{macro_url}/image-position/#framing-roles[
+Framing roles - Position and Frame Images^]
+
+// tag::frame[]
+
+:width: 80
+:height: 45
+[horizontal]
+Default::
+  image:example.webp[default, {width}, {height}]
+Frame(`thumb`, `th`)::
+  image:example.webp[add frame, {width}, {height}, role=thumb]
+
+// end::frame[]
+
+:pixabay_url: https://pixabay.com
+:pixabay_url_with_utm: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image
+:example_image_content_id: 197160
+:example_image_url: {pixabay_url}/photos/lawn-green-meadow-pasture-animal-{example_image_content_id}/
+:anna_link: {pixabay_url}/users/annaer-35513/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content={example_image_content_id}[Anna^]
+{example_image_url}[
+Image^] by {anna_link} from {pixabay_url_with_utm}&amp;utm_content={example_image_content_id}[
+pixabay^]
+
+:asciidoc_code_file_path: ./images/frame.adoc
+:display_code_tag_name: frame
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

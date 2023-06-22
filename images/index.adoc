@@ -1,9 +1,9 @@
 = Images
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-06-16T17:04:05+09:00
-:revremark: add image position
+:revnumber: v0.7.0
+:revdate: 2023-06-16T17:04:25+09:00
+:revremark: add image frame
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -122,6 +122,10 @@ include::./title.adoc[tag=main, leveloffset=+1]
 == Position
 
 include::./position.adoc[tag=main, leveloffset=+1]
+
+== Frame
+
+include::./frame.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

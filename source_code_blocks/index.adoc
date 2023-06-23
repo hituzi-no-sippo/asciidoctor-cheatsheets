@@ -1,9 +1,9 @@
 = Source Code
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-22T06:26:47+09:00
-:revremark: add line options
+:revnumber: v0.6.0
+:revdate: 2023-06-22T06:27:38+09:00
+:revremark: add source-language document attribute
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -90,6 +90,10 @@ include::./highlighter.adoc[tag=main, leveloffset=+1]
 == Line
 
 include::./line.adoc[tag=main, leveloffset=+1]
+
+== Default Language
+
+include::./default_language.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

@@ -1,9 +1,101 @@
+= Default Language
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T08:53:17+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T08:58:09+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:verbatim_url: https://docs.asciidoctor.org/asciidoc/latest/verbatim
+
+// tag::main[]
+
+.References
+{verbatim_url}/source-highlighter/#source-language[
+source-language attribute - Source Highlighting^]
+
+Setting `source-language` document attribute as
+the default language of source code block.
+
+Set `AsciiDoc` to `source-language` document attribute makes
+`[source]` same as `[source, AsciiDoc]`.
+
+`source-language` document attribute is set,
+implicit listing block becomes a source code block.
+
+// tag::set_source_language_document_attribute[]
+
+:source-language: bash
+
+`source-language` document attribute is {source-language}.
+
+.Source Code Block
+----
+printf "Hello World!!"
+----
+
+// end::set_source_language_document_attribute[]
+
+:display_code_tag_name: set_source_language_document_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./source_code_blocks/default_language.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::unset_source_language_document_attribute[]
+
+:!source-language:
+
+`source-language` document attribute is unset.
+
+.Listing Block
+----
+printf "Hello World!!"
+----
+
+// end::unset_source_language_document_attribute[]
+
+:display_code_tag_name: unset_source_language_document_attribute
+include::./default_language.adoc[tag=display_asciidoc_code]
+
+.How to use linenums or highlight on implicit source code block
+[NOTE]
+====
+.linenums
+[source, AsciiDoc]
+------
+[options=linenums]
+----
+source code
+----
+
+[%linenums]
+----
+source code
+----
+------
+
+.highlight
+[source, AsciiDoc]
+------
+[highlight=1]
+----
+source code
+----
+------
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

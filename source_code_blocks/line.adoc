@@ -1,9 +1,35 @@
+= Line
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T08:30:46+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T08:45:23+09:00
+:revremark: add supported highlighter
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:verbatim_url: {asciidoc_docs_url}/verbatim
+
+// tag::main[]
+
+:enable_line_number_link: {verbatim_url}/source-highlighter/#enable-line-numbering[ \
+Enable line numbering - Source Highlighting^]
+:highlight_lines_url: {verbatim_url}/highlight-lines
+
+.References
+* {enable_line_number_link}
+* {highlight_lines_url}/#usage-criteria[
+  Usage criteria - Highlight Select Lines^]
+
+.Supported highlighter
+* rouge
+* coderay
+* pygments
+
+// end::main[]
+
+// end::body[]
 
 '''
 

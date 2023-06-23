@@ -1,9 +1,9 @@
 = Line
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-24T08:49:59+09:00
-:revremark: add line number display
+:revnumber: v0.5.0
+:revdate: 2023-06-24T08:51:04+09:00
+:revremark: add line highlight
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -48,6 +48,55 @@ Add `linenums` attribute.
 [source, AsciiDoc]
 ----
 [%linenums, AsciiDoc]
+----
+
+== Highlight Line
+
+.References
+{highlight_lines_url}[
+Highlight Select Lines^]
+
+Add `highlight=<LINE_NUMBER>` attribute.
+For Example `[source, AsciiDoc, highlight='2,4..10']`
+
+.Example of line number entry
+* 1
+* 4..10
+* '2,4,6'
+* '2,4..10'
+
+=== For coderay
+
+.References
+* {highlight_lines_url}/#rouge[
+  Rouge - Highlight Select Lines^]
+* {asciidoc_docs_url}/docinfo/[
+  Docinfo Files^]
+
+You need to supply CSS, when highlight is coderay
+(i.e. `:source-highlighter: rouge`).
+
+docinfo can help to provide CSS.
+
+.AsciiDoc
+[source, AsciiDoc]
+----
+= Document Title
+:source-highlighter: rouge
+:docinfo: shared
+----
+
+.docinfo.html
+[source, HTML]
+----
+<style>
+pre.rouge .hll {
+    background-color: #ffc;
+}
+pre.rouge .hll * {
+    background-color: initial;
+}
+</style>
 ----
 
 // end::main[]

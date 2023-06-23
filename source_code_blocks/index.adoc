@@ -1,9 +1,10 @@
 = Source Code
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-22T06:22:27+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-22T06:24:49+09:00
+:revremark: add highlighter
+:icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -80,6 +81,10 @@ Set the subs attribute on a block to attributes.
 
 :display_code_tag_name: attribute
 include::./index.adoc[tag=display_asciidoc_code]
+
+== Highlighter
+
+include::./highlighter.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

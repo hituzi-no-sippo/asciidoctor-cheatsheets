@@ -1,9 +1,54 @@
+= Highlighter
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T08:22:17+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T08:23:14+09:00
+:revremark: add introduction
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:verbatim_url: https://docs.asciidoctor.org/asciidoc/latest/verbatim
+
+// tag::main[]
+
+.References
+{verbatim_url}/source-highlighter[
+Source Highlighting^]
+
+.Source highlight is disabled by default
+[IMPORTANT]
+====
+Source highlight is enabled to
+set `source-highlighter` document attribute in document header or CLI.
+====
+
+.Supported highlighter
+* https://highlightjs.org/[highlighter.js^]
+* https://github.com/rouge-ruby/rouge[Rouge^]
+* https://pygments.org[Pygments^]
+* http://coderay.rubychan.de[CodeRay^]
+
+== Highlighter Setup
+
+.Will need install appropriate library?
+No::
+* highlight.js +
+   Generated HTML loads highlighter.js from CDN.
+YES::
+* Rouge
+* Paygents
+* CodeRay
+
+== Set highlighter
+
+Use `source-highlighter` document attribute.
+For example,
+write `:source-highlighter: highlighter.js`, when use highlighter.js.
+
+// end::main[]
+
+// end::body[]
 
 '''
 

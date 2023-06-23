@@ -1,9 +1,11 @@
 = Line
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-24T08:45:23+09:00
-:revremark: add supported highlighter
+:revnumber: v0.4.0
+:revdate: 2023-06-24T08:49:59+09:00
+:revremark: add line number display
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -26,6 +28,27 @@ Enable line numbering - Source Highlighting^]
 * rouge
 * coderay
 * pygments
+
+== Display Line Number
+
+.References
+{enable_line_number_link}
+
+Add `linenums` attribute.
+
+.Example
+* {empty}
++
+[source, AsciiDoc]
+----
+[source, AsciiDoc, linenums]
+----
+* {empty}
++
+[source, AsciiDoc]
+----
+[%linenums, AsciiDoc]
+----
 
 // end::main[]
 

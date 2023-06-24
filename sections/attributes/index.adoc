@@ -1,9 +1,9 @@
 = Section Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-25T05:05:51+09:00
-:revremark: add section link
+:revnumber: v0.4.0
+:revdate: 2023-06-25T08:07:54+09:00
+:revremark: add section number
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -18,6 +18,10 @@
 == Section Links
 
 include::./links.adoc[tag=main, leveloffset=+1]
+
+== Section Number
+
+include::./number.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

@@ -1,9 +1,83 @@
+= Section Number
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-25T05:20:37+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T08:06:00+09:00
+:revremark: add enable and disable
+:toc:
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:sections_docs_url: {asciidoc_docs_url}/sections
+
+// tag::main[]
+
+.References
+{sections_docs_url}/numbers/[
+Section Numbers^]
+
+:section_level_examples_path: ../section_level_examples.adoc
+== Enable
+
+// tag::enable[]
+
+:sectnums:
+:sectnumlevels: 5
+
+include::{section_level_examples_path}[]
+
+// end::enable[]
+
+:display_code_tag_name: enable
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./sections/attributes/number.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+:!sectnums:
+
+== Disable
+
+=== `sectnums` is disable
+
+// tag::sectnums_disable[]
+
+:!sectnums:
+
+include::{section_level_examples_path}[]
+
+// end::sectnums_disable[]
+
+:display_code_tag_name: sectnums_disable
+include::./number.adoc[tag=display_asciidoc_code]
+
+=== `sectnums` is enable, `sectnumlevels` is 0
+
+// tag::sectnums_enable_and_secnumlevels_0[]
+
+:sectnums:
+:sectnumlevels: 0
+
+include::{section_level_examples_path}[]
+
+// end::sectnums_enable_and_secnumlevels_0[]
+
+:display_code_tag_name: sectnums_enable_and_secnumlevels_0
+include::./number.adoc[tag=display_asciidoc_code]
+
+:!sectnums:
+:sectnumlevels:
+
+// end::main[]
+
+// end::body[]
 
 '''
 

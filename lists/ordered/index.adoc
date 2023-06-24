@@ -1,9 +1,29 @@
+= Ordered Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-09T05:40:01+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-09T05:44:51+09:00
+:revremark: add ordered number styles
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:list_url: {asciidoc_docs_url}/lists
+
+// tag::main[]
+
+:ordered_list_url: {list_url}/ordered
+
+== Number Styles
+
+include::./number_styles.adoc[tag=main, leveloffset=+1]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

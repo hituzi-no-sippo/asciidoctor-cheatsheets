@@ -1,9 +1,112 @@
+= Number Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T09:41:37+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T09:43:37+09:00
+:revremark: add number styles
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:ordered_list_url: {asciidoc_docs_url}/lists/ordered
+
+// tag::main[]
+
+.References
+{ordered_list_url}/#styles[
+Number styles^]
+
+// tag::number_styles[]
+
+.Default
+. Level 1
+.. Level 2
+... Level 3
+.... Level 4
+..... Level 5
+...... Level 6
+....... Level 7
+
+:number_style: arabic
+
+// tag::examples[]
+
+.{number_style}
+[{number_style}]
+. Level 1
+. Level 1
+. Level 1
+.. Level 2
+
+// end::examples[]
+
+:number_style: decimal
+include::./number_styles.adoc[tag=examples]
+
+:number_style: loweralpha
+include::./number_styles.adoc[tag=examples]
+
+:number_style: upperalpha
+include::./number_styles.adoc[tag=examples]
+
+:number_style: lowerroman
+include::./number_styles.adoc[tag=examples]
+
+:number_style: upperroman
+include::./number_styles.adoc[tag=examples]
+
+:number_style: lowergreek
+include::./number_styles.adoc[tag=examples]
+
+// end::number_styles[]
+
+:display_code_tag_name: number_styles
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/ordered/number_styles.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::mixed[]
+
+.Mixed Number Style
+. default
+. default
+[arabic]
+.. arabic
+.. arabic
+[decimal]
+... decimal
+... decimal
+[loweralpha]
+.... loweralpha
+.... loweralpha
+[upperalpha]
+..... upperalpha
+..... upperalpha
+[lowerroman]
+...... lowerroman
+...... lowerroman
+[upperroman]
+....... upperroman
+....... upperroman
+[lowergreek]
+........ lowergreek
+........ lowergreek
+
+// end::mixed[]
+
+:display_code_tag_name: mixed
+include::./number_styles.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

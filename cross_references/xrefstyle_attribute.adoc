@@ -1,9 +1,146 @@
+= xrefstyle Attribute
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T17:52:07+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T17:49:57+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ../images
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:macro_url: {asciidoc_docs_url}/macros
+
+// tag::main[]
+
+.References
+{macro_url}/xref-text-and-style/#cross-reference-styles[
+Cross reference styles - Cross Reference Text and Styles^]
+
+Default and `:!xrefstyle:` are sames as `:xrefstyle: basic`
+
+// tag::xref_target[]
+
+:sectnums:
+:sectnumlevels: 6
+
+== xrefstyle Attribute Test Section
+
+:!sectnums:
+:sectnumlevels:
+
+[[cross_reference_image_block_test]]
+.xrefstyle Attribute Test Image Block
+image::cross_reference_attribute_test_image.webp['Sheep, Coast, Mountain', width=128, height=128]
+
+// end::xref_target[]
+
+:content_id: 990044
+:pixabay_url: https://pixabay.com
+:image_url: {pixabay_url}/photos/sheep-coast-mountain-nature-{content_id}
+:monika_link: {pixabay_url}/users/monicore-1499084/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content={content_id}[Monika^]
+:pixabay_link: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content={content_id}[Pixabay^]
+
+{image_url}[Image^] by {monika_link} from {pixabay_link}
+
+:display_code_tag_name: xref_target
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./cross_references/xrefstyle_attribute.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::xrefstyle_attribute[]
+
+// tag::xrefstyle_attribute_default[]
+
+:block_title: Default
+
+// tag::xrefstyle_attribute_examples[]
+
+.{block_title}
+Section::
++
+[horizontal]
+Double Angled Brackets::: <<_xrefstyle_attribute_test_section>>
+xref macro::: xref:_xrefstyle_attribute_test_section[]
+Natural Cross Reference::: <<xrefstyle Attribute Test Section>>
+Image Block(`image::<PATH>[]`)::
++
+[horizontal]
+Double Angled Brackets ::: <<cross_reference_image_block_test>>
+xref macro::: xref:cross_reference_image_block_test[]
+Natural Cross Reference::: <<xrefstyle Attribute Test Image Block>>
+
+// end::xrefstyle_attribute_examples[]
+
+// end::xrefstyle_attribute_default[]
+
+:tag_suffix: default
+
+// tag::xrefstyle_attribute_asciidoc_code[]
+
+:display_code_tag_name: xrefstyle_attribute_{tag_suffix}
+include::./xrefstyle_attribute.adoc[tag=display_asciidoc_code]
+
+// end::xrefstyle_attribute_asciidoc_code[]
+
+// tag::xrefstyle_attribute_full[]
+
+:xrefstyle: full
+:block_title: {xrefstyle}
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_examples]
+
+// end::xrefstyle_attribute_full[]
+
+:tag_suffix: {xrefstyle}
+
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_asciidoc_code]
+
+// tag::xrefstyle_attribute_short[]
+
+:xrefstyle: short
+:block_title: {xrefstyle}
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_examples]
+
+// end::xrefstyle_attribute_short[]
+
+:tag_suffix: {xrefstyle}
+
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_asciidoc_code]
+
+// tag::xrefstyle_attribute_basic[]
+
+:xrefstyle: basic
+:block_title: {xrefstyle}
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_examples]
+
+// end::xrefstyle_attribute_basic[]
+
+:tag_suffix: {xrefstyle}
+
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_asciidoc_code]
+
+// tag::xrefstyle_attribute_unset[]
+
+:!xrefstyle:
+:block_title: :!xrefstyle:
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_examples]
+
+// end::xrefstyle_attribute_unset[]
+
+:tag_suffix: unset
+
+include::./xrefstyle_attribute.adoc[tag=xrefstyle_attribute_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

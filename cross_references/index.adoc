@@ -1,12 +1,14 @@
 = Cross References
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-15T02:31:12+09:00
-:revremark: add cross reference default styling
+:revnumber: v0.5.0
+:revdate: 2023-06-24T17:03:42+09:00
+:revremark: add xrefstyle attribute
+:toc:
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
+:imagesdir: ../images
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -85,6 +87,10 @@ See xref:apple[].
 == Default Styling
 
 include::./default_styling.adoc[tag=main, leveloffset=+1]
+
+== xrefstyle Attribute
+
+include::./xrefstyle_attribute.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

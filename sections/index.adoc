@@ -1,9 +1,10 @@
 = Sections
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-25T04:52:49+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-25T05:16:54+09:00
+:revremark: add section attributes
+:toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -30,6 +31,10 @@ include::./section_level_examples.adoc[]
 
 :asciidoc_code_file_path: ./sections/index.adoc
 include::../display_asciidoc_code.adoc[]
+
+== Section Attributes
+
+include::./attributes/index.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

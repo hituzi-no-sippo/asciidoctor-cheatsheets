@@ -1,9 +1,10 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-05-22T05:39:31+09:00
-:revremark: add sections
+:revnumber: v0.7.0
+:revdate: 2023-05-23T04:15:23+09:00
+:revremark: add section link attributes
+:icons: font
 :toc: right
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -18,6 +19,12 @@ Document Type:: {asciidoc_docs_url}/document/doctype/[{doctype}^]
 
 .Document Attributes
 <<_display_document_attributes>>
+
+[NOTE]
+====
+HTML display and AsciiDoc code may have different section levels.
+This is due to the `leveloffset` of the `include` macro.
+====
 
 == Sections
 

@@ -1,9 +1,27 @@
+= Section Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-25T05:00:12+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T05:05:51+09:00
+:revremark: add section link
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:sections_docs_url: {asciidoc_docs_url}/sections
+
+// tag::main[]
+
+== Section Links
+
+include::./links.adoc[tag=main, leveloffset=+1]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

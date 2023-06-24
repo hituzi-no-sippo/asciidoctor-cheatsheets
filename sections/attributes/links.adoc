@@ -1,9 +1,70 @@
+= Section Links
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-08T15:10:09+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-08T15:56:00+09:00
+:revremark: add enable and disable
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:sections_docs_url: {asciidoc_docs_url}/sections
+
+// tag::main[]
+
+.References
+{sections_docs_url}/title-links/[
+Activate Section Title Links^]
+
+== Enable
+
+Let's focus on section.
+
+// tag::enable[]
+
+:sectids:
+:sectlinks:
+:sectanchors:
+
+=== `sectids` , `sectlinks` and `sectanchors` is enable
+
+// end::enable[]
+
+:display_code_tag_name: enable
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./sections/attributes/links.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Disable
+
+Let's focus on section.
+
+// tag::disable[]
+
+:!sectids:
+
+=== `sectids` is disable, `sectlinks` and `sectanchors` is enable
+
+:sectids:
+:!sectlinks:
+:!sectanchors:
+
+=== `sectids` is enable, `sectlinks` and `sectanchors` is disable
+
+// end::disable[]
+
+:display_code_tag_name: disable
+include::./links.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

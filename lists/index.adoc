@@ -1,12 +1,14 @@
 = Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.8.0
-:revdate: 2023-06-09T07:28:21+09:00
-:revremark: add complex list items
+:revnumber: v0.9.0
+:revdate: 2023-07-08T06:29:31+09:00
+:revremark: set icnos and imagesdir document attributes
+:icons: font
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
+:imagesdir: ../images
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]

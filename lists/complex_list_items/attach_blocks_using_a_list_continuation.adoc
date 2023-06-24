@@ -1,9 +1,137 @@
+= Attach Blocks Using a List Continuation
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T13:14:57+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T13:47:23+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ../../images
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:complex_list_items_url: {asciidoc_docs_url}/lists/continuation
+
+// tag::main[]
+
+.References
+{complex_list_items_url}#list-continuation[
+Attach blocks using a list continuation - Complex List Items^]
+
+// tag::list_continuation[]
+
+.list continuation
+. Item 1 +
+  newline
++
+The attach block
+. Item 2
+
+// end::list_continuation[]
+
+:display_code_tag_name: list_continuation
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/complex_list_items/attach_blocks_using_a_list_continuation.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::attach_a_one_block[]
+
+.Attach a one block
+. Item 1
++
+.Source Code
+[source, AsciiDoc]
+----
+Item 1 Code
+----
+. Item 2
++
+.Source Code
+[source, AsciiDoc]
+----
+Item 2 Code
+----
+Item 2 content
+. Item 3
++
+.Source Code
+[source, AsciiDoc]
+----
+Item 3 Code
+----
++
+Item 3 content
+
+// end::attach_a_one_block[]
+
+:display_code_tag_name: attach_a_one_block
+include::./attach_blocks_using_a_list_continuation.adoc[tag=display_asciidoc_code]
+
+// tag::attach_blocks[]
+
+.Attach blocks
+. Item 1
++
+.Sidebar
+****
+// tag::attach_block_content[]
+
+[discrete]
+==== Discrete Heading
+
+[source, AsciiDoc]
+----
+Source Code
+----
+
+.Example
+====
+Example Block
+
+[NOTE]
+======
+NOTE Block
+======
+====
+
+image:complex_list_item_image.webp[
+'Sheep, Scotland, Highlands', width=128, height=128]
+
+// end::attach_block_content[]
+****
+Item 1 content
+. Item 2
++
+.Open Block
+--
+include::./attach_blocks_using_a_list_continuation.adoc[tag=attach_block_content]
+--
++
+Item 2 content
+
+// end::attach_blocks[]
+
+:pixabay_url: https://pixabay.com
+:content_id: 4066997
+:image_url: {pixabay_url}/photos/sheep-scotland-highlands-nature-{content_id}
+:m_v_link: {pixabay_url}/users/efraimstochter-12351/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content={content_id}[M V^]
+:pixabay_link: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content={content_id}[Pixabay^]
+
+{image_url}[Image^] by {m_v_link} from {pixabay_link}
+
+:display_code_tag_name: attach_blocks
+include::./attach_blocks_using_a_list_continuation.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

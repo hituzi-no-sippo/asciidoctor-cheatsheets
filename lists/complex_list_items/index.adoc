@@ -1,11 +1,13 @@
 = Complex List Items
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-09T07:44:33+09:00
-:revremark: add multi line principal text
+:revnumber: v0.4.0
+:revdate: 2023-06-13T06:32:43+09:00
+:revremark: add attach blocks using a list continuation
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
+:icons: font
+:imagesdir: ../../images
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -20,6 +22,10 @@
 == Multi line Principal Text
 
 include::./multi_line_principal_text.adoc[tag=main, leveloffset=+1]
+
+== Attach Blocks Using a List Continuation
+
+include::./attach_blocks_using_a_list_continuation.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

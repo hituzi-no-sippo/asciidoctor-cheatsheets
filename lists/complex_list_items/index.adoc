@@ -1,9 +1,29 @@
+= Complex List Items
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-09T07:25:07+09:00
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-09T07:44:33+09:00
+:revremark: add multi line principal text
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:list_url: {asciidoc_docs_url}/lists
+
+// tag::main[]
+
+:complex_list_items_url: {list_url}/continuation
+
+== Multi line Principal Text
+
+include::./multi_line_principal_text.adoc[tag=main, leveloffset=+1]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

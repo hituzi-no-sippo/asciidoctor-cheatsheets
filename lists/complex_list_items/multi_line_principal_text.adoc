@@ -1,9 +1,54 @@
+= Multi line Principal Text
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.2.0
 :revdate: 2023-06-24T13:01:02+0900
 :revremark: add copyright
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:complex_list_items_url: {asciidoc_docs_url}/lists/continuation
+
+// tag::main[]
+
+.References
+{complex_list_items_url}#multiline-principal-text[
+Multiline principal text - Complex List Items^]
+
+// tag::introduction[]
+
+* line 1
+line 2
+* apple ba
+nana
+* line 1
+  line 2
+  line 3
+* line 1
+  line 2
+
+  line 3
+
+* line 1
+line 2
+
+This point that list end.
+Because a empty line after a list item is followed by the beginning of a block,
+such as a paragraph or a delimited block, rather than another list item.
+
+// end::introduction[]
+
+:asciidoc_code_file_path: ./lists/complex_list_items/multi_line_principal_text.adoc
+:display_code_tag_name: introduction
+include::../../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

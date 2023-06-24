@@ -1,9 +1,10 @@
 = Complex List Items
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-13T06:39:35+09:00
-:revremark: add drop the principal text
+:revnumber: v0.6.0
+:revdate: 2023-06-13T06:56:43+09:00
+:revremark: add attach blocks to an ancestor list
+:toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :icons: font
@@ -30,6 +31,10 @@ include::./attach_blocks_using_a_list_continuation.adoc[tag=main, leveloffset=+1
 == Drop the Principal Text
 
 include::./drop_the_principal_text.adoc[tag=main, leveloffset=+1]
+
+== Attach Blocks to an Ancestor List
+
+include::./attach_blocks_to_an_ancestor_list.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

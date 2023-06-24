@@ -1,9 +1,92 @@
+= Attach Blocks to an Ancestor List
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T13:53:57+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T13:47:23+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:complex_list_items_url: {asciidoc_docs_url}/lists/continuation
+
+// tag::main[]
+
+.References
+{complex_list_items_url}#attach-to-ancestor-list[
+Attach blocks to an ancestor list - Complex List Items^]
+
+// tag::normal[]
+
+.Normal
+. Level 1
+.. Level 2
+... Level 3
+    Level 3 content
+. Level 1
+
+// end::normal[]
+
+
+:display_code_tag_name: normal
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/complex_list_items/attach_blocks_to_an_ancestor_list.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::enclose[]
+
+.Enclose in open block (Use `+` and `--`)
+. Level 1 Item 1
++
+--
+.. Level 2
+... Level 3
+--
++
+Level 1 Item 1 content
+. Level 1 Item 2
+
+// end::enclose[]
+
+:display_code_tag_name: enclose
+include::./attach_blocks_to_an_ancestor_list.adoc[tag=display_asciidoc_code]
+
+// tag::ancestor_list[]
+
+.Ancestor list continuation(Use `+` and empty line)
+. Level 1 Item 1
+.. Level 2
+... Level 3
+
++
+Level 1 Item 1 content
+. Level 1 Item 2
+.. Level 2
+... Level 3
++
+Since no blank line is inserted, it becomes Level 3 content.
+. Level 1 Item 3
+.. Level 2
+... Level 3
+
+Since no `+` is inserted, it becomes paragraph.
+. Level 1 Item 4
+
+// end::ancestor_list[]
+
+:display_code_tag_name: ancestor_list
+include::./attach_blocks_to_an_ancestor_list.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,9 @@
 = Complex List Items
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-13T06:32:43+09:00
-:revremark: add attach blocks using a list continuation
+:revnumber: v0.5.0
+:revdate: 2023-06-13T06:39:35+09:00
+:revremark: add drop the principal text
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :icons: font
@@ -26,6 +26,10 @@ include::./multi_line_principal_text.adoc[tag=main, leveloffset=+1]
 == Attach Blocks Using a List Continuation
 
 include::./attach_blocks_using_a_list_continuation.adoc[tag=main, leveloffset=+1]
+
+== Drop the Principal Text
+
+include::./drop_the_principal_text.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

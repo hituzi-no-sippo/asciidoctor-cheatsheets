@@ -1,9 +1,87 @@
+= Drop the Principal Text
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T13:32:59+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T13:42:24+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:imagesdir: ../../images
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:complex_list_items_url: {asciidoc_docs_url}/lists/continuation
+
+// tag::main[]
+
+.References
+{complex_list_items_url}#drop-principal-text[
+Drop the principal text - Complex List Items^]
+
+:image_content: image:complex_list_item_image.webp[ \
+'Sheep, Scotland, Highlands', width=128, height=128]
+// tag::image[]
+
+.Image
+. {empty}
++
+.Use `\{empty}`
+--
+{image_content}
+--
+. Inline image {image_content}
+.
++
+.`\{empty}` document attribute is not used
+--
+{image_content}
+--
+
+// end::image[]
+
+:pixabay_url: https://pixabay.com
+:content_id: 4066997
+:image_url: {pixabay_url}/photos/sheep-scotland-highlands-nature-{content_id}
+:m_v_link: {pixabay_url}/users/efraimstochter-12351/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content={content_id}[M V^]
+:pixabay_link: {pixabay_url}//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content={content_id}[Pixabay^]
+
+{image_url}[Image^] by {m_v_link} from {pixabay_link}
+
+:display_code_tag_name: image
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/complex_list_items/drop_the_principal_text.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::block[]
+
+.Block
+. {empty}
++
+.Side Bar
+****
+Use `\{empty}`
+****
+.
++
+.Side Bar
+****
+`\{empty}` document attribute is not used
+****
+
+// end::block[]
+
+:display_code_tag_name: block
+include::./drop_the_principal_text.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

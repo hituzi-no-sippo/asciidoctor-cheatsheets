@@ -1,0 +1,23 @@
+:temp_leveloffset: {leveloffset}
+
+:leveloffset: 0
+
+[discrete]
+= Document Title
+
+[discrete]
+== Level 1
+
+[discrete]
+=== Level 2
+
+[discrete]
+==== Level 3
+
+[discrete]
+===== Level 4
+
+[discrete]
+====== Level 5
+
+:leveloffset: {temp_leveloffset}

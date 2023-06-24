@@ -1,9 +1,9 @@
 = Sections
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-06-25T08:11:22+09:00
-:revremark: add section style
+:revnumber: v0.6.0
+:revdate: 2023-06-25T08:21:58+09:00
+:revremark: add discrete
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -39,6 +39,10 @@ include::./attributes/index.adoc[tag=main, leveloffset=+1]
 == Section Styles
 
 include::./styles.adoc[tag=main, leveloffset=+1]
+
+== Discrete
+
+include::./discrete.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

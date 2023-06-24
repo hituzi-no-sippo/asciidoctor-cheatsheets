@@ -1,9 +1,41 @@
+= Discrete
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-25T06:58:44+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T07:00:43+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/discrete-headings/[
+Discrete Headings^]
+
+Discrete headings are closest to headings in other markup languages.
+
+Discrete headings are not included in the table of contents.
+
+// tag::introduction[]
+
+include::./discrete_heanding_examples.adoc[]
+
+// end::introduction[]
+
+:asciidoc_code_file_path: ./sections/discrete.adoc
+:display_code_tag_name: introduction
+
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

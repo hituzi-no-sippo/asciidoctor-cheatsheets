@@ -143,7 +143,6 @@ Bibliography^]
 // end::bibliography_target[]
 
 :display_code_tag_name: bibliography_target
-
 include::./styles.adoc[tag=display_asciidoc_code]
 
 // tag::bibliography_enable[]
@@ -167,7 +166,6 @@ include::./styles.adoc[tag=display_asciidoc_code]
 // end::bibliography_enable[]
 
 :display_code_tag_name: bibliography_enable
-
 include::./styles.adoc[tag=display_asciidoc_code]
 
 // tag::bibliography_disable[]
@@ -181,7 +179,6 @@ include::./styles.adoc[tag=bibliography_entriess]
 // end::bibliography_disable[]
 
 :display_code_tag_name: bibliography_disable
-
 include::./styles.adoc[tag=display_asciidoc_code]
 
 // end::main[]

@@ -1,0 +1,8 @@
+.AsciiDoc Code
+[%collapsible]
+==========
+[source, AsciiDoc]
+----------
+include::{asciidoc_code_file_path}[tag={display_code_tag_name}]
+----------
+==========

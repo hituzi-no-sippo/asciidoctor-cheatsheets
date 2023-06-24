@@ -1,9 +1,39 @@
+= Sections
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-25T04:44:24+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T04:52:49+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:sections_docs_url: {asciidoc_docs_url}/sections
+
+.References
+{sections_docs_url}/titles-and-levels/[
+Section Titles and Levels^]
+
+// tag::introduction[]
+
+include::./section_level_examples.adoc[]
+
+// end::introduction[]
+
+:display_code_tag_name: introduction
+
+:asciidoc_code_file_path: ./sections/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

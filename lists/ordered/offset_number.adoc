@@ -1,9 +1,55 @@
+= Offset Number
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T09:48:34+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T09:43:37+09:00
+:revremark: add offset number
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:ordered_list_url: {asciidoc_docs_url}/lists/ordered
+
+// tag::main[]
+
+.References
+{ordered_list_url}/#basic-ordered-list[
+Basic ordered list^]
+
+// tag::offset_number[]
+
+[start=2]
+. Level 1
+. Level 1
+. Level 1
+.. Level 2
+.. Level 2
+.. Level 2
+[start=10]
+... Level 3
+... Level 3
+... Level 3
+[start=5]
+.... Level 4
+.... Level 4
+.... Level 4
+[arbic, start=0]
+..... Level 5
+..... Level 5
+..... Level 5
+
+// end::offset_number[]
+
+:asciidoc_code_file_path: ./lists/ordered/offset_number.adoc
+:display_code_tag_name: offset_number
+include::../../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

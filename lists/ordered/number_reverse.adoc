@@ -1,9 +1,81 @@
+= Number Reverse
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T09:57:20+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T09:43:37+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:ordered_list_url: {asciidoc_docs_url}/lists/ordered
+
+// tag::main[]
+
+.References
+{ordered_list_url}/#basic-ordered-list[
+Basic ordered list^]
+
+// tag::reverse[]
+
+[%reversed]
+. Level 1
+. Level 1
+. Level 1
+.. Level 2
+.. Level 2
+.. Level 2
+[options=reversed, start=10]
+... Level 3
+... Level 3
+... Level 3
+[%reversed, start=5]
+.... Level 4
+.... Level 4
+.... Level 4
+[decimal, options=reversed, start=7]
+..... Level 5
+..... Level 5
+..... Level 5
+
+// end::reverse[]
+
+:display_code_tag_name: reverse
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./lists/ordered/number_reverse.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::start_0[]
+
+.`start=0`
+[start=0, options=reversed]
+. Number style is default
+. Number style is default
+. Number style is default
+[decimal, start=0, options=reversed]
+.. Number style is `decimal`
+.. Number style is `decimal`
+.. Number style is `decimal`
+[upperalpha, start=0, options=reversed]
+... Number style is `upperalpha`
+... Number style is `upperalpha`
+... Number style is `upperalpha`
+
+// end::start_0[]
+
+:display_code_tag_name: start_0
+include::./number_reverse.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

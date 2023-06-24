@@ -1,9 +1,10 @@
 = Ordered Lists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-06-09T05:49:52+09:00
-:revremark: add ordered offset number
+:revnumber: v0.5.0
+:revdate: 2023-06-09T07:07:55+09:00
+:revremark: add ordered number reverse
+:toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -24,6 +25,10 @@ include::./number_styles.adoc[tag=main, leveloffset=+1]
 == Offset Number
 
 include::./offset_number.adoc[tag=main, leveloffset=+1]
+
+== Reverse
+
+include::./number_reverse.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

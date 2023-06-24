@@ -1,9 +1,50 @@
+= Breaks
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-22T07:56:45+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-23T03:43:13+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/breaks/[
+Breaks^]
+
+// tag::introduction[]
+
+.Thematic breaks
+--
+'''
+--
+
+.Markdown-style thematic breaks
+--
+---
+
+- - -
+
+***
+
+* * *
+--
+
+// end::introduction[]
+
+:asciidoc_code_file_path: ./breaks.adoc
+:display_code_tag_name: introduction
+include::./display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

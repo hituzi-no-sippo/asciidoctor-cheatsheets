@@ -1,9 +1,9 @@
 = Cross References
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-15T02:21:53+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-15T02:31:12+09:00
+:revremark: add cross reference default styling
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -81,6 +81,10 @@ See xref:apple[].
 == Banana
 ----
 ====
+
+== Default Styling
+
+include::./default_styling.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

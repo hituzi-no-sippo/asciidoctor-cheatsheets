@@ -1,9 +1,41 @@
+= Default Styling
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T17:42:57+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-24T17:49:57+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:macro_url: {asciidoc_docs_url}/macros
+
+// tag::main[]
+
+.References
+{macro_url}/xref-text-and-style/#default-styling[
+Default styling - Cross Reference Text and Styles^]
+
+// tag::reftext[]
+
+[reftext="set `reftext`"]
+== reftext test
+
+Double Angled Brackets:: <<_reftext_test>>
+xref macro:: xref:_reftext_test[]
+
+// end::reftext[]
+
+:asciidoc_code_file_path: ./cross_references/default_styling.adoc
+:display_code_tag_name: reftext
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

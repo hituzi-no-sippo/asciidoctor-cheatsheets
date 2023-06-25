@@ -1,9 +1,48 @@
+= Text Formatting & Block
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-25T09:34:58+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T09:37:44+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+// tag::main[]
+
+// tag::introduction[]
+
+ formatting test <1><2>
+
+<1> *bold* _italic_ `monospace` #highlight#
+<2> {empty}
+    * unordered list 1
+    ** unordered list 2
+    . ordered list 1
+    .. ordered list 2
+
++
+[source, AsciiDoc]
+----
+AsciiDoc Code
+----
+
+// end::introduction[]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs=-callouts]
+------
+include::./text_formatting_and_block.adoc[tag=introduction]
+------
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

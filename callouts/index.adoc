@@ -1,9 +1,9 @@
 = Callouts
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-22T07:14:46+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-06-22T07:15:51+09:00
+:revremark: add text formatting and block
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -88,6 +88,10 @@ include::./index.adoc[tag=display_asciidoc_code]
 Use `\{iconsdir}/<NUMBER>{icontype}` (e.g. `{iconsdir}/1.svg`),
 when set `icons` document attribute to `image` (i.e. `:icons: image`)
 ====
+
+== Text Formatting & Block
+
+include::./text_formatting_and_block.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

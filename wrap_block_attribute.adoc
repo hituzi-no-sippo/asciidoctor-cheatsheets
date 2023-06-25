@@ -1,9 +1,11 @@
 = Wrap Block Attribute
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-06-25T08:59:44+09:00
-:revremark: add supported blocks
+:revnumber: v0.4.0
+:revdate: 2023-06-25T09:00:33+09:00
+:revremark: add enable and disable
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -14,6 +16,58 @@
 * Source Code
 * Listing
 * Literal
+
+:long_string: 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+== Enable
+
+// tag::enable[]
+
+:wrap_option: wrap
+
+// tag::example[]
+
+.Source Code
+[source, console, options={wrap_option}, subs=+attributes]
+----
+{long_string}
+----
+
+.Listing
+[options={wrap_option}, subs=+attributes]
+----
+{long_string}
+----
+
+.Literal
+[options={wrap_option}, subs=+attributes]
+....
+{long_string}
+....
+
+// end::example[]
+
+// end::enable[]
+
+:display_code_tag_name: enable
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./wrap_block_attribute.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Disable
+
+// tag::disable[]
+
+:wrap_option: nowrap
+include::./wrap_block_attribute.adoc[tag=example]
+
+// end::disable[]
+
+:display_code_tag_name: disable
+include::./wrap_block_attribute.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

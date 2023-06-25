@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.34.0
-:revdate: 2023-06-22T07:08:35+09:00
-:revremark: add callouts
+:revnumber: v0.35.0
+:revdate: 2023-06-25T09:01:33+09:00
+:revremark: add wrap block attribute
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -140,6 +140,10 @@ include::./literal_blocks.adoc[tag=main, leveloffset=+1]
 == Callouts
 
 include::./callouts/index.adoc[tag=main, leveloffset=+1]
+
+== Wrap Block Attribute
+
+include::./wrap_block_attribute.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

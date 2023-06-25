@@ -1,9 +1,23 @@
+= Wrap Block Attribute
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-06-24T07:27:55+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-06-25T08:59:44+09:00
+:revremark: add supported blocks
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+// tag::main[]
+
+.Supported Block
+* Source Code
+* Listing
+* Literal
+
+// end::main[]
+
+// end::body[]
 
 '''
 

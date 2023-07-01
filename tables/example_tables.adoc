@@ -1,0 +1,20 @@
+// tag::simple[]
+|===
+// tag::columns[]
+|Column 1 row 1  |Column 2 row 1  |Column 3 row 1
+|Column 1 row 2  |Column 2 row 2  |Column 3 row 2
+|Column 1 row 3  |Column 2 row 3  |Column 3 row 3
+|Column 1 row 4  |Column 2 row 4  |Column 3 row 4
+// end::columns[]
+|===
+// end::simple[]
+
+// tag::header_and_footer[]
+|===
+|Column 1 Header |Column 2 Header |Column 3 Header
+
+include::./example_tables.adoc[tag=columns]
+
+|Column 1 Footer |Column 2 Footer |Column 3 Footer
+|===
+// end::header_and_footer[]

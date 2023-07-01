@@ -1,9 +1,87 @@
+= Table Border Frame
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T05:33:48+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T05:49:50+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:borders_url: {asciidoc_docs_url}/tables/borders
+
+// tag::main[]
+
+.References
+{borders_url}/#frame[
+Frame - Table Borders^]
+
+:table_title_suffix: (Default)
+
+// tag::frame_is_all[]
+
+:frame_value: all
+
+// tag::frame_example_table[]
+
+.`frame={frame_value}` {table_title_suffix}
+[frame={frame_value}, options="header, footer, autowidth"]
+include::../example_tables.adoc[tag=header_and_footer]
+
+// end::frame_example_table[]
+
+// end::frame_is_all[]
+
+:display_code_tag_name: frame_is_all
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/borders/frame.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+:table_title_suffix:
+
+// tag::frame_is_ends[]
+
+:frame_value: ends
+
+include::./frame.adoc[tag=frame_example_table]
+
+// end::frame_is_ends[]
+
+:display_code_tag_name: frame_is_ends
+include::./frame.adoc[tag=display_asciidoc_code]
+
+// tag::frame_is_sides[]
+
+:frame_value: sides
+
+include::./frame.adoc[tag=frame_example_table]
+
+// end::frame_is_sides[]
+
+:display_code_tag_name: frame_is_sides
+include::./frame.adoc[tag=display_asciidoc_code]
+
+// tag::frame_is_none[]
+
+:frame_value: none
+
+include::./frame.adoc[tag=frame_example_table]
+
+// end::frame_is_none[]
+
+:display_code_tag_name: frame_is_none
+include::./frame.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

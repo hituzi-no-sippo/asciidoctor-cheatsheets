@@ -1,9 +1,29 @@
+= Table Borders
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T05:35:19+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T05:35:54+09:00
+:revremark: add frames
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:borders_url: {asciidoc_docs_url}/tables/borders
+
+// tag::main[]
+
+:borders_url: {table_url}/borders
+
+== Frame
+
+include::./frame.adoc[tag=main, leveloffset=+1]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

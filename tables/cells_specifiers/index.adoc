@@ -1,10 +1,11 @@
 = Cell Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
-:revdate: 2023-07-01T19:36:26+09:00
-:revremark: add cell span
+:revnumber: v0.7.0
+:revdate: 2023-07-01T19:37:53+09:00
+:revremark: add cell duplicate
 :toc:
+:icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -44,6 +45,10 @@ include::./format_content.adoc[tag=main, leveloffset=+1]
 == Span
 
 include::./span.adoc[tag=main, leveloffset=+1]
+
+== Duplicate
+
+include::./duplicate.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

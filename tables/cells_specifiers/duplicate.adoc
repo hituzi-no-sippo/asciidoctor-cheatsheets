@@ -1,9 +1,135 @@
+= Cell Duplicate
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T17:46:10+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T19:35:42+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/duplicate-cells/[
+Duplicate Cells^]
+
+Cell duplicate allow you to define consecutive same cells in a table.
+
+Syntax is
+`<NUMBER_OF_CELLS>*<HORIZONTAL_ALIGN><VERTICAL_ALIGN><CONTENT_FORMAT>`.
+For Example `4*^.^l`.
+
+[CAUTION]
+====
+Only one of the duplicate (`*`) and span (`+`) can be used.
+====
+
+// tag::simple[]
+
+.Simple
+|===
+3*|One
+|===
+
+// end::simple[]
+
+:display_code_tag_name: simple
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/cells_specifiers/duplicate.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::content_format[]
+
+.Content Format
+|===
+3*s|One
+|===
+
+// end::content_format[]
+
+:display_code_tag_name: content_format
+include::./duplicate.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal[]
+
+.Horizontal
+|===
+3*^|One
+|===
+
+// end::horizontal[]
+
+:display_code_tag_name: horizontal
+include::./duplicate.adoc[tag=display_asciidoc_code]
+
+// tag::vertical[]
+
+.Vertical
+[cols="3"]
+|===
+|One
+
+Two
+
+Three
+2*.>|One
+|===
+
+// end::vertical[]
+
+:display_code_tag_name: vertical
+include::./duplicate.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_and_vertical[]
+
+.Horizontal and Vertical
+[cols="3"]
+|===
+|One
+
+Two
+
+Three
+2*>.>|One
+|===
+
+// end::horizontal_and_vertical[]
+
+:display_code_tag_name: horizontal_and_vertical
+include::./duplicate.adoc[tag=display_asciidoc_code]
+
+// tag::align_and_format[]
+
+.Align & Format
+[cols="3"]
+|===
+|One
+
+Two
+
+Three
+2*>.>s|One
+|===
+
+// end::align_and_format[]
+
+:display_code_tag_name: align_and_format
+include::./duplicate.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

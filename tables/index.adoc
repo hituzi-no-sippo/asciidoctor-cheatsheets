@@ -1,9 +1,10 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-01T10:35:46+09:00
-:revnumber: v0.4.0
-:revremark: add table caption
+:revdate: 2023-07-01T20:06:59+09:00
+:revnumber: v0.5.0
+:revremark: set icons document attribute to font
+:icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}

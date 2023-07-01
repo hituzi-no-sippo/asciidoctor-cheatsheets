@@ -1,9 +1,10 @@
 = Table Caption
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-01T10:36:30+09:00
-:revremark: add changed caption
+:revnumber: v0.4.0
+:revdate: 2023-07-01T10:37:04+09:00
+:revremark: add caption disable
+:icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -40,8 +41,43 @@
 
 :display_code_tag_name: caption_change
 
+// tag::display_asciidoc_code[]
+
 :asciidoc_code_file_path: ./tables/caption.adoc
 include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Disable
+
+.References
+{table_url}/turn-off-title-label/[
+Turn Off the Title Label^]
+
+// tag::caption_disable[]
+
+[caption=]
+.Caption attribute on block attribute
+|===
+|column 1 |column 2
+|===
+
+.Add caption attribute into cols attribute
+[cols="1,1", caption=]
+|===
+|column 1 |column 2
+|===
+
+// end::caption_disable[]
+
+:display_code_tag_name: caption_disable
+include::./caption.adoc[tag=display_asciidoc_code]
+
+.How to disable caption for all the tables
+[NOTE]
+====
+Unset `table-caption` document attribute (i.e. `:!table-caption:`).
+====
 
 // end::main[]
 

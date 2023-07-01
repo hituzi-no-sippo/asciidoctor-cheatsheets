@@ -1,9 +1,149 @@
+= Table Striping
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T06:25:22+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T07:12:37+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/striping/[
+Table Striping^]
+
+== `stripe` block attribute
+
+:table_title_suffix: (Default)
+
+// tag::stripe_is_none[]
+
+:stripe_value: none
+
+// tag::stripe_block_attribute_example[]
+
+.pass:a,n[{table_title}]
+.`stripes={stripe_value}` {table_title_suffix}
+[stripes={stripe_value}, options="header, footer, autowidth", role="aqua-background"]
+include::./example_tables.adoc[tag=header_and_footer]
+
+// end::stripe_block_attribute_example[]
+
+// end::stripe_is_none[]
+
+:display_code_tag_name: stripe_is_none
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/striping.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+:table_title_suffix:
+
+// tag::stripe_is_even[]
+
+:stripe_value: even
+
+include::./striping.adoc[tag=stripe_block_attribute_example]
+
+// end::stripe_is_even[]
+
+:display_code_tag_name: stripe_is_even
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// tag::stripe_is_odd[]
+
+:stripe_value: odd
+
+include::./striping.adoc[tag=stripe_block_attribute_example]
+
+// end::stripe_is_odd[]
+
+:display_code_tag_name: stripe_is_odd
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// tag::stripe_is_all[]
+
+:stripe_value: all
+
+include::./striping.adoc[tag=stripe_block_attribute_example]
+
+// end::stripe_is_all[]
+
+:display_code_tag_name: stripe_is_all
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// tag::stripe_is_hover[]
+
+:stripe_value: hover
+:table_title_suffix: (Let's focus on cell)
+
+include::./striping.adoc[tag=stripe_block_attribute_example]
+
+// end::stripe_is_hover[]
+
+:display_code_tag_name: stripe_is_hover
+include::./striping.adoc[tag=display_asciidoc_code]
+
+== `table-stripes` document attribute
+
+Use `table-stripes` document attribute to
+change stripe on table for all the tables.
+
+// tag::table_stripes_is_even[]
+
+:table-stripes: even
+:table_title: `table-stripes={table-stripes}`
+
+// tag::table_stripes_document_example[]
+
+.pass:a,n[{table_title}]
+[options="header, footer, autowidth", role="lime-background"]
+include::./example_tables.adoc[tag=header_and_footer]
+
+// end::table_stripes_document_example[]
+
+// end::table_stripes_is_even[]
+
+:display_code_tag_name: table_stripes_is_even
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// tag::table_stripes_is_all[]
+
+:table-stripes: all
+:table_title: `table-stripes={table-stripes}`
+
+include::./striping.adoc[tag=table_stripes_document_example]
+
+// end::table_stripes_is_all[]
+
+:display_code_tag_name: table_stripes_is_all
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// tag::unset_table_stripes[]
+
+:!table-stripes:
+:table_title: `:!table-stripes:`
+
+include::./striping.adoc[tag=table_stripes_document_example]
+
+// end::unset_table_stripes[]
+
+:display_code_tag_name: unset_table_stripes
+include::./striping.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

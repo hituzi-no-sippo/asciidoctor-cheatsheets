@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-02T05:39:07+09:00
-:revnumber: v0.8.0
-:revremark: add table width
+:revdate: 2023-07-02T06:27:31+09:00
+:revnumber: v0.9.0
+:revremark: add table striping
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -114,6 +114,10 @@ include::./width.adoc[tag=main, leveloffset=+1]
 == Borders
 
 include::./borders/index.adoc[tag=main, leveloffset=+1]
+
+== Striping
+
+include::./striping.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

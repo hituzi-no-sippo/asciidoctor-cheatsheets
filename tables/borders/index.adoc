@@ -1,9 +1,10 @@
 = Table Borders
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-02T05:35:54+09:00
-:revremark: add frames
+:revnumber: v0.4.0
+:revdate: 2023-07-02T05:56:01+09:00
+:revremark: add grid
+:toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -20,6 +21,10 @@
 == Frame
 
 include::./frame.adoc[tag=main, leveloffset=+1]
+
+== Grid
+
+include::./grid.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

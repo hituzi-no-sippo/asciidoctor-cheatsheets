@@ -1,9 +1,87 @@
+= Table Border Grid
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T05:54:42+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T06:06:27+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:borders_url: {asciidoc_docs_url}/tables/borders
+
+// tag::main[]
+
+.References
+{borders_url}/#grid[
+Grid - Table Borders^]
+
+:table_title_suffix: (Default)
+
+// tag::grid_is_all[]
+
+:grid_value: all
+
+// tag::grid_example_table[]
+
+.`grid={grid_value}` {table_title_suffix}
+[grid={grid_value}, options="header, footer, autowidth"]
+include::../example_tables.adoc[tag=header_and_footer]
+
+// end::grid_example_table[]
+
+// end::grid_is_all[]
+
+:display_code_tag_name: grid_is_all
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/borders/grid.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+:table_title_suffix:
+
+// tag::grid_is_cols[]
+
+:grid_value: cols
+
+include::./grid.adoc[tag=grid_example_table]
+
+// end::grid_is_cols[]
+
+:display_code_tag_name: grid_is_cols
+include::./grid.adoc[tag=display_asciidoc_code]
+
+// tag::grid_is_rows[]
+
+:grid_value: rows
+
+include::./grid.adoc[tag=grid_example_table]
+
+// end::grid_is_rows[]
+
+:display_code_tag_name: grid_is_rows
+include::./grid.adoc[tag=display_asciidoc_code]
+
+// tag::grid_is_none[]
+
+:grid_value: none
+
+include::./grid.adoc[tag=grid_example_table]
+
+// end::grid_is_none[]
+
+:display_code_tag_name: grid_is_none
+include::./grid.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

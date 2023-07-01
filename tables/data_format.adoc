@@ -1,9 +1,9 @@
 = Table Data Formats
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-02T08:41:12+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-02T08:42:15+09:00
+:revremark: add how to change data format
 :font: icons
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -61,9 +61,11 @@
 // tag::psv[]
 
 .PSV
+// tag::psv_table[]
 |===
 |Prefix | Separated | Values
 |===
+// end::psv_table[]
 
 // end::psv[]
 
@@ -145,6 +147,30 @@ CSV 2*^.^,Incorrect
 ,===
 ----
 ====
+
+== Change data format
+
+.References
+{data_format_url}/#delimiter-separated-values[
+Delimiter-separated values - Table Data Formats^]
+
+The `format` block option allow you to change data format in the table.
+
+// tag::format_option[]
+
+.PSV
+include::./data_format.adoc[tag=psv_table]
+
+.CSV(`format=csv`)
+[format=csv]
+|===
+Comma, Separated, Values
+|===
+
+// end::format_option[]
+
+:display_code_tag_name: format_option
+include::./data_format.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

@@ -1,9 +1,228 @@
+= Format Column Content
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T14:16:48+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T15:02:30+09:00
+:revremark: add introduction
+:toc:
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/format-column-content/[
+Format Content by Column^]
+
+`cols` block attribute sets the style of the column content.
+
+== Default *Bold* _Italic_ `Monospace`
+
+:column_specifiers: d,s,e,m
+:cols_attribute: cols="{column_specifiers}"
+
+// tag::cols_attribute[]
+
+The `cols` block attribute is `{cols_attribute}`.
+
+// end::cols_attribute[]
+
+// tag::text[]
+
+.Text
+[{cols_attribute}]
+|===
+|Default
+|Bold (``s``trong)
+|Italic (``e``mphasis)
+|Monospace
+
+// tag::table_examples[]
+4*|Normal
+
+4*|*Bold*
+
+4*|_italic_
+
+4*|`Monospace`
+
+4*|#Highlight#
+
+4*|[.red]#Red#
+
+4*|[.aqua-background]#Aqua Background#
+
+4*|H~2~o
+
+4*|2^10^
+
+4*|'`Single`'
+
+4*|"`Double`"
+|===
+
+// end::text[]
+
+:display_code_tag_name: text
+
+// tag::display_asciidoc_code[]
+
+.AsciiDoc Code
+[%collapsible]
+======
+[source, AsciiDoc, subs="+attributes"]
+------
+include::./format_content.adoc[tag={display_code_tag_name}]
+------
+======
+
+// end::display_asciidoc_code[]
+
+// tag::list[]
+
+.List
+[{cols_attribute}]
+|===
+4*|
+* Item 1
+* Item 2
+** Item 3
+
+4*|
+. Item 1
+. Item 2
+.. Item 3
+
+4*|
+Item:: 1
+Item:: 2
+Item::: 3
+|===
+
+// end::list[]
+
+:display_code_tag_name: list
+include::./format_content.adoc[tag=display_asciidoc_code]
+
+// tag::nest[]
+
+.Nest
+[{cols_attribute}]
+|===
+4*|
+[cols="1,1"]
+!===
+!Nest Table
+
+!Nest Table Column 1 row 1  !Nest Table Column 2 row 1
+!Nest Table Column 1 row 2  !Nest Table Column 2 row 2
+!===
+|===
+
+// end::nest[]
+
+:display_code_tag_name: nest
+include::./format_content.adoc[tag=display_asciidoc_code]
+
+// tag::block[]
+
+.Block
+[{cols_attribute}]
+|===
+4*|
+[source, AsciiDoc]
+----
+Source Code
+----
+
+4*|
+[NOTE]
+====
+Admonitions Block
+====
+
+4*|
+[example]
+====
+Example Block
+====
+
+4*|
+----
+Listing Block
+----
+
+4*|
+....
+Literal Block
+....
+|===
+
+// end::block[]
+
+:display_code_tag_name: block
+include::./format_content.adoc[tag=display_asciidoc_code]
+
+// tag::document_attributes[]
+
+.Document Attributes
+[{cols_attribute}]
+|===
+4*|`\{doctitle}` is {doctitle}
+|===
+
+// end::document_attributes[]
+
+:display_code_tag_name: document_attributes
+include::./format_content.adoc[tag=display_asciidoc_code]
+
+.include
+[{cols_attribute}]
+|===
+4*|{empty}
+include::./format_content.adoc[tag=cols_attribute]
+|===
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+----
+.include
+[{cols_attribute}]
+|===
+4*|\{empty}
+\include::./format_content.adoc[tag=cols_attribute]
+|===
+----
+====
+
+// end::table_examples[]
+
+== Default AsciiDoc Header Literal
+
+:column_specifiers: ,a,h,l
+:cols_attribute: cols="{column_specifiers}"
+
+.Text
+[{cols_attribute}]
+|===
+|Default
+|AsciiDoc
+|Header
+|Literal
+include::./format_content.adoc[tag=table_examples]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

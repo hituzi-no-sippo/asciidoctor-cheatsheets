@@ -1,9 +1,9 @@
 = Column Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-01T14:10:56+09:00
-:revremark: add column align
+:revnumber: v0.5.0
+:revdate: 2023-07-01T14:19:50+09:00
+:revremark: add format content by column
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -43,6 +43,10 @@ include::./widths.adoc[tag=main, leveloffset=+1]
 == Align
 
 include::./align.adoc[tag=main, leveloffset=+1]
+
+== Format Content
+
+include::./format_content.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

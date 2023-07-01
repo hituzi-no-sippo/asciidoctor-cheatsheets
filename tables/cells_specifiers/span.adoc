@@ -1,9 +1,161 @@
+= Cell Span
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T18:10:31+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T19:59:13+09:00
+:revremark: add introduction
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/span-cells/[
+Span Columns and Rows^]
+
+Span allow you to merge cells.
+
+Syntax is
+`<NUMBER_OF_CELLS><SPAN_FACTOR>+<HORIZONTAL_ALIGN><VERTICAL_ALIGN><CONTENT_FORMAT>`.
+For Example `4^.^+^.^s`.
+
+// tag::column_span[]
+
+.Column span
+|===
+2+|Column 1 & 2 row 1           |Column 3 row 1
+|Column 1 row 2 |Column 2 row 2 |Column 3 row 2
+|===
+
+// end::column_span[]
+
+:display_code_tag_name: column_span
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/cells_specifiers/span.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::row_span[]
+
+.Row span
+|===
+.2+|Column 1 & 2 row 1 |Column 3 row 1
+                       |Column 3 row 2
+|===
+
+// end::row_span[]
+
+:display_code_tag_name: row_span
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::block_span[]
+
+.Block span
+|===
+2.2+|Column 1 & 2 row 1 & 2     |Column 3 row 1
+                                |Column 3 row 2
+|Column 1 row 3 |Column 2 row 3 |Column 3 row 3
+|===
+
+// end::block_span[]
+
+:display_code_tag_name: block_span
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::content_format[]
+
+.Content Format
+|===
+2+s|Column 1 & 2 row 1           |Column 3 row 1
+|Column 1 row 2 |Column 2 row 2  |Column 3 row 2
+|===
+
+// end::content_format[]
+
+:display_code_tag_name: content_format
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal[]
+
+.Horizontal
+|===
+2+>|Column 1 & 2 row 1           |Column 3 row 1
+|Column 1 row 2 |Column 2 row 2  |Column 3 row 2
+|===
+
+// end::horizontal[]
+
+:display_code_tag_name: horizontal
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::vertical[]
+
+.Vertical
+[cols="3"]
+|===
+2+.>|
+// tag::vertical_example_cells[]
+One
+
+Two
+
+Three
+|One
+
+Two
+
+Three
+
+Four
+
+Five
+|Column 1 row 2 |Column 2 row 2 |Column 3 row 2
+// end::vertical_example_cells[]
+|===
+
+// end::vertical[]
+
+:display_code_tag_name: vertical
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_and_vertical[]
+
+.Horizontal and Vertical
+[cols="3"]
+|===
+2+^.^|
+include::./span.adoc[tag=vertical_example_cells]
+|===
+
+// end::horizontal_and_vertical[]
+
+:display_code_tag_name: horizontal_and_vertical
+include::./span.adoc[tag=display_asciidoc_code]
+
+// tag::align_and_format[]
+
+.Align & Format
+[cols="3"]
+|===
+2+^.^e|
+include::./span.adoc[tag=vertical_example_cells]
+|===
+
+// end::align_and_format[]
+
+:display_code_tag_name: align_and_format
+include::./span.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,9 @@
 = Cell Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-07-01T17:14:39+09:00
-:revremark: add format cell content
+:revnumber: v0.6.0
+:revdate: 2023-07-01T19:36:26+09:00
+:revremark: add cell span
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -40,6 +40,10 @@ include::./align.adoc[tag=main, leveloffset=+1]
 == Format Content
 
 include::./format_content.adoc[tag=main, leveloffset=+1]
+
+== Span
+
+include::./span.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

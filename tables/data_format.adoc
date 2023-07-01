@@ -1,9 +1,154 @@
+= Table Data Formats
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T08:08:27+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T08:41:12+09:00
+:revremark: add introduction
+:font: icons
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+:data_format_url: {table_url}/data-format
+.References
+* {data_format_url}/#supported-data-formats[
+  Supported data formats - Table Data Formats^]
+* {data_format_url}/#data-table-formats[
+  Data table formats - Table Data Formats^]
+* {data_format_url}/#shorthand-notation-for-data-tables[
+  Shorthand notation for data tables - Table Data Formats^]
+* {data_format_url}/#formatting-cells-in-a-data-table[
+  Formatting cells in a data table - Table Data Formats^]
+
+[cols=6, options="autowidth"]
+|===
+|Name
+|PSV (Default)
+|Nest PSV
+|CSV
+|TSV
+|DSV
+
+|
+|Prefix-Separated Values
+|Nest Prefix-Separated Values
+|Comma-Separated Values
+|Tab-Separated Values
+|Delimited Data Values
+
+|The table block delimiter
+|`\|===`
+|`!===`
+|`,===`
+|None
+|`:===`
+
+|Default Data separator
+|`\|`
+|`!`
+|`,`
+|Tab
+|`:`
+|===
+
+// tag::psv[]
+
+.PSV
+|===
+|Prefix | Separated | Values
+|===
+
+// end::psv[]
+
+:display_code_tag_name: psv
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/data_format.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::csv[]
+
+.CSV
+,===
+Comma, Separated, Values
+,===
+
+// end::csv[]
+
+:display_code_tag_name: csv
+include::./data_format.adoc[tag=display_asciidoc_code]
+
+// tag::tsv[]
+
+.TSV
+[format=tsv]
+|===
+Tab	Separated	Values
+|===
+
+// end::tsv[]
+
+:display_code_tag_name: tsv
+include::./data_format.adoc[tag=display_asciidoc_code]
+
+// tag::dsv[]
+
+.DSV
+:===
+Delimited: Data: Values
+:===
+
+// end::dsv[]
+
+:display_code_tag_name: dsv
+include::./data_format.adoc[tag=display_asciidoc_code]
+
+.Read table data from file with include directive
+[NOTE]
+====
+.Create table from CSV file
+[source, AsciiDoc]
+----
+[format=csv]
+|===
+\include::<CSV_FILE_PATH>[]
+|===
+----
+====
+
+.The cell specifier can only be used in PSV
+[CAUTION]
+====
+.Correct
+[source, AsciiDoc]
+----
+|===
+|PSV 2*^.^s|Correct
+|===
+----
+
+.Incorrect
+[source, AsciiDoc]
+----
+,===
+CSV 2*^.^,Incorrect
+,===
+----
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

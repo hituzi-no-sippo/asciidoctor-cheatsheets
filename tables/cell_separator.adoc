@@ -1,9 +1,45 @@
+= Cell Separator
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T08:44:08+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T08:55:41+09:00
+:revremark: add how to change cell separator
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+== Change cell separator
+
+The `separator` block attribute allow you to change separator.
+
+// tag::change_separator[]
+
+.Default
+|===
+|1|2|3
+|===
+
+.Change separator to `$`
+[separator="$"]
+|===
+$1$2$3
+|===
+
+// end::change_separator[]
+
+:display_code_tag_name: change_separator
+
+:asciidoc_code_file_path: ./tables/cell_separator.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

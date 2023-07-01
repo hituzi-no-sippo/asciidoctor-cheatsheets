@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-09T09:15:25+09:00
-:revnumber: v0.12.0
-:revremark: add table data format
+:revdate: 2023-07-02T08:48:43+09:00
+:revnumber: v0.13.0
+:revremark: add cell separator
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -130,6 +130,10 @@ include::./nesting.adoc[tag=main, leveloffset=+1]
 == Data Format
 
 include::./data_format.adoc[tag=main, leveloffset=+1]
+
+== Cell Separator
+
+include::./cell_separator.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

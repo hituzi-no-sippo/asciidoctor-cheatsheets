@@ -1,9 +1,105 @@
+= Frame and Grid Combination
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T06:14:46+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T06:21:42+09:00
+:revremark: add all patterns
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:borders_url: {asciidoc_docs_url}/tables/borders
+
+// tag::main[]
+
+.References
+{borders_url}/#interaction-with-row-and-column-spans[
+Interaction with row and column spans - Table Borders^]
+
+:frame_value: all
+:table_title_suffix: (Default)
+
+// tag::frame_and_grid_combination_section[]
+
+== Frame is `{frame_value}`
+
+// tag::grid_is_all[]
+
+:grid_value: all
+
+// tag::frame_and_grid_example_table[]
+
+.`frame={frame_value} grid={grid_value}` {table_title_suffix}
+[frame={frame_value}, grid={grid_value}, options="header, footer, autowidth"]
+include::../example_tables.adoc[tag=header_and_footer]
+
+// end::frame_and_grid_example_table[]
+
+// end::grid_is_all[]
+
+:display_code_tag_name: grid_is_all
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/borders/frame_and_grid_combination.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+:table_title_suffix:
+
+// tag::grid_is_cols[]
+
+:grid_value: cols
+
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_example_table]
+
+// end::grid_is_cols[]
+
+:display_code_tag_name: grid_is_cols
+include::./frame_and_grid_combination.adoc[tag=display_asciidoc_code]
+
+// tag::grid_is_rows[]
+
+:grid_value: rows
+
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_example_table]
+
+// end::grid_is_rows[]
+
+:display_code_tag_name: grid_is_rows
+include::./frame_and_grid_combination.adoc[tag=display_asciidoc_code]
+
+// tag::grid_is_none[]
+
+:grid_value: none
+
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_example_table]
+
+// end::grid_is_none[]
+
+:display_code_tag_name: grid_is_none
+include::./frame_and_grid_combination.adoc[tag=display_asciidoc_code]
+
+// end::frame_and_grid_combination_section[]
+
+:table_title_suffix:
+
+:frame_value: ends
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_combination_section]
+
+:frame_value: sides
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_combination_section]
+
+:frame_value: none
+include::./frame_and_grid_combination.adoc[tag=frame_and_grid_combination_section]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

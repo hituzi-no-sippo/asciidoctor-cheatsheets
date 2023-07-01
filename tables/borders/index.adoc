@@ -1,9 +1,9 @@
 = Table Borders
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-02T05:56:01+09:00
-:revremark: add grid
+:revnumber: v0.5.0
+:revdate: 2023-07-02T06:16:09+09:00
+:revremark: add frame and grid combination
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -25,6 +25,10 @@ include::./frame.adoc[tag=main, leveloffset=+1]
 == Grid
 
 include::./grid.adoc[tag=main, leveloffset=+1]
+
+== Frame and grid combination
+
+include::./frame_and_grid_combination.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

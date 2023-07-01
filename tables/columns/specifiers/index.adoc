@@ -1,9 +1,41 @@
+= Column Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T10:49:16+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T11:06:32+09:00
+:revremark: add introduction
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/add-columns/#cols-attribute[
+Specify the number of columns with the cols attribute - Add Columns to a Table^]
+
+Use column specifier on `cols` block attribute.
+
+.The column specifier defines elements
+Width::
+* `3`
+* `30%`
+Align::
+* `^`
+* `.^`
+Format Content::
+* `s`
+* `a`
+Number of Columns::
+* `2*`
+* `5*`
+
+// end::main[]
+
+// end::body[]
 
 '''
 

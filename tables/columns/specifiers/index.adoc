@@ -1,9 +1,11 @@
 = Column Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-01T11:06:32+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-01T14:03:35+09:00
+:revremark: add column width
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -32,6 +34,10 @@ Format Content::
 Number of Columns::
 * `2*`
 * `5*`
+
+== Width
+
+include::./widths.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

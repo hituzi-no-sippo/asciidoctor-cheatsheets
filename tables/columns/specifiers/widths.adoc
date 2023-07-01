@@ -1,9 +1,65 @@
+= Column Width
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T10:49:48+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T14:06:02+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/adjust-column-widths/[
+Adjust Column Widths^]
+
+The column width is determined by the percentage or integer of the cols attribute.
+
+// tag::percentage[]
+
+.Percentage
+[cols="30%, 10%, 60%"]
+|===
+|30%
+|10%
+|60%
+|===
+
+// end::percentage[]
+
+:display_code_tag_name: percentage
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/columns/specifiers/widths.adoc
+include::../../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::proportional[]
+
+.Integer
+[cols="3,1,6"]
+|===
+|Proportional width 3
+|Proportional width 1
+|Proportional width 6
+|===
+
+// end::proportional[]
+
+:display_code_tag_name: proportional
+include::./widths.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,10 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-01T20:06:59+09:00
-:revnumber: v0.5.0
-:revremark: set icons document attribute to font
+:revdate: 2023-07-01T16:44:55+09:00
+:revnumber: v0.6.0
+:revremark: add columns
+:toc:
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -97,6 +98,10 @@ include::./index.adoc[tag=display_asciidoc_code]
 == Caption
 
 include::./caption.adoc[tag=main, leveloffset=+1]
+
+== Columns
+
+include::./columns/index.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

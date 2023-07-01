@@ -1,9 +1,62 @@
+= Columns
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T10:43:03+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T10:46:13+09:00
+:revremark: add number of columns
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/add-columns/[
+Add Columns to a Table^]
+
+There are two ways to specify the number of columns in a table.
+
+// tag::number_of_cells[]
+
+.The number of cells in the first non-empty line
+// tag::column_number_example[]
+|===
+|1|2
+|3|4
+|5|6
+|===
+// end::column_number_example[]
+
+// end::number_of_cells[]
+
+:display_code_tag_name: column_number_example
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/columns/index.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::cols_block_attribute[]
+
+.`cols` block attribute
+[cols="3"]
+include::./index.adoc[tag=column_number_example]
+
+// end::cols_block_attribute[]
+
+:display_code_tag_name: cols_block_attribute
+include::./index.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,51 @@
+= Table Caption
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T10:28:43+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T10:36:30+09:00
+:revremark: add changed caption
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+:customize_title_label_url: {table_url}/customize-title-label
+== Change
+
+.References
+* {customize_title_label_url}[
+  Customize the Title Label^]
+
+// tag::caption_change[]
+
+[caption="Change caption: "]
+.Caption attribute on block attribute
+|===
+|column 1 |column 2
+|===
+
+.Add caption attribute into cols attribute
+[cols="1,1", caption="Change caption: "]
+|===
+|column 1 |column 2
+|===
+
+// end::caption_change[]
+
+:display_code_tag_name: caption_change
+
+:asciidoc_code_file_path: ./tables/caption.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

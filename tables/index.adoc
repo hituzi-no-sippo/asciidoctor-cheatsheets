@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-01T10:25:40+09:00
-:revremark: add introduction
+:revdate: 2023-07-01T10:35:46+09:00
+:revnumber: v0.4.0
+:revremark: add table caption
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -92,6 +92,10 @@ include::./index.adoc[tag=display_asciidoc_code]
 
 :display_code_tag_name: span
 include::./index.adoc[tag=display_asciidoc_code]
+
+== Caption
+
+include::./caption.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

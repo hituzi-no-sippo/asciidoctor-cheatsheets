@@ -1,9 +1,38 @@
+= Cell Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T16:48:22+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T17:02:28+09:00
+:revremark: add introduction
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/add-cells-and-rows/#specifiers[
+Cell specifiers and operators - Add Cells and Rows to a Table^]
+
+The cell specifiers are almost same to column specifier.
+
+.Same point between cell specifier and column specifier
+Align::
+* `^`
+* `.^`
+Format Content::
+* `s`
+* `a`
+Number of Cells::
+* `2*`
+* `5*`
+
+// end::main[]
+
+// end::body[]
 
 '''
 

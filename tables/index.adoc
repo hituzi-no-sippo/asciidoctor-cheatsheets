@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-01T16:44:55+09:00
-:revnumber: v0.6.0
-:revremark: add columns
+:revdate: 2023-07-01T17:05:36+09:00
+:revnumber: v0.7.0
+:revremark: add cell specifiers
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -102,6 +102,10 @@ include::./caption.adoc[tag=main, leveloffset=+1]
 == Columns
 
 include::./columns/index.adoc[tag=main, leveloffset=+1]
+
+== Cell Specifiers
+
+include::./cells_specifiers/index.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

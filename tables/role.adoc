@@ -1,9 +1,55 @@
+= Role for Table
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T07:44:22+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T07:55:05+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/assign-a-role/[
+Assign a Role to a Table^]
+
+// tag::frame[]
+
+.Frame
+[.thumb]
+include::./example_tables.adoc[tag=header_and_footer]
+
+// end::frame[]
+
+:display_code_tag_name: frame
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/role.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::background[]
+
+.Change background
+[role="aqua-background", options="footer"]
+include::./example_tables.adoc[tag=header_and_footer]
+
+// end::background[]
+
+:display_code_tag_name: background
+include::./role.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

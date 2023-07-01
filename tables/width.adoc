@@ -1,9 +1,108 @@
+= Table Width
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T05:17:52+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T05:27:24+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/width/[
+Table Width^]
+
+// tag::default[]
+
+.Default
+|===
+// tag::width_example[]
+|Column 1 Header |Column 2 Header |Column 3 Header long width
+
+|Column 1 row 1  |Column 2 row 1  |Column 3 row 1
+|Column 1 row 2  |Column 2 row 2  |Column 3 row 2
+// end::width_example[]
+|===
+
+// end::default[]
+
+:display_code_tag_name: default
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/width.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::fixed_width[]
+
+.Fixed Width
+[width=30%]
+|===
+include::./width.adoc[tags=width_example]
+|===
+
+// end::fixed_width[]
+
+:display_code_tag_name: fixed_width
+include::./width.adoc[tag=display_asciidoc_code]
+
+// tag::auto_width[]
+
+.Auto width (`[%autowidth]`, `[options=autowidth]`)
+[options=autowidth]
+|===
+include::./width.adoc[tags=width_example]
+|===
+
+// end::auto_width[]
+
+:display_code_tag_name: auto_width
+include::./width.adoc[tag=display_asciidoc_code]
+
+// tag::stretch[]
+
+.Stretch
+[.stretch]
+|===
+include::./width.adoc[tags=width_example]
+|===
+
+// end::stretch[]
+
+:display_code_tag_name: stretch
+include::./width.adoc[tag=display_asciidoc_code]
+
+[NOTE]
+====
+`role=stretch` or `[.stretch]` is same as `width=100%`.
+====
+
+// tag::mix[]
+
+.Mix fixed and autowidth columns
+[cols="~,~,75"]
+|===
+include::./width.adoc[tags=width_example]
+|===
+
+// end::mix[]
+
+:display_code_tag_name: mix
+include::./width.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

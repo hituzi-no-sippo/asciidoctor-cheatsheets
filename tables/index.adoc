@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-01T17:05:36+09:00
-:revnumber: v0.7.0
-:revremark: add cell specifiers
+:revdate: 2023-07-02T05:23:08+09:00
+:revnumber: v0.8.0
+:revremark: add table width
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -106,6 +106,10 @@ include::./columns/index.adoc[tag=main, leveloffset=+1]
 == Cell Specifiers
 
 include::./cells_specifiers/index.adoc[tag=main, leveloffset=+1]
+
+== Width
+
+include::./width.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

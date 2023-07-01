@@ -2,8 +2,8 @@
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.3.0
-:revdate: 2023-07-02T08:55:41+09:00
-:revremark: add how to change cell separator
+:revdate: 2023-07-02T08:56:52+09:00
+:revremark: add how to escape bar in a table
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -34,8 +34,39 @@ $1$2$3
 
 :display_code_tag_name: change_separator
 
+// tag::display_asciidoc_code[]
+
 :asciidoc_code_file_path: ./tables/cell_separator.adoc
 include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Escape bar in a Table
+
+There are three ways to display bar (`|`) in a table.
+
+// tag::escape_bar[]
+
+.Escape (`\|`)
+|===
+|\|
+|===
+
+.Change separator
+[separator="$"]
+|===
+$|
+|===
+
+.Use `\{vbar}` attribute
+|===
+|{vbar}
+|===
+
+// end::escape_bar[]
+
+:display_code_tag_name: escape_bar
+include::./cell_separator.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

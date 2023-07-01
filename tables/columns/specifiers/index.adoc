@@ -2,8 +2,9 @@
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.4.0
-:revdate: 2023-07-01T14:03:35+09:00
-:revremark: add column width
+:revdate: 2023-07-01T14:10:56+09:00
+:revremark: add column align
+:toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -38,6 +39,10 @@ Number of Columns::
 == Width
 
 include::./widths.adoc[tag=main, leveloffset=+1]
+
+== Align
+
+include::./align.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

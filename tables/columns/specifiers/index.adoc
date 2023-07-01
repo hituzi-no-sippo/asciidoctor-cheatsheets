@@ -1,9 +1,9 @@
 = Column Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-07-01T14:19:50+09:00
-:revremark: add format content by column
+:revnumber: v0.6.0
+:revdate: 2023-07-01T15:09:21+09:00
+:revremark: add column multiplier
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -47,6 +47,10 @@ include::./align.adoc[tag=main, leveloffset=+1]
 == Format Content
 
 include::./format_content.adoc[tag=main, leveloffset=+1]
+
+== Multiplier
+
+include::./multiplier.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

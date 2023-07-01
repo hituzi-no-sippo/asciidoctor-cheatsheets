@@ -1,9 +1,193 @@
+= Column Multiplier
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T15:06:05+0900
+:revnumber: v0.3.0
+:revdate: 2023-07-01T15:09:52+09:00
 :revremark: add copyright
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/add-columns/#column-multiplier[
+Using a column multiplier^]
+
+Column multipliers allow you to define consecutive same columns in a table.
+
+Syntax is
+`<NUMBER_OF_COLUMNS>*<HORIZONTAL ALIGN><VERTICAL ALIGN><WIDTH><CONTENT_FORMAT>`.
+For Example `3*^.^30%s`.
+
+// tag::simple[]
+
+.Simple
+[cols="3*"]
+// tag::three_columns[]
+|===
+|One |Two |Three
+|===
+// end::three_columns[]
+
+// end::simple[]
+
+:display_code_tag_name: simple
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/columns/specifiers/multiplier.adoc
+include::../../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::content_format[]
+
+.Content Format
+[cols="3*s"]
+include::./multiplier.adoc[tag=three_columns]
+
+// end::content_format[]
+
+:display_code_tag_name: content_format
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal[]
+
+.Horizontal
+[cols="3*^"]
+include::./multiplier.adoc[tag=three_columns]
+
+// end::horizontal[]
+
+:display_code_tag_name: horizontal
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::vertical[]
+
+.Vertical
+[cols="3*.^"]
+// tag::vertical_example[]
+|===
+|One
+|One
+
+Two
+|One
+
+Two
+
+Three
+|===
+// end::vertical_example[]
+
+// end::vertical[]
+
+:display_code_tag_name: vertical
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_and_vertical[]
+
+.Horizontal and Vertical (Must delimiter double quote)
+[cols="3*^.^"]
+include::./multiplier.adoc[tag=vertical_example]
+
+// end::horizontal_and_vertical[]
+
+:display_code_tag_name: horizontal_and_vertical
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::align_and_format[]
+
+.Align & Format (Must delimiter double quote)
+[cols="3*^.^s"]
+include::./multiplier.adoc[tag=vertical_example]
+
+// end::align_and_format[]
+
+:display_code_tag_name: align_and_format
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::proportional[]
+
+.Proportional
+[cols="2,3*6"]
+|===
+|Proportional 2
+3*|Proportional 6
+|===
+
+// end::proportional[]
+
+:display_code_tag_name: proportional
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::percentage[]
+
+.Percentage
+[cols="10%,3*30%"]
+|===
+|10%
+3*|30%
+|===
+
+// end::percentage[]
+
+:display_code_tag_name: percentage
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::all[]
+
+.All
+[cols="2,2*>.>4e"]
+include::./multiplier.adoc[tag=vertical_example]
+
+// end::all[]
+
+:display_code_tag_name: all
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// tag::mix[]
+
+.Mix
+[cols="3,2*>.>6l,2s,2*5a"]
+|===
+|Proportional width 3 Default
+|Multiplier Proportional width 6 Literal Horizontal and Vertical Center
+|Multiplier Proportional width 6 Literal Horizontal and Vertical Center
+|Proportional width 2 Bold
+|
+* Multiplier
+. Proportional Width 5
+[horizontal]
+AsciiDoc:: Content
+|
+[NOTE]
+====
+Multiplier
+====
+****
+Proportional Width 5
+****
+[source, AsciiDoc]
+----
+AsciiDoc Content
+----
+|===
+
+// end::mix[]
+
+:display_code_tag_name: mix
+include::./multiplier.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

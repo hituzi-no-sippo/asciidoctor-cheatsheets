@@ -1,9 +1,101 @@
+= Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T10:15:54+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T10:25:40+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:table_url: {asciidoc_docs_url}/tables
+
+.References
+* {table_url}/build-a-basic-table/[
+  Build a Basic Table^]
+* {table_url}/add-header-row/[
+  Create a Header Row^]
+* {table_url}/add-footer-row/[
+  Create a Footer Row^]
+* {table_url}/span-cells/[
+  Span Columns and Rows^]
+
+// tag::delimiter[]
+
+.Table block delimiter is `|===`
+|===
+|row 1
+|row 2
+|===
+
+// end::delimiter[]
+
+:display_code_tag_name: delimiter
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/index.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::header[]
+
+.Add Header
+|===
+|Column 1 Header |Column 2 Header
+
+|Column 1 row 1  |Column 2 row 1
+|Column 1 row 2  |Column 2 row 2
+|===
+
+// end::header[]
+
+:display_code_tag_name: header
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::footer[]
+
+.Add Footer
+[options="footer"]
+|===
+|Column 1 row 1  |Column 2 row 1
+|Column 1 row 2  |Column 2 row 2
+
+|Column 1 Footer |Column 2 Footer
+|===
+
+// end::footer[]
+
+:display_code_tag_name: footer
+include::./index.adoc[tag=display_asciidoc_code]
+
+// tag::span[]
+
+.Span Columns and Rows
+|===
+|Column 1 row 1        |Column 2 row 1 |Column 3 row 1
+2+|Column 1 & 2 row 2                  |Column 3 row 2
+.2+|Column 1 row 3 & 4 |Column 2 row 3 |Column 3 row 3
+                       |Column 2 row 4 |Column 3 row 4
+2.2+|Column 1 & 2 row 5 & 6            |Column 3 row 5
+                                       |Column 3 row 6
+|===
+
+// end::span[]
+
+:display_code_tag_name: span
+include::./index.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.36.0
-:revdate: 2023-07-09T13:30:14+09:00
-:revremark: add indent block attribute
+:revnumber: v0.37.0
+:revdate: 2023-07-01T10:26:28+09:00
+:revremark: add tables
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -148,6 +148,10 @@ include::./wrap_block_attribute.adoc[tag=main, leveloffset=+1]
 == Indent Block Attribute
 
 include::./indent_block_attribute.adoc[tag=main, leveloffset=+1]
+
+== Tables
+
+include::./tables/index.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

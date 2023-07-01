@@ -1,9 +1,121 @@
+= Format Cell Content
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-01T17:10:45+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-01T17:28:51+09:00
+:revremark: add introduction
+:toc:
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/format-cell-content/[
+Format Content by Cell^]
+
+== Default *Bold* _Italic_ `Monospace`
+
+// tag::default_bold_italic_monospace[]
+
+:format_content_example: pass:n[Normal *bold* _italic_ `mono` #Highlight# [.red]#Red# H~2~o 2^10^ '`Single`' "`Double`"]
+
+[cols="4"]
+|===
+|Default {format_content_example}
+s|Bold {format_content_example}
+e|Italic {format_content_example}
+m|Monospace {format_content_example}
+
+|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+s|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+e|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+m|
+[NOTE]
+====
+AsciiDoc Content
+====
+|===
+
+// end::default_bold_italic_monospace[]
+
+:display_code_tag_name: default_bold_italic_monospace
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/cells_specifiers/format_content.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== Default AsciiDoc Header Literal
+
+// tag::default_asciidoc_header_literal[]
+
+:format_content_example: pass:n[Normal *bold* _italic_ `mono` #Highlight# [.red]#Red# H~2~o 2^10^ '`Single`' "`Double`"]
+
+[cols="4"]
+|===
+|Default {format_content_example}
+a|AsciiDoc {format_content_example}
+h|Header {format_content_example}
+l|Literal {format_content_example}
+
+|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+a|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+h|
+[NOTE]
+====
+AsciiDoc Content
+====
+
+l|
+[NOTE]
+====
+AsciiDoc Content
+====
+|===
+
+// end::default_asciidoc_header_literal[]
+
+:display_code_tag_name: default_asciidoc_header_literal
+include::./format_content.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

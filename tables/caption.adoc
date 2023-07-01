@@ -1,9 +1,9 @@
 = Table Caption
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-01T10:37:04+09:00
-:revremark: add caption disable
+:revnumber: v0.5.0
+:revdate: 2023-07-01T10:40:37+09:00
+:revremark: add table block title as caption only
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -78,6 +78,31 @@ include::./caption.adoc[tag=display_asciidoc_code]
 ====
 Unset `table-caption` document attribute (i.e. `:!table-caption:`).
 ====
+
+== Table Title is Caption Only
+
+.References
+{customize_title_label_url}/#modify-the-label-of-an-individual-table-using-caption[
+Modify the label of an individual table using caption - Customize the Title Label^]
+
+Use `\{empty}` or `title` block attribute.
+
+// tag::title_is_caption_only[]
+
+.{empty}
+|===
+|column 1 |column 2
+|===
+
+[caption=,title="{table-caption} {counter:table-number}"]
+|===
+|column 1 |column 2
+|===
+
+// end::title_is_caption_only[]
+
+:display_code_tag_name: title_is_caption_only
+include::./caption.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

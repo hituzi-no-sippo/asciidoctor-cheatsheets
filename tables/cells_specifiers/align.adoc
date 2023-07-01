@@ -1,9 +1,120 @@
+= Cell Align
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.2.0
-:revdate: 2023-07-01T16:50:18+0900
+:revdate: 2023-07-01T16:52:59+09:00
 :revremark: add copyright
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/align-by-cell/[
+Align Content by Cell^]
+
+// tag::horizontal[]
+
+.Horizontal
+[cols="4"]
+|===
+|Default <|Flush Left ^|Center >|Flush Right
+
+|Default <|`<`        ^|`^`    >|`>`
+|===
+
+// end::horizontal[]
+
+:display_code_tag_name: horizontal
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./tables/cells_specifiers/align.adoc
+include::../../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::vertical[]
+
+.Vertical
+[cols="4"]
+|===
+|Default
+.<|Flush Top
+.^|Center
+.>|Flush Bottom
+
+|Default
+.<|`.<`
+.^|`.^`
+.>|`.>`
+
+|1 +
+2 +
+3 +
+4 +
+5
+.<|1 +
+2 +
+3
+.^|1 +
+2 +
+3
+.>|1 +
+2 +
+3
+|===
+
+// end::vertical[]
+
+:display_code_tag_name: vertical
+include::./align.adoc[tag=display_asciidoc_code]
+
+// tag::horizontal_and_vertical[]
+
+.Horizontal and Vertical
+[cols="4"]
+|===
+|Default
+<.<|Left and Top
+^.^|Center
+>.>|Right and Bottom
+
+|Default
+<.<|`<.<`
+^.^|`\^.^`
+>.>|`>.>`
+
+|1 +
+2 +
+3 +
+4 +
+5
+<.<|1 +
+2 +
+3
+^.^|1 +
+2 +
+3
+>.>|1 +
+2 +
+3
+|===
+
+// end::horizontal_and_vertical[]
+
+:display_code_tag_name: horizontal_and_vertical
+include::./align.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

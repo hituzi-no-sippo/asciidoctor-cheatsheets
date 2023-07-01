@@ -1,9 +1,11 @@
 = Cell Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-01T17:02:28+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-01T17:04:13+09:00
+:revremark: add cell align
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -29,6 +31,10 @@ Format Content::
 Number of Cells::
 * `2*`
 * `5*`
+
+== Align
+
+include::./align.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

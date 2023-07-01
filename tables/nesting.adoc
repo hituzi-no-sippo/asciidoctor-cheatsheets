@@ -1,9 +1,51 @@
+= Nesting Table
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T07:57:34+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T08:05:23+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/nested/[
+Nesting Tables^]
+
+// tag::nesting[]
+
+[cols="n,a"]
+|===
+|Table 1 Column 1 Header |Table 1 Column 2 Header
+
+|Table 1 Column 1 row 1  |Table 1 Column 2 row 1
+|Table 1 Column 1 row 2  |Table 1 Column 2 row 2
+
+.Table 2
+!===
+!Table 2 Column 1 Header !Table 2 Column 2 Header
+
+!Table 2 Column 1 row 1  !Table 2 Column 2 row 1
+!Table 2 Column 1 row 2  !Table 2 Column 2 row 2
+!===
+|===
+
+// end::nesting[]
+
+:asciidoc_code_file_path: ./tables/nesting.adoc
+:display_code_tag_name: nesting
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

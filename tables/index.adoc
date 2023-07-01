@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-02T07:50:58+09:00
-:revnumber: v0.10.0
-:revremark: add table role
+:revdate: 2023-07-02T08:01:23+09:00
+:revnumber: v0.11.0
+:revremark: add nesting table
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -122,6 +122,10 @@ include::./striping.adoc[tag=main, leveloffset=+1]
 == Role
 
 include::./role.adoc[tag=main, leveloffset=+1]
+
+== Nesting
+
+include::./nesting.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

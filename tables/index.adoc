@@ -1,9 +1,9 @@
 = Tables
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revdate: 2023-07-02T08:48:43+09:00
-:revnumber: v0.13.0
-:revremark: add cell separator
+:revdate: 2023-07-02T09:01:28+09:00
+:revnumber: v0.14.0
+:revremark: add table position
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -134,6 +134,10 @@ include::./data_format.adoc[tag=main, leveloffset=+1]
 == Cell Separator
 
 include::./cell_separator.adoc[tag=main, leveloffset=+1]
+
+== Position
+
+include::./position.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

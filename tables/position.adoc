@@ -1,9 +1,60 @@
+= Table Position
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T07:28:38+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-02T07:36:15+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:table_url: {asciidoc_docs_url}/tables
+
+// tag::main[]
+
+.References
+{table_url}/table-ref/[
+Table Syntax and Attribute Reference^]
+
+// tag::float[]
+
+.Float
+[.float-group]
+--
+:float_value: right
+
+// tag::table_float[]
+[float={float_value},width=5%]
+|===
+|float {float_value}
+|===
+// end::table_float[]
+
+:float_value: left
+include::./position.adoc[tag=table_float]
+
+:float_value: center
+include::./position.adoc[tag=table_float]
+--
+
+// end::float[]
+
+:asciidoc_code_file_path: ./tables/position.adoc
+:display_code_tag_name: float
+include::../display_asciidoc_code.adoc[]
+
+[NOTE]
+====
+`[role=<left,center,right>]` is same as `[.<left,center,right>]`.
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

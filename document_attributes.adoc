@@ -1,9 +1,84 @@
+= Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-03T15:46:28+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-03T17:57:52+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:attributes_url: {asciidoc_docs_url}/attributes
+.References
+* {attributes_url}/attribute-entries/[
+  Attribute Entries^]
+* {attributes_url}/unset-attributes/[
+  Unset Document Attributes^]
+* {attributes_url}/reference-attributes/[
+  Reference Document Attributes^]
+
+.Define an Document Attribute
+[source, AsciiDoc]
+----
+:attribute_name: attribute value
+----
+
+// tag::reference_attribute[]
+
+:attribute_name: attribute value
+.Reference an Document Attribute
+`\{attribute_name}` is {attribute_name}.
+
+// end::reference_attribute[]
+
+:display_code_tag_name: reference_attribute
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./document_attributes.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+.Use an Document Attribute to Define an Document Attribute
+[source, AsciiDoc]
+----
+:helix_org: helix-editor.com
+:helix_docs_url: https://docs.{helix_org}
+----
+
+.Unset an Document Attribute
+[source, AsciiDoc]
+----
+:!attribute_name:
+----
+
+// tag::escape[]
+
+.Escape an Attribute Reference
+:console_domain: console.dev
+[horizontal]
+Normal::
+  https://{console_domain}/tools
+Backslash (`\`)::
+  https://\{console_domain}/tools
+Passthrough (`+` or `\pass:[]`)::
+  +https://{console_domain}/tools+
+
+// end::escape[]
+
+:display_code_tag_name: escape
+include::./document_attributes.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

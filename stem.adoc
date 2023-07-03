@@ -1,9 +1,9 @@
 = Equations and Formulas (STEM)
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-03T13:58:27+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-03T14:00:15+09:00
+:revremark: add inline macro
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -66,6 +66,46 @@ sqrt(256)
 // end::block[]
 
 :display_code_tag_name: block
+include::./stem.adoc[tag=display_asciidoc_code]
+
+== Inline Macro
+
+.References
+{stem_url}#inline[
+Inline STEM content - Equations and Formulas (STEM)^]
+
+// tag::latex_inline_macro[]
+
+:stem_example: sqrt(4) = 2
+
+.Tex and Latex Math Notation
+latexmath:[pass:n[{stem_example}]]
+
+// end::latex_inline_macro[]
+
+:display_code_tag_name: latex_inline_macro
+include::./stem.adoc[tag=display_asciidoc_code]
+
+// tag::asciimath_inline_macro[]
+
+.AsciiMath Math Notation
+asciimath:[pass:n[{stem_example}]]
+
+// end::asciimath_inline_macro[]
+
+:display_code_tag_name: asciimath_inline_macro
+include::./stem.adoc[tag=display_asciidoc_code]
+
+`\{stem}` is {stem}.
+
+// tag::stem_inline_macro[]
+
+.Math Notation for Value of `stem` Document Attribute
+stem:[pass:n[{stem_example}]]
+
+// end::stem_inline_macro[]
+
+:display_code_tag_name: stem_inline_macro
 include::./stem.adoc[tag=display_asciidoc_code]
 
 // end::main[]

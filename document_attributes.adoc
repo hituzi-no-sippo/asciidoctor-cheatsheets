@@ -1,9 +1,9 @@
 = Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-03T17:57:52+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-03T19:04:48+09:00
+:revremark: add wrap
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -74,6 +74,36 @@ Passthrough (`+` or `\pass:[]`)::
 // end::escape[]
 
 :display_code_tag_name: escape
+include::./document_attributes.adoc[tag=display_asciidoc_code]
+
+== Wrap
+
+.References
+{attributes_url}/wrap-values/[
+Wrap Attribute Entry Values^]
+
+// tag::soft_wrap[]
+
+:soft_wrap: soft \
+            wrap
+.Soft Wrap
+`\{soft_wrap}` is {soft_wrap}.
+
+// end::soft_wrap[]
+
+:display_code_tag_name: soft_wrap
+include::./document_attributes.adoc[tag=display_asciidoc_code]
+
+// tag::hard_wrap[]
+
+:hard_wrap: hard + \
+            wrap
+.Hard Wrap
+`\{hard_wrap}` is {hard_wrap}.
+
+// end::hard_wrap[]
+
+:display_code_tag_name: hard_wrap
 include::./document_attributes.adoc[tag=display_asciidoc_code]
 
 // end::main[]

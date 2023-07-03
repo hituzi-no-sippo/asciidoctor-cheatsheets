@@ -1,9 +1,76 @@
+= Equations and Formulas (STEM)
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-02T15:55:43+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-03T13:58:27+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
+:stem: asciimath
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:stem_url: {asciidoc_docs_url}/stem
+.References
+{stem_url}[
+Equations and Formulas (STEM)^]
+
+:mathjax_input_url: https://docs.mathjax.org/en/latest/input
+.Supported Math Notation
+* {mathjax_input_url}/asciimath.html[
+  AsciiMath^]
+* {mathjax_input_url}/tex/index.html[
+  Tex and Latex^]
+
+[IMPORTANT]
+====
+To enable equation and formula support,
+you need to set `stem` document attribute.
+====
+
+[NOTE]
+====
+`:stem:` is same as `:stem: asciimath`.
+====
+
+// tag::inline[]
+
+.Inline
+stem:[sqrt(256)] is 16.
+
+// end::inline[]
+
+:display_code_tag_name: inline
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./stem.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::block[]
+
+.Block
+[stem]
+++++
+sqrt(256)
+++++
+
+// end::block[]
+
+:display_code_tag_name: block
+include::./stem.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

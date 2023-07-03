@@ -1,14 +1,15 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.37.0
-:revdate: 2023-07-01T10:26:28+09:00
-:revremark: add tables
+:revnumber: v0.38.0
+:revdate: 2023-07-03T13:59:04+09:00
+:revremark: add stem
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc, julia
 :imagesdir: ./images
+:stem: asciimath
 :copyright: Copyright (C) 2023 {author}
 
 // Custom Attributes
@@ -152,6 +153,10 @@ include::./indent_block_attribute.adoc[tag=main, leveloffset=+1]
 == Tables
 
 include::./tables/index.adoc[tag=main, leveloffset=+1]
+
+== Equations and Formulas (STEM)
+
+include::./stem.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

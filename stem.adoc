@@ -1,9 +1,9 @@
 = Equations and Formulas (STEM)
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-03T14:00:15+09:00
-:revremark: add inline macro
+:revnumber: v0.5.0
+:revdate: 2023-07-03T14:01:35+09:00
+:revremark: add block content
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -106,6 +106,60 @@ stem:[pass:n[{stem_example}]]
 // end::stem_inline_macro[]
 
 :display_code_tag_name: stem_inline_macro
+include::./stem.adoc[tag=display_asciidoc_code]
+
+== Block Content
+
+.References
+{stem_url}#block[
+Block STEM content - Equations and Formulas (STEM)^]
+
+// tag::latex_block[]
+
+.Tex and Latex Math Notation
+[latexmath]
+++++
+\begin{bmatrix}
+a & b \\
+\alpha & \beta \\
+\end{bmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+++++
+
+// end::latex_block[]
+
+:display_code_tag_name: latex_block
+include::./stem.adoc[tag=display_asciidoc_code]
+
+// tag::asciimath_block[]
+
+.AsciiMath Math Notation
+[asciimath]
+// tag::asciimath_math_notation[]
+++++
+[[a,b],[\alpha,\beta]]((x),(y))
+++++
+// end::asciimath_math_notation[]
+
+// end::asciimath_block[]
+
+:display_code_tag_name: asciimath_block
+include::./stem.adoc[tag=display_asciidoc_code]
+
+`\{stem}` is {stem}.
+
+// tag::stem_block[]
+
+.Math Notation for Value of `stem` Document Attribute
+[stem]
+include::./stem.adoc[tag=asciimath_math_notation]
+
+// end::stem_block[]
+
+:display_code_tag_name: stem_block
 include::./stem.adoc[tag=display_asciidoc_code]
 
 // end::main[]

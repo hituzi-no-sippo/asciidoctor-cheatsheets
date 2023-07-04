@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.38.0
-:revdate: 2023-07-03T13:59:04+09:00
-:revremark: add stem
+:revnumber: v0.39.0
+:revdate: 2023-07-04T15:40:43+09:00
+:revremark: add open block
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -157,6 +157,10 @@ include::./tables/index.adoc[tag=main, leveloffset=+1]
 == Equations and Formulas (STEM)
 
 include::./stem.adoc[tag=main, leveloffset=+1]
+
+== Open Block
+
+include::./open_blocks.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

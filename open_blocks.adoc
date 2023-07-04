@@ -1,9 +1,140 @@
+= Open Blocks
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-04T15:39:34+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-04T16:23:45+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/blocks/open-blocks/[
+Open Blocks^]
+
+// tag::anonymous[]
+
+.Anonymous
+--
+Anonymous
+--
+
+// end::anonymous[]
+
+:display_code_tag_name: anonymous
+
+// tag::display_asciidoc_code[]
+
+.AsciiDoc Code
+[source, AsciiDoc, subs="+attributes"]
+----
+include::./open_blocks.adoc[tag={display_code_tag_name}]
+----
+
+// end::display_asciidoc_code[]
+
+== Supported Blocks
+
+:section_title: Sidebar
+:block_name: sidebar
+
+// tag::example_section[]
+
+=== {section_title}
+
+// tag::open_block[]
+
+[{block_name}]
+--
+{section_title}
+--
+
+// end::open_block[]
+
+:display_code_tag_name: open_block
+include::./open_blocks.adoc[tag=display_asciidoc_code]
+
+// end::example_section[]
+
+:section_title: Admonition
+:block_name: NOTE
+include::./open_blocks.adoc[tag=example_section]
+
+:section_title: Verse
+:block_name: verse
+include::./open_blocks.adoc[tag=example_section]
+
+:section_title: Quote
+:block_name: quote
+include::./open_blocks.adoc[tag=example_section]
+
+=== Source Code
+
+// tag::source_code[]
+
+[source, AsciiDoc]
+--
+Source Code
+--
+
+// end::source_code[]
+
+:display_code_tag_name: source_code
+include::./open_blocks.adoc[tag=display_asciidoc_code]
+
+=== Listing
+
+// tag::listing[]
+
+[listing]
+--
+Listing
+--
+
+// end::listing[]
+
+:display_code_tag_name: listing
+include::./open_blocks.adoc[tag=display_asciidoc_code]
+
+
+=== Literal
+
+// tag::literal[]
+
+[literal]
+--
+Literal
+--
+
+// end::literal[]
+
+:display_code_tag_name: literal
+include::./open_blocks.adoc[tag=display_asciidoc_code]
+
+=== Passthrough
+
+// tag::passthrough[]
+
+[pass]
+--
+<u>Passthrough</u>
+--
+
+// end::passthrough[]
+
+:display_code_tag_name: passthrough
+include::./open_blocks.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,52 @@
+= Comments
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-04T18:16:15+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-04T18:58:53+09:00
+:revremark: add comment line
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:comment_url: {asciidoc_docs_url}/comments/
+== Comment Line
+
+.References
+{comment_url}#comment-lines[
+Comment lines - Comments^]
+
+
+// tag::comment_line[]
+
+Comment
+
+// Comment Line
+
+Line
+
+// end::comment_line[]
+
+:display_code_tag_name: comment_line
+
+// tag::display_asciidoc_code[]
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+include::./comments.adoc[tag={display_code_tag_name}]
+----
+
+// end::display_asciidoc_code[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.40.0
-:revdate: 2023-07-09T13:33:58+09:00
-:revremark: add collapsible block
+:revnumber: v0.41.0
+:revdate: 2023-07-04T18:20:46+09:00
+:revremark: add comment
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -165,6 +165,10 @@ include::./open_blocks.adoc[tag=main, leveloffset=+1]
 == Collapsible Blocks
 
 include::./collapsible_blocks.adoc[tag=main, leveloffset=+1]
+
+== Comments
+
+include::./comments.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

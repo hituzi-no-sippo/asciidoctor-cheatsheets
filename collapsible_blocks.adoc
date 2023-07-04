@@ -1,9 +1,9 @@
 = Collapsible Blocks
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-04T17:50:23+09:00
-:revremark: add how to change toggle text
+:revnumber: v0.5.0
+:revdate: 2023-07-04T17:56:43+09:00
+:revremark: add how to open by default
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -108,6 +108,34 @@ Collapsible Paragraph
 // end::toggle_text_paragraph[]
 
 :display_code_tag_name: toggle_text_paragraph
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+== Default to Open
+
+.References
+{collapsible_url}#default-to-open[
+Default to open - Collapsible Blocks^]
+
+// tag::open_block[]
+
+[%collapsible%open]
+====
+Open by Default
+====
+
+// end::open_block[]
+
+:display_code_tag_name: open_block
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::open_paragraph[]
+
+[example%collapsible%open]
+Open by Default
+
+// end::open_paragraph[]
+
+:display_code_tag_name: open_paragraph
 include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
 
 // end::main[]

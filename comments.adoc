@@ -1,9 +1,9 @@
 = Comments
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-07-04T19:02:33+09:00
-:revremark: add comment paragraph
+:revnumber: v0.6.0
+:revdate: 2023-07-04T19:03:45+09:00
+:revremark: add comment in a list
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -106,6 +106,29 @@ Paragraph
 // end::comment_paragraph[]
 
 :display_code_tag_name: comment_paragraph
+include::./comments.adoc[tag=display_asciidoc_code]
+
+== In List
+
+.References
+{comment_block_link}
+
+// tag::in_list[]
+
+. Item 1
++
+////
+Comment
+
+in
+
+a list
+////
+. Item 2
+
+// end::in_list[]
+
+:display_code_tag_name: in_list
 include::./comments.adoc[tag=display_asciidoc_code]
 
 // end::main[]

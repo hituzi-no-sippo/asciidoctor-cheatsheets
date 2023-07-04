@@ -1,9 +1,88 @@
+= Collapsible Blocks
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-04T16:29:49+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-04T17:47:22+09:00
+:revremark: add collapsible block syntax
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:collapsible_url: {asciidoc_docs_url}/blocks/collapsible
+.References
+{collapsible_url}[
+Collapsible Blocks^]
+
+// tag::collapsible_block[]
+
+[%collapsible]
+====
+Collapsible Blocks.
+====
+
+// end::collapsible_block[]
+
+:display_code_tag_name: collapsible_block
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./collapsible_blocks.adoc
+include::./display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+`[%collapsible]` is same as `[options="collapsible"]`.
+
+// tag::collapsible_paragraph[]
+
+[example%collapsible]
+Collapsible Paragraph
+
+// end::collapsible_paragraph[]
+
+:display_code_tag_name: collapsible_paragraph
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::enclosure[]
+
+[%collapsible]
+====
+[discrete]
+== discrete Heading
+
+* Unordered List
+** Unordered List
+. Ordered List
+.. Ordered List
+Description:: List
+
+[NOTE]
+======
+admonitions
+======
+
+[source, justfile]
+----
+hello:
+  echo 'World'
+----
+====
+
+// end::enclosure[]
+
+:display_code_tag_name: enclosure
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

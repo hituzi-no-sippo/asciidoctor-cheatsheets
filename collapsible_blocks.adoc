@@ -1,9 +1,9 @@
 = Collapsible Blocks
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-04T17:47:22+09:00
-:revremark: add collapsible block syntax
+:revnumber: v0.4.0
+:revdate: 2023-07-04T17:50:23+09:00
+:revremark: add how to change toggle text
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -78,6 +78,36 @@ hello:
 // end::enclosure[]
 
 :display_code_tag_name: enclosure
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+== Change Toggle Text
+
+.References
+{collapsible_url}#customize-the-toggle-text[
+Customize the toggle text - Collapsible Blocks^]
+
+// tag::toggle_text_block[]
+
+.Change Toggle Text for Block
+[%collapsible]
+====
+Change Toggle Text
+====
+
+// end::toggle_text_block[]
+
+:display_code_tag_name: toggle_text_block
+include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
+
+// tag::toggle_text_paragraph[]
+
+.Change Toggle Text for Paragraph
+[example%collapsible]
+Collapsible Paragraph
+
+// end::toggle_text_paragraph[]
+
+:display_code_tag_name: toggle_text_paragraph
 include::./collapsible_blocks.adoc[tag=display_asciidoc_code]
 
 // end::main[]

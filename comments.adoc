@@ -1,9 +1,9 @@
 = Comments
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-04T19:00:45+09:00
-:revremark: add comment block
+:revnumber: v0.5.0
+:revdate: 2023-07-04T19:02:33+09:00
+:revremark: add comment paragraph
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -86,6 +86,26 @@ Use `[comment]`.
 // end::use_open_block[]
 
 :display_code_tag_name: use_open_block
+include::./comments.adoc[tag=display_asciidoc_code]
+
+== Comment Paragraph
+
+.References
+{comment_block_link}
+
+// tag::comment_paragraph[]
+
+Comment
+
+[comment]
+Comment
+Paragraph
+
+Paragraph
+
+// end::comment_paragraph[]
+
+:display_code_tag_name: comment_paragraph
 include::./comments.adoc[tag=display_asciidoc_code]
 
 // end::main[]

@@ -1,9 +1,9 @@
 = Comments
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-04T18:58:53+09:00
-:revremark: add comment line
+:revnumber: v0.4.0
+:revdate: 2023-07-04T19:00:45+09:00
+:revremark: add comment block
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -43,6 +43,50 @@ include::./comments.adoc[tag={display_code_tag_name}]
 ----
 
 // end::display_asciidoc_code[]
+
+:comment_block_link: {comment_url}#comment-blocks[ \
+Comment blocks - Comments^]
+== Comment Block
+
+.References
+{comment_block_link}
+
+// tag::comment_block[]
+
+Comment
+
+////
+Comment
+
+Block
+////
+
+Block
+
+// end::comment_block[]
+
+:display_code_tag_name: comment_block
+include::./comments.adoc[tag=display_asciidoc_code]
+
+=== Use Open Block
+
+// tag::use_open_block[]
+
+Comment Block
+
+[comment]
+--
+Comment
+
+Block
+--
+
+Use `[comment]`.
+
+// end::use_open_block[]
+
+:display_code_tag_name: use_open_block
+include::./comments.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

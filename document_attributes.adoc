@@ -1,9 +1,9 @@
 = Document Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-03T19:04:48+09:00
-:revremark: add wrap
+:revnumber: v0.5.0
+:revdate: 2023-07-04T13:49:11+09:00
+:revremark: add changed value
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -105,6 +105,31 @@ include::./document_attributes.adoc[tag=display_asciidoc_code]
 
 :display_code_tag_name: hard_wrap
 include::./document_attributes.adoc[tag=display_asciidoc_code]
+
+== When to change value
+
+Change value on define value.
+As a result, displays first `foods` document attribute as `apple cacao`
+the following AsciiDoc.
+
+// tag::when_to_change_value[]
+
+:fruit: apple
+:foods: {fruit} cacao
+:fruit: banana
+
+`\{foods}` is {foods}.
+
+:foods: {fruit} cacao
+`\{foods}` is {foods}.
+
+// end::when_to_change_value[]
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+include::./document_attributes.adoc[tag=when_to_change_value]
+----
 
 // end::main[]
 

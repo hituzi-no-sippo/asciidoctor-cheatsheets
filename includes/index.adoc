@@ -1,9 +1,70 @@
+= Includes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-04T19:05:32+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-05T17:04:48+09:00
+:revremark: add introduction
+:icons: font
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:directive_url: {asciidoc_docs_url}/directives
+.References
+* {directive_url}/include[
+  Includes^]
+* {directive_url}/include-list-item-content/[
+  Include List Item Content^]
+
+Use include directive (`include::<FILE>[]`) to
+you can include content from another files.
+
+.Read a Content from any URI
+[NOTE]
+====
+Can reference file served from any URI.
+`include::<URI>[]`
+====
+
+.Include Content form `paragraph.adoc` File
+include::./paragraph.adoc[]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc]
+----
+\include::./paragraph.adoc[]
+----
+====
+
+.Include Content in a List
+* {empty}
+--
+include::./paragraph.adoc[]
+--
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc]
+----
+* {blank}
+--
+\include::./paragraph.adoc[]
+--
+----
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

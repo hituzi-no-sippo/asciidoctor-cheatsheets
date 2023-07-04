@@ -1,9 +1,11 @@
 = Indent Block Attribute
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-05T05:39:51+09:00
-:revremark: add supported blocks
+:revnumber: v0.4.0
+:revdate: 2023-07-05T06:20:36+09:00
+:revremark: add how to use indent block attribute
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
 
 // tag::body[]
@@ -20,6 +22,60 @@ Indent Included Content^]
 * Source Code
 * Listing
 * Literal
+
+// tag::default[]
+
+.Default
+[source, Julia]
+// tag::example_source_code[]
+----
+    function hello_world()
+      run(Cmd(["echo", "Hello World"]))
+    end
+
+    hello_world()
+----
+// end::example_source_code[]
+
+// end::default[]
+
+:display_code_tag_name: default
+
+// tag::display_asciidoc_code[]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+-----
+include::./indent_block_attribute.adoc[tag={display_code_tag_name}]
+-----
+====
+
+// end::display_asciidoc_code[]
+
+:indent_value: 0
+
+// tag::example[]
+
+// tag::indent_code_example[]
+
+.`indent={indent_value}`
+[source, Julia, indent={indent_value}]
+include::./indent_block_attribute.adoc[tag=example_source_code]
+
+// end::indent_code_example[]
+
+:display_code_tag_name: indent_code_example
+include::./indent_block_attribute.adoc[tag=display_asciidoc_code]
+
+// end::example[]
+
+:indent_value: 2
+include::./indent_block_attribute.adoc[tag=example]
+
+:indent_value: 10
+include::./indent_block_attribute.adoc[tag=example]
 
 // end::main[]
 

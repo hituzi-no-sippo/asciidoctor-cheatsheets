@@ -1,9 +1,29 @@
+= Indent Block Attribute
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-05T05:36:46+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-05T05:39:51+09:00
+:revremark: add supported blocks
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+.References
+{asciidoc_docs_url}/directives/include-with-indent/[
+Indent Included Content^]
+
+.Supported Block
+* Source Code
+* Listing
+* Literal
+
+// end::main[]
+
+// end::body[]
 
 '''
 

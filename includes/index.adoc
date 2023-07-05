@@ -1,9 +1,9 @@
 = Includes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
-:revdate: 2023-07-05T18:35:24+09:00
-:revremark: add how to change indent
+:revnumber: v0.6.0
+:revdate: 2023-07-06T05:43:13+09:00
+:revremark: add range
 :toc:
 :icons: font
 :source-highlighter: highlight.js
@@ -70,6 +70,10 @@ include::./offset_section_levels.adoc[tag=main, leveloffset=+1]
 == How to change indent
 
 include::./indent.adoc[tag=main, leveloffset=+1]
+
+== Selection of Include Ranges
+
+include::./ranges.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

@@ -1,9 +1,140 @@
+= Ranges
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-06T05:25:06+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-06T07:32:05+09:00
+:revremark: add tag
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+The include directive allows selection of included ranges.
+
+== Tag
+
+.References
+{directive_url}/include-tagged-regions/[
+Include Content by Tagged Regions^]
+
+=== AsciiDoc
+
+:include_asciidoc_file_for_tags: tags.adoc
+.AsciiDoc Code to be Include (`{include_asciidoc_file_for_tags}`)
+[source, AsciiDoc]
+----
+include::./{include_asciidoc_file_for_tags}[]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+[source, AsciiDoc]
+----
+\include::./{include_asciidoc_file_for_tags}[]
+----
+------
+====
+
+:tags_value: a
+
+// tag::tags_element_attribute_example[]
+
+.`tags="{tags_value}"`
+[source, AsciiDoc]
+----
+include::./{include_asciidoc_file_for_tags}[tags="{tags_value}"]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+.`tags="{tags_value}"`
+[source, AsciiDoc]
+----
+\include::./{include_asciidoc_file_for_tags}[tags="{tags_value}"]
+----
+------
+====
+
+// end::tags_element_attribute_example[]
+
+:tags_value: b
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: c
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: b,c
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: *
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: !*
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: !b
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+:tags_value: a,!b
+include::./ranges.adoc[tag=tags_element_attribute_example]
+
+=== Other than AsciiDoc
+
+Tag can be used other than AsciiDoc.
+
+:include_lua_file: tags.lua
+.Lua Code to be Include (`{include_lua_file}`)
+[source, Lua]
+----
+include::./{include_lua_file}[]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+[source, AsciiDoc]
+----
+\include::./{include_lua_file}[]
+----
+------
+====
+
+.`tags="hello"`
+[source, Lua]
+----
+include::./{include_lua_file}[tags="hello"]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+.`tags="hello"`
+[source, Lua]
+----
+\include::./{include_lua_file}[tags="hello"]
+----
+------
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

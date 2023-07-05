@@ -1,9 +1,78 @@
+= Indent
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-05T17:08:08+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-05T18:44:15+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc, nix
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+.References
+{directive_url}/include-with-indent/[
+Indent Included Content^]
+
+Use `indent` element attribute to change indent.
+
+.Nix Code to be Include (`hello.nix`)
+[source, Nix]
+----
+include::./hello.nix[]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc]
+------
+[source, Nix]
+----
+\include::./hello.nix[]
+----
+------
+====
+
+:indent_value: 0
+
+// tag::indent_element_attribute_example[]
+
+.`indent={indent_value}`
+[source, Nix]
+----
+include::./hello.nix[indent={indent_value}]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+.`indent={indent_value}`
+[source, Nix]
+----
+\include::./hello.nix[indent={indent_value}]
+----
+------
+====
+
+// end::indent_element_attribute_example[]
+
+:indent_value: 2
+include::./indent.adoc[tag=indent_element_attribute_example]
+
+:indent_value: 10
+include::./indent.adoc[tag=indent_element_attribute_example]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

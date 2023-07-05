@@ -1,13 +1,13 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.42.0
-:revdate: 2023-07-09T13:37:09+09:00
-:revremark: add includes
+:revnumber: v0.42.1
+:revdate: 2023-07-09T13:40:41+09:00
+:revremark: add nix to highlight language
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
-:highlightjs-languages: asciidoc, julia
+:highlightjs-languages: asciidoc, julia, nix
 :imagesdir: ./images
 :stem: asciimath
 :copyright: Copyright (C) 2023 {author}

@@ -2,7 +2,7 @@
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revnumber: v0.3.0
-:revdate: 2023-07-06T07:32:05+09:00
+:revdate: 2023-07-06T07:54:34+09:00
 :revremark: add tag
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -131,6 +131,67 @@ include::./{include_lua_file}[tags="hello"]
 ----
 ------
 ====
+
+== Lines
+
+.References
+{directive_url}/include-lines/[
+Include Content by Line Ranges^]
+
+:include_asciidoc_file_for_lines: lines.adoc
+.AsciiDoc Code to be Include (`{include_asciidoc_file_for_lines}`)
+[source, AsciiDoc]
+----
+include::./{include_asciidoc_file_for_lines}[]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+[source, AsciiDoc]
+----
+\include::./{include_asciidoc_file_for_lines}[]
+----
+------
+====
+
+:lines_value: 10
+
+// tag::lines_element_attribute_example[]
+
+.`lines="{lines_value}"`
+[source, AsciiDoc]
+----
+include::./{include_asciidoc_file_for_lines}[lines="{lines_value}"]
+----
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc, subs="+attributes"]
+------
+.`lines="{lines_value}"`
+[source, AsciiDoc]
+----
+\include::./{include_asciidoc_file_for_lines}[lines="{lines_value}"]
+----
+------
+====
+
+// end::lines_element_attribute_example[]
+
+:lines_value: 5..10
+include::./ranges.adoc[tag=lines_element_attribute_example]
+
+:lines_value: 1,7,15
+include::./ranges.adoc[tag=lines_element_attribute_example]
+
+:lines_value: 3..5,7..9,14
+include::./ranges.adoc[tag=lines_element_attribute_example]
+
+The `lines` element attribute can be used other than AsciiDoc.
 
 // end::main[]
 

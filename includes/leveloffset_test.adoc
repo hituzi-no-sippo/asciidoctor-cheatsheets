@@ -1,0 +1,5 @@
+`\{leveloffset}` is {leveloffset}.
+
+=== Section
+
+Check HTML headings (`h1` - `h6`) element on above section.

@@ -1,9 +1,9 @@
 = Includes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-05T17:04:48+09:00
-:revremark: add introduction
+:revnumber: v0.4.0
+:revdate: 2023-07-05T17:05:18+09:00
+:revremark: add how to change section level
 :icons: font
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -61,6 +61,10 @@ include::./paragraph.adoc[]
 --
 ----
 ====
+
+== How to change section level
+
+include::./offset_section_levels.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

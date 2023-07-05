@@ -1,9 +1,61 @@
+= Offset Section Levels
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-05T16:28:54+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-05T16:53:02+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+.References
+{directive_url}/include-with-leveloffset/[
+Offset Section Levels^]
+
+Use `leveloffset` element attribute to change section level offset.
+
+.AsciiDoc Code to be Include (`leveloffset_test.adoc`)
+[source, AsciiDoc]
+----
+include::./leveloffset_test.adoc[]
+----
+
+== Default
+
+include::./leveloffset_test.adoc[]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc]
+----
+\include::./leveloffset_test.adoc[]
+----
+====
+
+== Change Offset Section Level
+
+include::./leveloffset_test.adoc[leveloffset=+1]
+
+.AsciiDoc Code
+[%collapsible]
+====
+[source, AsciiDoc]
+----
+\include::./leveloffset_test.adoc[leveloffset=+1]
+----
+====
+
+// end::main[]
+
+// end::body[]
 
 '''
 

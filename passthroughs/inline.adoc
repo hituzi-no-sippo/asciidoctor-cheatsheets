@@ -1,9 +1,9 @@
 = Inline Passthroughs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-07T07:31:36+09:00
-:revremark: add plus signs
+:revnumber: v0.4.0
+:revdate: 2023-07-07T07:32:49+09:00
+:revremark: add pass macro
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -35,8 +35,95 @@ Inline Passthroughs^]
 
 :display_code_tag_name: plus_signs
 
+// tag::display_asciidoc_code[]
+
 :asciidoc_code_file_path: ./passthroughs/inline.adoc
 include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+== pass macro
+
+// tag::pass_macro[]
+
+:hello: World
+.`\pass:[]`
+pass:[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro[]
+
+:display_code_tag_name: pass_macro
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_normal[]
+
+.`pass:<normal|n>[]`
+pass:normal[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_normal[]
+
+:display_code_tag_name: pass_macro_normal
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_verbatim[]
+
+.`pass:<verbatim|v>[]`
+pass:verbatim[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_verbatim[]
+
+:display_code_tag_name: pass_macro_verbatim
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_specialchars[]
+
+.`pass:<specialchars|c>[]`
+pass:specialchars[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_specialchars[]
+
+:display_code_tag_name: pass_macro_specialchars
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_attributes[]
+
+.`pass:<attributes|a>[]`
+pass:attributes[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_attributes[]
+
+:display_code_tag_name: pass_macro_attributes
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_replacements[]
+
+.`pass:<replacements|r>[]`
+pass:replacements[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_replacements[]
+
+:display_code_tag_name: pass_macro_replacements
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_macros[]
+
+.`pass:<macros|m>[]`
+pass:macros[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_macros[]
+
+:display_code_tag_name: pass_macro_macros
+include::./inline.adoc[tag=display_asciidoc_code]
+
+// tag::pass_macro_multiple[]
+
+.Multiple Substitution `\pass:attributes,macros,specialchars[]`
+pass:attributes,macros,specialchars[Normal *bold* {hello} <mark>Highlight</mark> &lt; &gt; &amp; &#x1f4db; (C) https://console.substack.com]
+
+// end::pass_macro_multiple[]
+
+:display_code_tag_name: pass_macro_multiple
+include::./inline.adoc[tag=display_asciidoc_code]
 
 // end::main[]
 

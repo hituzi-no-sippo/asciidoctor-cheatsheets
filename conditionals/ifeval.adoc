@@ -1,9 +1,107 @@
+= ifeval Directive
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-06T17:01:56+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-06T18:03:06+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+.References
+{directive_url}/ifeval/[
+ifeval Directive^]
+
+.String
+[source, AsciiDoc]
+----
+:hello: world
+
+\ifeval::["{hello}" == "world"]
+Two values are equal
+\endif::[]
+
+\ifeval::["{hello}" != "world"]
+Two values are not equal
+\endif::[]
+----
+
+:hello: world
+
+ifeval::["{hello}" == "world"]
+Two values are equal
+endif::[]
+
+ifeval::["{hello}" != "world"]
+Two values are not equal.
+endif::[]
+
+.Number
+[source, AsciiDoc]
+----
+:number: 1.5
+
+\ifeval::[{number} == 1.5]
+Two values are equal
+\endif::[]
+
+\ifeval::[{number} != 1.5]
+Two values are not equal
+\endif::[]
+
+\ifeval::[{number} < 4.5]
+The left-hand side is less
+\endif::[]
+
+\ifeval::[{number} <= 1.5]
+The left-hand side is less than or equal
+\endif::[]
+
+\ifeval::[{number} > 0.5]
+The left-hand side is greater
+\endif::[]
+
+\ifeval::[{number} >= 1.5]
+The left-hand side is greater than or equal
+\endif::[]
+----
+
+:number: 1.5
+
+ifeval::[{number} == 1.5]
+Two values are equal
+endif::[]
+
+ifeval::[{number} != 1.5]
+Two values are not equal
+endif::[]
+
+ifeval::[{number} < 4.5]
+The left-hand side is less
+endif::[]
+
+ifeval::[{number} <= 1.5]
+The left-hand side is less than or equal
+endif::[]
+
+ifeval::[{number} > 0.5]
+The left-hand side is greater
+endif::[]
+
+ifeval::[{number} >= 1.5]
+The left-hand side is greater than or equal
+endif::[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

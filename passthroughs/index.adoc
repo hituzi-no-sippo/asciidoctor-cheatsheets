@@ -1,9 +1,28 @@
+= Passthroughs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T04:34:21+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T07:22:06+09:00
+:revremark: add inline passthroughs
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+
+// tag::main[]
+
+:pass_url: {asciidoc_docs_url}/pass
+
+== Inline Passthroughs
+
+include::./inline.adoc[tag=main, leveloffset=+1]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

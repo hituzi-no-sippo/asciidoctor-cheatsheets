@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.43.0
-:revdate: 2023-07-09T13:37:38+09:00
-:revremark: add conditionals
+:revnumber: v0.44.0
+:revdate: 2023-07-09T13:38:03+09:00
+:revremark: add passthroughs
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -177,6 +177,10 @@ include::./includes/index.adoc[tag=main, leveloffset=+1]
 == Conditionals
 
 include::./conditionals/index.adoc[tag=main, leveloffset=+1]
+
+== Passthroughs
+
+include::./passthroughs/index.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

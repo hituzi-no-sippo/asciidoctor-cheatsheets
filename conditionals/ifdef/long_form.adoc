@@ -1,9 +1,99 @@
+== Long Form
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T17:29:59+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T17:33:40+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+.References
+{directive_url}/ifdef-ifndef[
+ifdef and ifndef Directives^]
+
+.Block
+[source, AsciiDoc]
+----
+\ifdef::hello[]
+Hello
+World
+
+[NOTE]
+====
+Admonitions
+====
+\endif::[]
+
+\ifndef::hello[]
+Also use can ifndef.
+\endif::[]
+----
+
+Define `hello` document attribute.
+
+:hello:
+// tag::block_ifdef[]
+ifdef::hello[]
+Hello
+World
+
+[NOTE]
+====
+Admonitions
+====
+endif::[]
+// end::block_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+include::./long_form.adoc[tag=block_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+include::./long_form.adoc[tag=block_ifdef]
+
+.AsciiDoc Code
+[source, AsciiDoc, subs="attributes+"]
+----
+Define `hello` document attribute.
+
+:hello:
+// tag{empty}::block_ifdef[]
+\ifdef::hello[]
+Hello
+World
+
+[NOTE]
+====
+Admonitions
+====
+\endif::[]
+// end{empty}::block_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+\include::./long_form.adoc[tag=block_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+\include::./long_form.adoc[tag=block_ifdef]
+----
+
+// end::main[]
+
+// end::body[]
 
 '''
 

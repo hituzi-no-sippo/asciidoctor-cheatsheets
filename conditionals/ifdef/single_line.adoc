@@ -1,9 +1,9 @@
 == Single Line
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-07T17:19:58+09:00
-:revremark: add ifdef
+:revnumber: v0.4.0
+:revdate: 2023-07-07T17:26:11+09:00
+:revremark: add ifndef
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -64,6 +64,55 @@ Define `hello` document attribute.
 
 :hello:
 \include::./single_line.adoc[tag=single_line_ifdef]
+----
+
+== ifndef
+
+.References
+{ifdef_ifndef_url}#ifndef[
+ifndef directive - ifdef and ifndef Directives^]
+
+[source, AsciiDoc]
+----
+\ifndef::hello[world]
+----
+
+Define `hello` document attribute.
+
+:hello:
+// tag::single_line_not_ifdef[]
+ifndef::hello[Hello World]
+// end::single_line_not_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+include::./single_line.adoc[tag=single_line_not_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+include::./single_line.adoc[tag=single_line_not_ifdef]
+
+.AsciiDoc Code
+[source, AsciiDoc, subs="attributes+"]
+----
+Define `hello` document attribute.
+
+:hello:
+// tag{empty}::single_line_not_ifdef[]
+\ifndef::hello[Hello World]
+// end{empty}::single_line_not_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+\include::./single_line.adoc[tag=single_line_not_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+\include::./single_line.adoc[tag=single_line_not_ifdef]
 ----
 
 // end::main[]

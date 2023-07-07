@@ -1,9 +1,74 @@
+== Single Line
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T17:17:08+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T17:19:58+09:00
+:revremark: add ifdef
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+:ifdef_ifndef_url: {directive_url}/ifdef-ifndef
+
+== ifdef
+
+.References
+{ifdef_ifndef_url}#ifdef[
+ifdef directive - ifdef and ifndef Directives^]
+
+[source, AsciiDoc]
+----
+\ifdef::hello[world]
+----
+
+Define `hello` document attribute.
+
+:hello:
+// tag::single_line_ifdef[]
+ifdef::hello[Hello World]
+// end::single_line_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+include::./single_line.adoc[tag=single_line_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+include::./single_line.adoc[tag=single_line_ifdef]
+
+.AsciiDoc Code
+[source, AsciiDoc, subs="attributes+"]
+----
+Define `hello` document attribute.
+
+:hello:
+// tag{empty}::single_line_ifdef[]
+\ifdef::hello[Hello World]
+// end{empty}::single_line_ifdef[]
+
+Unset `hello` document attribute.
+
+:!hello:
+\include::./single_line.adoc[tag=single_line_ifdef]
+
+Define `hello` document attribute.
+
+:hello:
+\include::./single_line.adoc[tag=single_line_ifdef]
+----
+
+// end::main[]
+
+// end::body[]
 
 '''
 

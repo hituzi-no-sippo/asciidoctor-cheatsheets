@@ -1,9 +1,9 @@
 = AsciiDoctor Cheatsheets
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.42.1
-:revdate: 2023-07-09T13:40:41+09:00
-:revremark: add nix to highlight language
+:revnumber: v0.43.0
+:revdate: 2023-07-09T13:37:38+09:00
+:revremark: add conditionals
 :icons: font
 :toc: right
 :source-highlighter: highlight.js
@@ -173,6 +173,10 @@ include::./comments.adoc[tag=main, leveloffset=+1]
 == Includes
 
 include::./includes/index.adoc[tag=main, leveloffset=+1]
+
+== Conditionals
+
+include::./conditionals/index.adoc[tag=main, leveloffset=+1]
 
 == Display Document Attributes
 

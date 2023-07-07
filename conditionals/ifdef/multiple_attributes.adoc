@@ -1,9 +1,147 @@
+= Multiple Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T17:35:14+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T17:36:40+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:directive_url: {asciidoc_docs_url}/directives
+
+// tag::main[]
+
+.References
+{directive_url}/ifdef-ifndef/#checking-multiple-attributes[
+Checking multiple attributes - ifdef and ifndef Directives^]
+
+[source, AsciiDoc]
+----
+\ifdef::hello,world[OR]
+\ifdef::hello+world[AND]
+
+\ifdef::hello,world[]
+OR
+\endif::[]
+
+\ifdef::hello+world[]
+AND
+\endif::[]
+----
+
+.Document Attributes
+[horizontal]
+hello:: Set
+world:: Set
+
+:hello:
+:world:
+// tag::multiple[]
+ifdef::hello,world[OR]
+
+ifdef::hello+world[AND]
+
+ifndef::hello,world[NOT OR]
+
+ifndef::hello+world[NOT AND]
+// end::multiple[]
+
+.AsciiDoc Code
+[source, AsciiDoc, subs="attributes+"]
+----
+.Document Attributes
+[horizontal]
+hello:: Set
+world:: Set
+
+:hello:
+:world:
+// tag{empty}::multiple[]
+\ifdef::hello,world[OR]
+
+\ifdef::hello+world[AND]
+
+\ifndef::hello,world[NOT OR]
+
+\ifndef::hello+world[NOT AND]
+// end{empty}::multiple[]
+----
+
+.Document Attributes
+[horizontal]
+hello:: Unset
+world:: Unset
+
+:!hello:
+:!world:
+include::./multiple_attributes.adoc[tag=multiple]
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+.Document Attributes
+[horizontal]
+hello:: Unset
+world:: Unset
+
+:!hello:
+:!world:
+\include::./multiple_attributes.adoc[tag=multiple]
+----
+
+.Document Attributes
+[horizontal]
+hello:: Set
+world:: Unset
+
+:hello:
+:!world:
+include::./multiple_attributes.adoc[tag=multiple]
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+.Document Attributes
+[horizontal]
+hello:: Set
+world:: Unset
+
+:hello:
+:!world:
+\include::./multiple_attributes.adoc[tag=multiple]
+----
+
+.Document Attributes
+[horizontal]
+hello:: Unset
+world:: Set
+
+:!hello:
+:world:
+include::./multiple_attributes.adoc[tag=multiple]
+
+.AsciiDoc Code
+[source, AsciiDoc]
+----
+.Document Attributes
+[horizontal]
+hello:: Unset
+world:: Set
+
+:!hello:
+:world:
+\include::./multiple_attributes.adoc[tag=multiple]
+----
+
+
+
+// end::main[]
+
+// end::body[]
 
 '''
 

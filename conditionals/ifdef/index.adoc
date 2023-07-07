@@ -1,9 +1,9 @@
 = ifdef and ifndef Directives
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
-:revdate: 2023-07-06T16:38:13+09:00
-:revremark: add long form
+:revnumber: v0.5.0
+:revdate: 2023-07-06T16:40:12+09:00
+:revremark: add multiple attributes
 :toc:
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
@@ -23,6 +23,10 @@ include::./single_line.adoc[tag=main, leveloffset=+1]
 == Long Form
 
 include::./long_form.adoc[tag=main, leveloffset=+1]
+
+== Multiple Attributes
+
+include::./multiple_attributes.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

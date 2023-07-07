@@ -1,9 +1,95 @@
+= Colors
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T19:05:04+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T19:12:47+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:text_docs_url: {asciidoc_docs_url}/text
+
+// tag::main[]
+
+.References
+{text_docs_url}/text-span-built-in-roles/#built-in-roles-for-text[
+Built-in roles for text - Text Span and Built-in Roles^]
+
+
+// tag::colors[]
+
+:color: red
+
+// tag::color_text[]
+
+.{color}
+* [.{color}]#{color}#
+* [.{color}-background]#{color}-background#
+
+// end::color_text[]
+
+:color: blue
+include::./colors.adoc[tag=color_text]
+
+:color: yellow
+include::./colors.adoc[tag=color_text]
+
+:color: green
+include::./colors.adoc[tag=color_text]
+
+:color: aqua
+include::./colors.adoc[tag=color_text]
+
+:color: fuchsia
+include::./colors.adoc[tag=color_text]
+
+:color: lime
+include::./colors.adoc[tag=color_text]
+
+:color: maroon
+include::./colors.adoc[tag=color_text]
+
+:color: purple
+include::./colors.adoc[tag=color_text]
+
+:color: navy
+include::./colors.adoc[tag=color_text]
+
+:color: olive
+include::./colors.adoc[tag=color_text]
+
+:color: teal
+include::./colors.adoc[tag=color_text]
+
+:color: gray
+include::./colors.adoc[tag=color_text]
+
+:color: silver
+include::./colors.adoc[tag=color_text]
+
+:color: white
+.{color}
+* [.{color}]#{color}#
+* [.black-background.white]#black [.white-background]##{color}-background## background#
+
+:color: black
+.{color}
+* [.{color}]#{color}#
+* [.black-background.white]#{color}-background#
+
+// end::colors[]
+
+:asciidoc_code_file_path: ./text_formatting_and_punctuation/colors.adoc
+:display_code_tag_name: colors
+include::../display_asciidoc_code.adoc[]
+
+// end::main[]
+
+// end::body[]
 
 '''
 

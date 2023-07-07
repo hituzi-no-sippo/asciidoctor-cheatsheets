@@ -1,9 +1,9 @@
 = Text Formatting and Punctuation
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v0.4.0
 :revdate: 2023-06-08T20:18:56+09:00
-:revremark: add introduction
+:revremark: add add built-in roles and custom inline styles
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -69,6 +69,10 @@ include::./index.adoc[tag=display_asciidoc_code]
 
 :display_code_tag_name: mixed
 include::./index.adoc[tag=display_asciidoc_code]
+
+== Built-in Roles and Custom Inline Styles
+
+include::./roles_and_styles.adoc[tag=main, leveloffset=+1]
 
 // end::body[]
 

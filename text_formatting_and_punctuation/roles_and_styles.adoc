@@ -1,9 +1,99 @@
+= Built-in Roles and Custom Inline Styles
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
-:revdate: 2023-07-07T18:45:28+0900
-:revremark: add copyright
+:revnumber: v0.3.0
+:revdate: 2023-07-07T18:45:52+09:00
+:revremark: add introduction
+:source-highlighter: highlight.js
+:highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
+
+// tag::body[]
+
+:asciidoc_docs_url: https://docs.asciidoctor.org/asciidoc/latest
+:text_docs_url: {asciidoc_docs_url}/text
+
+// tag::main[]
+
+.References
+* {text_docs_url}/text-span-built-in-roles/[
+  Text Span and Built-in Roles^]
+* {text_docs_url}/custom-inline-styles/[
+  Using Custom Inline Styles^]
+
+// tag::line[]
+
+.Line
+--
+:style: underline
+* [.{style}]#{style}#
+
+:style: overline
+* [.{style}]#{style}#
+
+:style: line-through
+* [.{style}]#{style}#
+--
+
+// end::line[]
+
+:display_code_tag_name: line
+
+// tag::display_asciidoc_code[]
+
+:asciidoc_code_file_path: ./text_formatting_and_punctuation/roles_and_styles.adoc
+include::../display_asciidoc_code.adoc[]
+
+// end::display_asciidoc_code[]
+
+// tag::size[]
+
+.Size
+--
+:style: big
+* [.{style}]#{style}#
+
+:style: small
+* [.{style}]#{style}#
+--
+
+// end::size[]
+
+:display_code_tag_name: size
+include::./roles_and_styles.adoc[tag=display_asciidoc_code]
+
+// tag::white_space[]
+
+:long_string: 012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
+.white-space
+--
+:style: pre-wrap
+* [.{style}]#{style}               space#
+
+:style: nobreak
+* [.{style}]#{style} {long_string}#
+--
+
+// end::white_space[]
+
+:display_code_tag_name: white_space
+include::./roles_and_styles.adoc[tag=display_asciidoc_code]
+
+// tag::word_wrap[]
+
+.word-wrap
+:style: nowrap
+* [.{style}]#{style} {long_string}#
+
+// end::word_wrap[]
+
+:display_code_tag_name: word_wrap
+include::./roles_and_styles.adoc[tag=display_asciidoc_code]
+
+
+// end::main[]
+
+// end::body[]
 
 '''
 

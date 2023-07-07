@@ -1,9 +1,9 @@
 = Passthroughs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
-:revdate: 2023-07-07T07:22:06+09:00
-:revremark: add inline passthroughs
+:revnumber: v0.4.0
+:revdate: 2023-07-07T07:44:54+09:00
+:revremark: add block passthroughs
 :source-highlighter: highlight.js
 :highlightjs-languages: asciidoc
 :copyright: Copyright (C) 2023 {author}
@@ -19,6 +19,10 @@
 == Inline Passthroughs
 
 include::./inline.adoc[tag=main, leveloffset=+1]
+
+== Passthrough Blocks
+
+include::./block.adoc[tag=main, leveloffset=+1]
 
 // end::main[]
 

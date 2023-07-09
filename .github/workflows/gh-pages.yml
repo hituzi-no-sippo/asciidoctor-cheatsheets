@@ -1,0 +1,86 @@
+---
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby and gems
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Generate HTML from AsciiDoc with Asciidoctor
+        run: |
+          bundle exec \
+            asciidoctor \
+            --attribute linkcss \
+            --destination-dir './desc' \
+            --source-dir './' \
+            "**/*.adoc"
+
+      - name: add meta tag
+        run: |
+          find ./desc \
+            -name "*.html" \
+            -exec sed -i \
+            's/<\/head>/<meta name="Hatena::Bookmark" content="nocomment" \/>\n&/' \
+            {} +
+
+      - name: Move medium
+        run: |
+          declare -ar DIR_NAMES=(
+            'audios'
+            'images'
+            'icons'
+            'videos'
+          )
+
+          for name in "${DIR_NAMES[@]}"
+          do
+            mkdir --parents "./desc/$name"
+            mv ./"$name"/* "./desc/$name/"
+          done
+
+      - name: Remove AsciiDoc Files
+        run: |
+          find './desc' \
+            -name "*.adoc" \
+            -delete
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './desc'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
+        id: deployment

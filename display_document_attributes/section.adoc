@@ -1,7 +1,7 @@
 = Section
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-14T16:23:20+09:00
 :revremark: add attributes
 :copyright: Copyright (C) 2023 {author}

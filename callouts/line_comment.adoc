@@ -1,7 +1,7 @@
 = Line Comment
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-25T10:30:08+09:00
 :revremark: add introduction
 :icons: font

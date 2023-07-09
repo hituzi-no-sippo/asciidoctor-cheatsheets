@@ -1,7 +1,7 @@
 = Source Code
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
+:revnumber: v1.0.0
 :revdate: 2023-06-22T06:27:38+09:00
 :revremark: add source-language document attribute
 :toc:

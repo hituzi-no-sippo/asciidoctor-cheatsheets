@@ -1,7 +1,7 @@
 = Icons
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
+:revnumber: v1.0.0
 :revdate: 2023-06-17T15:36:24+09:00
 :revremark: add image mode only attributes
 :icons: font

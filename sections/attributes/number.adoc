@@ -1,7 +1,7 @@
 = Section Number
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-25T08:06:00+09:00
 :revremark: add enable and disable
 :toc:

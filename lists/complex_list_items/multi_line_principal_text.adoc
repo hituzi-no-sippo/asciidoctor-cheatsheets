@@ -1,7 +1,7 @@
 = Multi line Principal Text
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
+:revnumber: v1.0.0
 :revdate: 2023-06-24T13:01:02+0900
 :revremark: add copyright
 :source-highlighter: highlight.js

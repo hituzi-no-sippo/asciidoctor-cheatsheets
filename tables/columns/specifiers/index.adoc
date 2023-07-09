@@ -1,7 +1,7 @@
 = Column Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
+:revnumber: v1.0.0
 :revdate: 2023-07-01T15:09:21+09:00
 :revremark: add column multiplier
 :toc:

@@ -1,7 +1,7 @@
 = Image and Icon
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
+:revnumber: v1.0.0
 :revdate: 2023-06-14T18:03:25+09:00
 :revremark: add icon attributes
 :copyright: Copyright (C) 2023 {author}

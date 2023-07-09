@@ -1,7 +1,7 @@
 = Cell Duplicate
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-07-01T19:35:42+09:00
 :revremark: add introduction
 :icons: font

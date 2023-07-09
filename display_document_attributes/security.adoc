@@ -1,7 +1,7 @@
 = Security
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
+:revnumber: v1.0.0
 :revdate: 2023-06-15T01:20:18+09:00
 :revremark: add attributes
 :copyright: Copyright (C) 2023 {author}

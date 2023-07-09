@@ -1,7 +1,7 @@
 = Section Attributes
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
+:revnumber: v1.0.0
 :revdate: 2023-06-25T08:07:54+09:00
 :revremark: add section number
 :source-highlighter: highlight.js

@@ -1,7 +1,7 @@
 = Hide URI Scheme
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-14T01:30:24+09:00
 :revremark: add introduction
 :source-highlighter: highlight.js

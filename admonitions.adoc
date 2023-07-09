@@ -1,7 +1,7 @@
 = Admonitions
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.6.0
+:revnumber: v1.0.0
 :revdate: 2023-06-18T14:33:53+09:00
 :revremark: add admonition image
 :icons: font

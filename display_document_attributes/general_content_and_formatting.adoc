@@ -1,7 +1,7 @@
 = General Content and Formatting
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-14T17:25:59+09:00
 :revremark: add attributes
 :copyright: Copyright (C) 2023 {author}

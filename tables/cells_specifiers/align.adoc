@@ -1,7 +1,7 @@
 = Cell Align
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.2.0
+:revnumber: v1.0.0
 :revdate: 2023-07-01T16:52:59+09:00
 :revremark: add copyright
 :source-highlighter: highlight.js

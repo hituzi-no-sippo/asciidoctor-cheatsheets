@@ -1,7 +1,7 @@
 = Passthroughs
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.4.0
+:revnumber: v1.0.0
 :revdate: 2023-07-07T07:44:54+09:00
 :revremark: add block passthroughs
 :source-highlighter: highlight.js

@@ -1,7 +1,7 @@
 = Cross References
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.5.0
+:revnumber: v1.0.0
 :revdate: 2023-06-24T17:03:42+09:00
 :revremark: add xrefstyle attribute
 :toc:

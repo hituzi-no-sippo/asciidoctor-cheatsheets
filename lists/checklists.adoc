@@ -1,7 +1,7 @@
 = Checklists
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-09T07:12:50+09:00
 :revremark: add checklists
 :source-highlighter: highlight.js

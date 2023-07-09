@@ -2,7 +2,7 @@
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
 :revdate: 2023-07-02T09:01:28+09:00
-:revnumber: v0.14.0
+:revnumber: v1.0.0
 :revremark: add table position
 :toc:
 :icons: font

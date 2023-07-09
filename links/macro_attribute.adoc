@@ -1,7 +1,7 @@
 = Link & URL Macro Attribute Parsing
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.3.0
+:revnumber: v1.0.0
 :revdate: 2023-06-13T19:11:19+09:00
 :revremark: add introduction
 :source-highlighter: highlight.js

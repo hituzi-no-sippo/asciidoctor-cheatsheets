@@ -1,7 +1,7 @@
 = Cell Specifiers
 :author: hituzi no sippo
 :email: dev@hituzi-no-sippo.me
-:revnumber: v0.7.0
+:revnumber: v1.0.0
 :revdate: 2023-07-01T19:37:53+09:00
 :revremark: add cell duplicate
 :toc:
